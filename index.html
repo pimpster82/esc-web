@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESC - Elevator Service Companion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .input-section {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .input-section input {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .input-section input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .input-section button {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .input-section button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .input-section button:active {
+            transform: translateY(0);
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .response-section {
+            display: none;
+        }
+
+        .response-section.show {
+            display: block;
+        }
+
+        .response {
+            background: #f5f5f5;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .response h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .response-text {
+            line-height: 1.8;
+            color: #333;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .confidence {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .confidence.high {
+            background: #c8e6c9;
+            color: #2e7d32;
+        }
+
+        .confidence.medium {
+            background: #fff9c4;
+            color: #f57f17;
+        }
+
+        .confidence.low {
+            background: #ffccbc;
+            color: #d84315;
+        }
+
+        .error {
+            background: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 20px;
+            border-radius: 8px;
+            color: #c62828;
+        }
+
+        .examples {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .examples h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .example-item {
+            padding: 8px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+            padding-left: 10px;
+            border-left: 3px solid #667eea;
+        }
+
+        .example-item:hover {
+            background: #e8eef7;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #fafafa;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 4px;
+            background: #c8e6c9;
+            color: #2e7d32;
+            font-size: 0.85em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛗 ESC</h1>
+            <p>Elevator Service Companion - Via Series Diagnostics</p>
+            <p style="font-size: 0.95em; margin-top: 10px;">
+                <span class="status">✓ 270 Data Entries Ready</span>
+            </p>
+        </div>
+
+        <div class="content">
+            <div class="input-section">
+                <input
+                    type="text"
+                    id="queryInput"
+                    placeholder="Ask about error codes, parameters, components... (e.g., 'F01 02', 'P0001', 'XTSS')"
+                    autocomplete="off"
+                >
+                <button onclick="submitQuery()">Ask</button>
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p style="margin-top: 10px; color: #667eea;">Analyzing...</p>
+            </div>
+
+            <div class="response-section" id="responseSection">
+                <div class="response" id="responseContent"></div>
+            </div>
+
+            <div class="error" id="errorSection" style="display: none;"></div>
+
+            <div class="examples">
+                <h4>📚 Try These Questions:</h4>
+                <div class="example-item" onclick="queryExample('What is error code F01 02?')">
+                    → What is error code F01 02?
+                </div>
+                <div class="example-item" onclick="queryExample('How do I configure P0001 parameter?')">
+                    → How do I configure P0001 parameter?
+                </div>
+                <div class="example-item" onclick="queryExample('What does XTSS connector do?')">
+                    → What does XTSS connector do?
+                </div>
+                <div class="example-item" onclick="queryExample('Elevator safety circuit opened - what to check?')">
+                    → Elevator safety circuit opened - what to check?
+                </div>
+                <div class="example-item" onclick="queryExample('Tell me about door control errors')">
+                    → Tell me about door control errors
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📖 Powered by Via Series Manual Data | 26 Error Codes • 93 Parameters • 151 Component Definitions</p>
+            <p style="margin-top: 8px; color: #bbb;">Version 1.0 • POC</p>
+        </div>
+    </div>
+
+    <script>
+        // Load knowledge base on startup
+        let knowledgeBase = null;
+
+        async function loadKnowledgeBase() {
+            try {
+                const response = await fetch('knowledge.json');
+                knowledgeBase = await response.json();
+                console.log('Knowledge base loaded:', {
+                    errors: knowledgeBase.error_codes?.length || 0,
+                    parameters: knowledgeBase.parameters?.length || 0,
+                    abbreviations: knowledgeBase.abbreviations?.length || 0
+                });
+            } catch (error) {
+                console.error('Failed to load knowledge base:', error);
+            }
+        }
+
+        // Load knowledge base on page load
+        loadKnowledgeBase();
+
+        function queryExample(text) {
+            document.getElementById('queryInput').value = text;
+            submitQuery();
+        }
+
+        async function submitQuery() {
+            const query = document.getElementById('queryInput').value.trim();
+
+            if (!query) {
+                showError('Please enter a question');
+                return;
+            }
+
+            if (!knowledgeBase) {
+                showError('Knowledge base is loading... Please wait.');
+                return;
+            }
+
+            showLoading(true);
+            hideError();
+            document.getElementById('responseSection').classList.remove('show');
+
+            try {
+                // For now, show a local analysis without API
+                const response = await analyzeQuery(query, knowledgeBase);
+                showResponse(response);
+            } catch (error) {
+                showError('Error analyzing query: ' + error.message);
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        async function analyzeQuery(query, kb) {
+            const queryLower = query.toLowerCase();
+
+            // Search in error codes
+            let errorMatch = null;
+            for (const code of kb.error_codes || []) {
+                if (queryLower.includes(code.code.toLowerCase()) ||
+                    queryLower.includes(code.code.replace(' ', '').toLowerCase())) {
+                    errorMatch = code;
+                    break;
+                }
+            }
+
+            // Search in parameters
+            let paramMatch = null;
+            for (const param of kb.parameters || []) {
+                if (queryLower.includes(param.code.toLowerCase())) {
+                    paramMatch = param;
+                    break;
+                }
+            }
+
+            // Search in abbreviations
+            let abbrevMatch = null;
+            for (const abbrev of kb.abbreviations || []) {
+                if (queryLower.includes(abbrev.code.toLowerCase())) {
+                    abbrevMatch = abbrev;
+                    break;
+                }
+            }
+
+            // Build response
+            let responseText = '';
+            let confidence = 'medium';
+
+            if (errorMatch) {
+                responseText += `ERROR CODE: ${errorMatch.code}\n\n`;
+                responseText += `Description: ${errorMatch.description_de}\n\n`;
+                if (errorMatch.cause_solution) {
+                    responseText += `Cause/Solution:\n${errorMatch.cause_solution}\n\n`;
+                }
+                responseText += `Manual Page: ${errorMatch.manual_page}`;
+                confidence = 'high';
+            } else if (paramMatch) {
+                responseText += `PARAMETER: ${paramMatch.code}\n\n`;
+                responseText += `Description: ${paramMatch.description_de}\n\n`;
+                responseText += `Section: ${paramMatch.section || 'General'}\n`;
+                responseText += `Manual Page: ${paramMatch.manual_page}`;
+                confidence = 'high';
+            } else if (abbrevMatch) {
+                responseText += `COMPONENT/CODE: ${abbrevMatch.code}\n\n`;
+                responseText += `Definition: ${abbrevMatch.description_de}\n`;
+                confidence = 'high';
+            } else {
+                responseText = `No direct match found in knowledge base for: "${query}"\n\n`;
+                responseText += `Try searching for:\n`;
+                responseText += `• Error codes (e.g., F01 02, F02 06)\n`;
+                responseText += `• Parameters (e.g., P0001, P0016)\n`;
+                responseText += `• Component codes (e.g., XTSS, XSM1)`;
+                confidence = 'low';
+            }
+
+            return {
+                text: responseText,
+                confidence: confidence,
+                hasData: errorMatch || paramMatch || abbrevMatch
+            };
+        }
+
+        function showResponse(response) {
+            const responseContent = document.getElementById('responseContent');
+            const responseSection = document.getElementById('responseSection');
+
+            let html = '<h3>📋 Analysis Result</h3>';
+            html += `<div class="response-text">${response.text}</div>`;
+            html += `<span class="confidence ${response.confidence}">Confidence: ${response.confidence.toUpperCase()}</span>`;
+
+            responseContent.innerHTML = html;
+            responseSection.classList.add('show');
+        }
+
+        function showError(message) {
+            const errorSection = document.getElementById('errorSection');
+            errorSection.textContent = '⚠️ ' + message;
+            errorSection.style.display = 'block';
+        }
+
+        function hideError() {
+            document.getElementById('errorSection').style.display = 'none';
+        }
+
+        function showLoading(visible) {
+            document.getElementById('loading').style.display = visible ? 'block' : 'none';
+        }
+
+        // Allow Enter key to submit
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('queryInput').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    submitQuery();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

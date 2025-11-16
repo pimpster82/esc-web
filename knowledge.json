@@ -1,0 +1,1654 @@
+{
+  "metadata": {
+    "title": "Via Series Elevator Knowledge Base",
+    "version": "1.0",
+    "data_entries": 270,
+    "last_updated": "2025-11-16"
+  },
+  "error_codes": [
+    {
+      "code": "F01 02",
+      "family": "01",
+      "number": "02",
+      "description_de": "Sicherheitskreis geöffnet",
+      "cause_solution": "Die Sicherheitskreis zwischen Punkt 1H und 3C wurde geöffnet.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F01 03",
+      "family": "01",
+      "number": "03",
+      "description_de": "Aufzug geparkt nach Feststellung eines F0102 Fehlers (nur Hydraulikaufzüge).",
+      "cause_solution": "Wenn die Sicherheitskreis nach der Öffnung zwischen 1H und 3C schließen sollte, würde der Fahrkorb auf der unteren Etage mit geschlossenen Türen stehen bleiben und der Aufzug wäre außer Betrieb, indem er F0103 anzeigt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F01 09",
+      "family": "01",
+      "number": "09",
+      "description_de": "110 V Versorgungsfehler (STR Sicherung, Phasenfehler an KVF)",
+      "cause_solution": "Es fehlen 110 V an der VSS Klemme des XTSS Steckers der VS- SMQ Platte.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F01 20",
+      "family": "01",
+      "number": "20",
+      "description_de": "Geschwindigkeitsbegrenzer",
+      "cause_solution": "Es wurde eine Fahrkorbfahrt mit höherer Geschwindigkeit als der für diese Anlage zugelassenen Höchstgeschwindigkeit festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F01 29",
+      "family": "01",
+      "number": "29",
+      "description_de": "Unbeabsichtigte Fahrkorbbewegung (nur bei Anlagen laut Änderung A3).",
+      "cause_solution": "Es wurde eine unbeabsichtigte Bewegung festgestellt. Der Fahrkorb durchquert den gesamten Türentriegelungsbereich mit geöffneten Türen, ohne auf Etagenebene stehen zu bleiben.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F01 30",
+      "family": "01",
+      "number": "30",
+      "description_de": "Kontakt des Monitoringsystems bei Anlagen laut Änderung A3 hängengeblieben",
+      "cause_solution": "An der KP2 Klemme ist keine Spannung vorhanden, wenn der Aufzug mit geöffneten Türen auf der Etage steht. Kontakt des Ventils oder Begrenzerspule prüfen, je nachdem, ob es sich um einen Hydraulik- oder einen elektrischen Asynchronaufzug handelt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F02 06",
+      "family": "02",
+      "number": "06",
+      "description_de": "Etagentürkreis geöffnet während einer Fahrt",
+      "cause_solution": "Beim Fahren des Aufzugs wurde eine Öffnung der Türkreis (Punkt 6H) festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F02 07",
+      "family": "02",
+      "number": "07",
+      "description_de": "Riegelkreis geöffnet während einer Fahrt",
+      "cause_solution": "Beim Fahren des Aufzugs wurde eine Öffnung der Riegelkreis (Punkte 7H, 8H, 9H) festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F03 05",
+      "family": "03",
+      "number": "05",
+      "description_de": "Wiederholte Fehler am Kreis der Fahrkorbtüren",
+      "cause_solution": "Nach wiederholten Versuchen, die Türen zu schließen, wurde kein Schließen des Riegelkontakts 7H-8H, 8H-9H festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F03 55",
+      "family": "03",
+      "number": "55",
+      "description_de": "Kontakte der externen Riegel oder des Fahrkorbriegels der Sicherheitskreis überbrückt.",
+      "cause_solution": "Nach einer anfänglichen Rücksendung oder nach einem Ausgang des Inspektionsmodus wird keine Schaltung an der Riegelkreis, Punkte 8H-9H, festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 04",
+      "family": "06",
+      "number": "04",
+      "description_de": "Schütz hängengeblieben",
+      "cause_solution": "Bei stillstehendem Aufzug mit geöffneten Türen wird Spannungsmangel an der KP1-Klemme festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 18",
+      "family": "06",
+      "number": "18",
+      "description_de": "Kommunikationsfehler mit 3VF Umrichter",
+      "cause_solution": "Wenn die Schütze nach einem Betriebsbefehl nicht anziehen, versteht die Steuerung, dass der Umrichter nicht richtig funktioniert. In diesem Fall unterbricht die Steuerung den Startbefehl und versucht ihn nach einigen Sekunden erneut. Bei gearless Anlagen laut Änderung A3 wird der Eingang der KP2 Klemme mit der Funktion “Umrichterfehler” konfiguriert (Parameter “Eingangsfunktion KP2” mit Wert 1). Die Logik dieses Eingangs lautet: bei 24 V Ausbleiben = Fehler.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 20",
+      "family": "06",
+      "number": "20",
+      "description_de": "Fehler manuelle Rückstellung",
+      "cause_solution": "Wenn die Steuerung mit manueller Rückstellung (Parameter „manuelle Rückstellung“ auf den Werten 1 oder 2) konfiguriert ist, erscheint dieser Fehler, wenn versucht wird, die Steuerung neuzustarten, indem sie nach einem Fehler, der keine automatische Rückstellung zulässt, aus- und eingeschaltet wird. Die Rückstellung ist nicht möglich, ohne vorher auf Inspektionsmodus zu gehen.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 34",
+      "family": "06",
+      "number": "34",
+      "description_de": "Kontakt der Aufwärts- oder Abwärtsdruckschalter des Inspektionskasten hängengeblieben.",
+      "cause_solution": "Die Auf- und Abwärtsdruckschalter führen zwei Funktionen aus: Einerseits geben sie der Steuerung die Bewegungsrichtung an und auf der anderen Seite überbrücken sie die Sicherheitskreis, indem sie das Verfahren des Aufzugs zulassen. Dieser Fehler zeigt an, dass der Kontakt, der der Überbrückung der Sicherheitskreis zugeordnet ist, hängengeblieben ist.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 40",
+      "family": "06",
+      "number": "40",
+      "description_de": "Maximal- oder Minimaldruckregler",
+      "cause_solution": "An der EA2-Klemme ist keine Spannung vorhanden. Am Hydraulikaggregat wurde eine ungeeignete Spannung festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 41",
+      "family": "06",
+      "number": "41",
+      "description_de": "Inspektion: Jumper P15 entfernt",
+      "cause_solution": "P15 Jumper anbringen und dem Parameter „Inspektionsgeschwindigkeit“ den Wert 0,6 zuordnen.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 17",
+      "family": "09",
+      "number": "17",
+      "description_de": "Konfiguration Block P",
+      "cause_solution": "Möglicher Schaden am internen Speicher. Parameter überprüfen. Sollte der Fehler weiter bestehen, muss mit dem Kundendienst Kontakt aufgenommen werden.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 30",
+      "family": "09",
+      "number": "30",
+      "description_de": "Konfiguration Block C",
+      "cause_solution": "Möglicher Schaden am internen Speicher. Parameter überprüfen. Sollte der Fehler weiter bestehen, muss mit dem Kundendienst Kontakt aufgenommen werden.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 31",
+      "family": "09",
+      "number": "31",
+      "description_de": "Konfiguration Block S",
+      "cause_solution": "Möglicher Schaden am internen Speicher. Parameter überprüfen. Sollte der Fehler weiter bestehen, muss mit dem Kundendienst Kontakt aufgenommen werden.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 32",
+      "family": "09",
+      "number": "32",
+      "description_de": "Konfiguration Block E",
+      "cause_solution": "Möglicher Schaden am internen Speicher. Parameter überprüfen. Sollte der Fehler weiter bestehen, muss mit dem Kundendienst Kontakt aufgenommen werden.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 40",
+      "family": "09",
+      "number": "40",
+      "description_de": "Interner Plattenfehler",
+      "cause_solution": "Platte beschädigt. Reparatur notwendig.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 41",
+      "family": "09",
+      "number": "41",
+      "description_de": "Unvereinbarkeit 1",
+      "cause_solution": "Die Hardwareversionen der Platten des Maschinenraums und des Fahrkorbs sind unvereinbar.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 42",
+      "family": "09",
+      "number": "42",
+      "description_de": "Unvereinbarkeit 2",
+      "cause_solution": "Die Hardwareversionen der Platten des Maschinenraums und des Fahrkorbs sind unvereinbar.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F10 01",
+      "family": "10",
+      "number": "01",
+      "description_de": "Maximale Fahrtdauer",
+      "cause_solution": "Kein Signal des Positionssensors (Klemme P des XPOS Steckers) innerhalb einer längeren Zeit als der im Parameter für maximale Fahrtdauer (MFD) festgelegten Zeit.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F11 08",
+      "family": "11",
+      "number": "08",
+      "description_de": "Orientierungsverlust Aufzug",
+      "cause_solution": "Nach Beendigung einer Fahrt wurde eine (zu hohe oder zu niedrige) Abweichung zwischen der Pulszahl, die während der Fahrt gezählt und der Pulszahl, die dieser Fahrt zugeordnet ist, festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F11 13",
+      "family": "11",
+      "number": "13",
+      "description_de": "Aufzug auf Zwischenetage bei geöffnetem Vorendschalter",
+      "cause_solution": "Während einer Fahrt wurde ein geöffneter (spannungsloser) unterer Vorendschalter (AFI Klemme XANTF Stecker) oder",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    }
+  ],
+  "parameters": [
+    {
+      "code": "P0001",
+      "description_de": "[Seite Anlage 1] Anzahl Haltestellen der Anlage",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "[Seite Anlage 1] Art der Anlage",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "[Seite Anlage 1] Aufzug Nummer",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "[Seite Anlage 1] Funktionsweise",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "[Seite Anlage 1] Art der Türen",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "[Seite Anlage 1] Bedienungsart",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "[Seite Anlage 1] Türen beim Anhalten",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "[Seite Anlage 1] Anzahl Zugänge",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "[Seite Anlage 1] Zugang Ausgangsetage",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "[Seite Anlage 1] Zugang Untergeschosse",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "[Seite Anlage 1] Restliche Zugänge",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "[Seite Anlage 1] Höhe Ausgangsetage",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "[Seite Anlage 1] Asymmetrische untere Etagenhöhen",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0014",
+      "description_de": "[Seite Anlage 1] Asymmetrische obere Etagenhöhen",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0015",
+      "description_de": "[Seite Anlage 1] Rücksendungsetage",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0016",
+      "description_de": "[Seite Anlage 1] Art des Tableau",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "Personenzahl",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "Fahrstuhlart",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "Anordnung",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "Abstand Etagenhöhen",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "Wechselart (Information)",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "Bremsabstand (Information mit Impulspositionierung)",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "Nenngeschwindigkeit",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "Inspektionsgeschwindigkeit",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "9 Senkrechttyp Schacht",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "3 VF Steuerungsmodus",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "Hydraulikstart",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "Soft-Starter",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "Door Lock",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0014",
+      "description_de": "Softstopp",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0015",
+      "description_de": "4 Senkrecht geteilt",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "Programmierung maximale Fahrtdauer",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "Programmierung maximale Schließdauer",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "Zeit nächste Fahrt",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "Zeit nächste Fahrt Ausgangsetage",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "Zeit nächste Fahrt kurz",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "Programmierung für außen",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "Maximale Dauer Türkreis",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "Verlängerte Öffnungsdauer Türen",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "Dauer Rücksendung zur Hauptetage",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "Programmierung Hydraulikaufzug",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "Uhrzeit Beginn Nachtmodus",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "Uhrzeit Ende Nachtmodus",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "Verzögerung Türschließung wegen Hindernis",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "[Seite Komfort] Vorgezogene Türöffnung",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "[Seite Komfort] Nachregulierung",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "[Seite Komfort] Dauer Nachregulierung",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "[Seite Komfort] DTS (15)",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "[Seite Komfort] Türsperre",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "[Seite Komfort] Lichtzelle",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "[Seite Komfort] Programmierung nächste Fahrt kurz",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "[Seite Komfort] Kontrolle Fahrkorblicht",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "[Seite Komfort] Verzögerung der Regulierung (Aufwärtsfahrt)",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "[Seite Komfort] Verzögerung der Regulierung (Abwärtsfahrt)",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "[Seite Komfort] Anpassung an die Regulierung nach Last",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "[Seite Komfort] Ausgleich nach Temperatur (Öl)",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "[Seite Komfort] Kontrolle Lautstärke in Fahrkorb",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0014",
+      "description_de": "[Seite Komfort] Nachtmodus",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] UP Peak 23 (0 : Signal | 1 : Stunden | 2 : Lernen)",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] Down Peak 23 (0 : Signal | 1 : Stunden | 2 : Lernen)",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] Etage UP Peak (1..32)",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] Etage Down Peak (1..32)",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] UP Peak Beginn",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] UP Peak Ende",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] Down Peak Beginn",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0014",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] Down Peak Ende",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "[SICHERHEITEN] Brandsteuerung 24 (0: Nein | 1: EN 81-72 | 2: Australische Vorschrift | 3: U36 Französische Vorschrift | 4: EN 81-73PC | 5: EN 81-73)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "[SICHERHEITEN] Etage für Evakuierung / Feuerwehr (Etage)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "[SICHERHEITEN] Alternativetage für Evakuierung / Feuerwehr (Etage)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "[SICHERHEITEN] Bergungssteuerung (0: Nein | 1: Ja)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "[SICHERHEITEN] Höchsttemperatur (10..125)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "[SICHERHEITEN] Mindesttemperatur25 (0..20)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "[SICHERHEITEN] Begrenzersteuerung (0: Nein | 1: ParaInme 26 | 2: ParaNivel 27 | 3: Gemischt 1,2)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "[SICHERHEITEN] Manuelle Rückstellung (0: Nein | 1: Beliebiger Fehler | 2: Endschalter, MFD, Druckregler)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "[SICHERHEITEN] Steuerung der Türen vom Inspektionskasten (0: Nein | 1: Ja)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "[SICHERHEITEN] Inspektionsmodus begrenzt bis (0: AF 28 | 1: Etage | 2: ES1 Signal)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "[SICHERHEITEN] Außentemperaturfühler Masch.-raum (0: Nein | 1: Ja)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "[SICHERHEITEN] Lastablesung 29 (0: Zelle | 1: Kontakt an SMQ | 2: Kontakt an CAB | 3: Fester Punkt)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "[SICHERHEITEN] EN 81-28 Alarmfilterung (0: Nein | 1: V7 | 2: V8 30 | 3: Fonomac 3 (ohne Filterplatte VS | ALRM))",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0014",
+      "description_de": "[SICHERHEITEN] Höchstzahl an Bedienungen pro Stunde (0..250 Fahrten 31)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0015",
+      "description_de": "[SICHERHEITEN] Funktionsweise KP2 Eingang (0: Schützkontakt hängengeblieben | 1: Umrichterstatus | 2: Monitoring Ventil- / | Begrenzerspulenkontakt)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "[Seite Fernsteuerung / Telefon und Internet / Adresse] Automatischer Anruf an Steuerzentrale (0: Nein | 1: Schwere | Fehler | 2: Alle)",
+      "manual_page": 150,
+      "section": "Seite Fernsteuerung / Telefon und Internet / Adresse",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "[Seite Fernsteuerung / Telefon und Internet / Adresse] Anschlussmittel (0: Direkt | 1: RTC | 2: GSM)",
+      "manual_page": 150,
+      "section": "Seite Fernsteuerung / Telefon und Internet / Adresse",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "[Seite Fernsteuerung / Telefon und Internet / Adresse] Anschlussart (0: von Punkt zu | Punkt | 1: Internet)",
+      "manual_page": 150,
+      "section": "Seite Fernsteuerung / Telefon und Internet / Adresse",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "[Seite Konfiguration nach Etagen] Türen beim Anhalten",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "[Seite Konfiguration nach Etagen] Nicht betriebsbereite Etage",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "[Seite Konfiguration nach Etagen] Code Fahrkorbaufruf",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "[Seite Konfiguration nach Etagen] Etagenkennzeichen",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "[Seite Konfiguration nach Etagen] Zugang, der bedient wird",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "[Seite Konfiguration nach Etagen] Entfernung zwischen Etagen",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "[Seite Konfiguration nach Etagen] Wechselart (Information)",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "[Seite Konfiguration nach Etagen] Bremsweg 32",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "[Seite Konfiguration nach Etagen] Zweite Geschwindigkeitsbank 33",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    }
+  ],
+  "abbreviations": [
+    {
+      "code": "VIA",
+      "description_de": "SERIE",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "ANNEX",
+      "description_de": "I ABKÜRZUNGEN",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "325VS",
+      "description_de": "325VS Magnetschalter Q",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "327VS",
+      "description_de": "327VS Magnetschalter QAC Kabinenbeleuchtung thermomagnetischer Schalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "328VS",
+      "description_de": "328VS Magnetschalter QAH Schachtbeleuchtung thermomagnetischer Schalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "AFI",
+      "description_de": "unterer Stopschalter R Rot",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "AFS",
+      "description_de": "oberer Stopschalter RF 3VFMAC Bremswiderstand",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "BTS",
+      "description_de": "Temperaturfühler SACCP Fangvorrichtungskontakt Gegengewicht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "COND",
+      "description_de": "Kondensator Frequenzregler SAFCP Schlaffseilkontakt Gegengewicht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FA",
+      "description_de": "Sicherung Kabinendeckenbeleuchtung SAFH Schlaffseilkontakt Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FAC",
+      "description_de": "Kabinenlicht Differential SALH Schalter Schachtbeleuchtung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FAH",
+      "description_de": "Kabinenlicht Differential SALV Geschwindigkeitsbegrenzer Fernauslösungskontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FCA1",
+      "description_de": "Sicherung Heizung SAM Stossdämpfer Kontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FCAP",
+      "description_de": "Endschalter Öffner SCC Kabinenverriegelung Serie",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FCCP",
+      "description_de": "Endschalter Schließer SCE Schachtverriegelung Serie",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FE",
+      "description_de": "Eingangsfilter Frequenzregler SDI Schalter 2-Weg-Gegensprechanlage",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FF",
+      "description_de": "Differential SEC1 Kabinenverriegelungskontakt 1",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FHC",
+      "description_de": "Kabinennotlicht SEC2 Kabinenverriegelungskontakt 2",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FOPR",
+      "description_de": "R Phase Sicherung SEM Maschinenzahnradkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FOPS",
+      "description_de": "S Phase Sicherung SEN Empfindlichkeitskontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FOPT",
+      "description_de": "T Phase Sicherung SFI Unterer Endkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FR",
+      "description_de": "Sicherung R SFS Oberer Endkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FS",
+      "description_de": "Sicherung S SHA Türschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FT",
+      "description_de": "Sicherung T SIB Inspektionstaster abwärts",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "G2R",
+      "description_de": "Relais SIR´ Steuerungstaster ab Steuerung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "GFR",
+      "description_de": "Bremsplatine SIS Inspektionstaster aufwärts",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "GRL",
+      "description_de": "Gleichrichterplatine Riegelmagnet SIS´ Aufwärts Taster ab Steuerung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "GRV",
+      "description_de": "Gleichrichterplatine Ventil SLVC Gegengewicht Geschwindigkeitsbegrenzer Kontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "HALR",
+      "description_de": "Alarmanzeige SLVH Geschwindigkeitsbegrenzer Schachtkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "HC",
+      "description_de": "Kabinenlicht SMAX Maximaldruckschalter Kontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "HNL",
+      "description_de": "Nicht-Bündig Anzeige SMES Maschinenraum MES Schalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "HRB",
+      "description_de": "Lichtreihe (Schachtinstallation) SMIN Minimaldruckschalter Kontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "K1",
+      "description_de": "Schütz 1 SPE Taster RufsteuTearusntegr",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "K2",
+      "description_de": "Schütz 2 SPF Anwesenheitskontakt in Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KAB",
+      "description_de": "Tür-Auf Relais SPM Bewegliche Türschwelle",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KB",
+      "description_de": "Schütz abwärts SPT Teleskop Säulenkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KBRE",
+      "description_de": "Notbefreiungsrelais abwärts SSB Taster Notbefreiung aufwärts",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KCP",
+      "description_de": "Tür-Zu Relais SSMES MES Maschinenraumkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KG",
+      "description_de": "Allgemeiner Schütz SSOB Überlast Druckschalter Kontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KL",
+      "description_de": "langsamer Schütz STC Lukenkontakt Zugang über Kabine",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KM",
+      "description_de": "Betriebsrelais STCC Ausgleichskettenkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KPF",
+      "description_de": "Schachtgrubenrelais STH Lukenkontakt Zugang über Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KR",
+      "description_de": "schneller Schütz STLC Begrenzerseil Spannungskontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KS",
+      "description_de": "Schütz aufwärts STLCP Gegengewichtsspannrollenkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KSRE",
+      "description_de": "Notbefreiungsrelais aufwärts STLCPF Schachtgrube Gegengewichtsspannrollenkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KT",
+      "description_de": "Stern-Dreieck Schütz STLCPH Schacht Gegengewichtsspannrollenkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KVF",
+      "description_de": "Phasen Monitorrelais STLF Spannrollenkontakt in Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "MES",
+      "description_de": "Hilfe bei elektrischer Wartung STOPC Wartungskasten Stoptaster",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "PCB",
+      "description_de": "3VFMAC Frequenzreglerboard STPSM Maschinenraum Stopkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TC",
+      "description_de": "Thermokontakt XC6 3VFMAC Encoder Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TCC",
+      "description_de": "Steckdose Wartungskasten XC9 CAN 3VFMAC Steuerungsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TCH",
+      "description_de": "Steckdose Schachtgrube XCA1 Schaltschrank 1 Hilfsstecker PCB",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TFN",
+      "description_de": "Telefon XCA1 Stecker Kabinenplatine",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TRM",
+      "description_de": "Transformator XCA2 Schaltschrank 2 Hilfsstecker PCB",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TROP3F",
+      "description_de": "3-Phasen Transformator XCBUS PCB-VS-SM Verbindungsstecker mit PCB-VSCAB",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TRV",
+      "description_de": "Transformatorventil XCC Stecker Kabinenverriegelung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "VD",
+      "description_de": "abwärts Ventil XCC-S Stecker Kabinenverriegelung im Maschinenraum",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "VR",
+      "description_de": "schnelles Ventil XCFE zusätzlicher hydraulischer Endkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "VS",
+      "description_de": "aufwärts Ventil XCFED 2 Zugangsseiten Notendstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X324",
+      "description_de": "324 Magnetschalter Stecker XCIS Stecker Inspektion Sicherheitskreis",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X325",
+      "description_de": "325 Magnetschalter Stecker XCMES MES Schaltschrankstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X325VS",
+      "description_de": "Magnetschalter Stecker 325VS XCMND Steuerungsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X327",
+      "description_de": "327 Magnetschalter Stecker XCNTP Stecker Gegengewichtsseil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X3C",
+      "description_de": "3c Wechselstecker XDISMB Stecker Schaltschrankanzeige",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X3VF",
+      "description_de": "3VF Verbindungsstecker XEC Stecker Kabinenverriegelung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X538",
+      "description_de": "538 Platinenstecker XEC1 Stecker Schaltschrankverriegelung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAC",
+      "description_de": "Keilkontakt XEC2 Stecker Schaltschrankverriegelung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAE",
+      "description_de": "Stecker Stockwerksalarm XEM Stecker Maschineneingriff",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAFC",
+      "description_de": "Schlaffseilkontakt XEMER PCB VS-CAB Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAFF",
+      "description_de": "Schlaffseilstecker Schachtgrube XEMR1 Stecker Tableau - Kabinendruckknopf",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAFH",
+      "description_de": "Schlaffseilstecker Schacht XEMR1 Stecker Steuerung - Kabinentableau",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAFI",
+      "description_de": "Stecker unterer Endschalter XEMR2 Notlichtstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAFS",
+      "description_de": "Stecker oberer Endschalter XENC Encoderstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XALB",
+      "description_de": "Stecker Kabinenlicht XEXT Entlüftungsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XALH",
+      "description_de": "Stecker Schachtlicht XFI Stecker unteres Hubende",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XALHS",
+      "description_de": "Stecker Schachtlicht XFIAC unterer Endschalter vor dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XALTI",
+      "description_de": "Stecker Gegensprechanlage XFIAH unterer Endschalter vor dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XALTIH",
+      "description_de": "Stecker Gegensprechanlage im Schacht XFIP Unterer Endschalter nach dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAM",
+      "description_de": "Pufferstecker Schachtgrube XFOT1 PCB VS-CAB Stecker Fotozelle",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XANTF",
+      "description_de": "Verbindungsstecker Endschalter XFOT23 2 PCB VS-CAB Stecker Fotozelle",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAP",
+      "description_de": "Tür-Auf und Tür-Zu Stecker in Inspektion XFRP Endschalter nach dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XARM",
+      "description_de": "Kabinenlicht Stecker XFS Oberer Endstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAUX",
+      "description_de": "Hilfsstecker XFSAC oberer Endschalter vor dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XB12",
+      "description_de": "Stecker Tableau - Tableau 2 XFSAH oberer Endschalter vor dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XB22",
+      "description_de": "Stecker Tableau - Tableau 2 XFSP oberer Endschalter nach dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XBATS",
+      "description_de": "Hilfsstecker Batterie XGF PCB VS-CAB Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XBOT21",
+      "description_de": "Stecker Tableau - Tableau 2 XHA Stecker Türschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XC1",
+      "description_de": "Adapter Platinenstecker XHC Stecker Kabinenlicht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XC10",
+      "description_de": "Stecker Kabinenplatine XHMB Stecker Stockwerkstableau",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XC11",
+      "description_de": "PCB-SM Verbindungsstecker mit PCB-3VFMAC XHMES MES Schachtstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XC2",
+      "description_de": "3VFMAC Kontrollsignal Stecker XIA Stecker Alarmidentifikation",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XC3",
+      "description_de": "Adapter Platinenstecker XINT Stecker Gegensprechanlage in Kabine",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XINTS",
+      "description_de": "Stecker Gegensprechanlage in Maschinenraum",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XKET",
+      "description_de": "ÖL PCB Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XKMT1",
+      "description_de": "ÖL PCB Stecker XTH Stecker Schachtzugangsluke",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XKMT2",
+      "description_de": "ÖL PCB Stecker XTLC Spannungskontakt Begrenzerseil Kabine",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XKV",
+      "description_de": "PCB VS-SM Prüfstecker XTLCPF Stecker Geschwindigkeitsbegrenzer Gegengewicht in Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XLVC",
+      "description_de": "Stecker Geschwindigkeitsbegrenzer Kabine XTLCPH Stecker Seilspannung Gegengewicht im Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XLVCPH",
+      "description_de": "Stecker Gegengewicht Schacht Geschwindigkeitsbegrenzer XTLF Stecker Geschwindigkeitsbegrenzer Spannung in Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XLVH",
+      "description_de": "Stecker Geschwindigkeitsbegrenzer Schacht XTLH Spannungskontakt Begrenzerseil Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XMAQ",
+      "description_de": "Stecker Maschinensteuerung XTSS PCB VS-SM Stecker Sicherheitskreis Spannung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XMCBUS",
+      "description_de": "andere PCB Verbindungsstecker (Maschinenraum) XTSS PCB VS-SM Stecker Sicherheitskreis Spannung PCB VS-SM",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XMES",
+      "description_de": "MES Stecker XVALV Stecker Hydraulikaggregatventil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XNL",
+      "description_de": "Stecker Nicht-Bündig Anzeige XVCBUS PCB VS-SM Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XNSN",
+      "description_de": "538 Stecker mit PCB VS-SM XVD Stecker Stockwerksventil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XO",
+      "description_de": "Stecker Hydraulikplatine XVE Stecker Notbefreiungsventil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOI",
+      "description_de": "220 Bremsstecker XVET Stecker Stern-Dreiecksventil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOP1",
+      "description_de": "Antrieb Stecker - Antrieb PCB XVF Schützrelais Phasenmonitor",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOP2",
+      "description_de": "Antrieb Stecker - Antrieb PCB XVL Stecker Spannung Verriegelungskurve",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOP3A",
+      "description_de": "Stecker 3-Phasen Antrieb XVR Stecker schnelles Ventil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOP3F",
+      "description_de": "Stecker 3-Phasen Antrieb XZSB 538 Platine Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOPC",
+      "description_de": "Stecker Direktanlauf Antrieb Z",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOPCA",
+      "description_de": "Stecker Direktanlauf Antrieb ZFLC Schütz Ablesefilter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOPL",
+      "description_de": "Stecker spannungsfreier Kontakt Antrieb",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOPLR",
+      "description_de": "Stecker spannungsfreier Kontakt Antrieb",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOPMB",
+      "description_de": "Verbindungsstecker Antrieb",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XP1",
+      "description_de": "Stecker Adapterboard",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XP2",
+      "description_de": "Stecker Adapterboard",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPC",
+      "description_de": "Stecker Anwesenheit Kabine",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPCEN",
+      "description_de": "Stecker Druckschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPF",
+      "description_de": "Stecker Anwesenheit Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPM",
+      "description_de": "Stecker bewegliche Türschwelle",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPMB1",
+      "description_de": "Stecker Rufe Schacht 1",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPMB2",
+      "description_de": "Stecker Rufe Schacht 2",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPN",
+      "description_de": "Stecker Pulse bündig",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPOS",
+      "description_de": "PCB VS-SM Positionsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPSC",
+      "description_de": "PCB VS-CAB Gegengewichtsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPT",
+      "description_de": "Stecker Teleskopstütze",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XRB",
+      "description_de": "Lichtkette im Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XRCBUS",
+      "description_de": "PCB VS-CAB Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XRES",
+      "description_de": "elektromechanischer Notbefreiungsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XRLV",
+      "description_de": "Stecker Fernauslösung Geschwindigkeitsbegrenzer",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XRLVC",
+      "description_de": "Stecker Fernauslösung Geschwindigkeitsbegrenzer Gegengewicht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSE",
+      "description_de": "Stecker Notbefreiungssystem",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSM1",
+      "description_de": "PCB VS-SM Hilfsstecker Eingänge - Ausgänge",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSM2",
+      "description_de": "PCB VS-SM Hilfsstecker Eingänge - Ausgänge",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSMES",
+      "description_de": "MES Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSSC",
+      "description_de": "PCB VS-SM Stecker Kabinensicherheitskreis",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSSH1",
+      "description_de": "PCB VS-SM Stecker Sicherheitskreis im Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSSH2",
+      "description_de": "PCB VS-SM Stecker Sicherheitskreis im Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSSM",
+      "description_de": "PCB VS-SM Stecker Sicherheitskreis im Maschinenraum",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSSS",
+      "description_de": "PCB VS-SM Stecker Sicherheitskreis im Maschinenraum",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSTOPB",
+      "description_de": "Stecker Kabinenstoptaster",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSTOPF",
+      "description_de": "Stoptaster Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSTPB",
+      "description_de": "Stecker Stoptaster Tableau",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSTPF",
+      "description_de": "Stecker Stoptaster Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSTPT",
+      "description_de": "Stecker Stoptaster Kabinendach",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XT20",
+      "description_de": "PCB VS-SM 20Vac Eingang Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XTC",
+      "description_de": "Stecker Kabinenluke",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XTCC",
+      "description_de": "Stecker Ausgleichskette",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XTFN",
+      "description_de": "Telefonstecker",
+      "extraction_status": "from_quickguide"
+    }
+  ]
+}
