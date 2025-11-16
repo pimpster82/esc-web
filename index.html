@@ -227,9 +227,9 @@
     <div class="container">
         <div class="header">
             <h1>🛗 ESC</h1>
-            <p>Elevator Service Companion - Via Series Diagnostics</p>
+            <p>Elevator Service Companion - Via Serie Diagnose</p>
             <p style="font-size: 0.95em; margin-top: 10px;">
-                <span class="status">✓ 270 Data Entries Ready</span>
+                <span class="status">✓ 270 Einträge bereit</span>
             </p>
         </div>
 
@@ -238,15 +238,15 @@
                 <input
                     type="text"
                     id="queryInput"
-                    placeholder="Ask about error codes, parameters, components... (e.g., 'F01 02', 'P0001', 'XTSS')"
+                    placeholder="Fehlercodes, Parameter, Komponenten... (z.B. 'F01 02', 'Sicherheit', 'P0001')"
                     autocomplete="off"
                 >
-                <button onclick="submitQuery()">Ask</button>
+                <button onclick="submitQuery()">Suchen</button>
             </div>
 
             <div class="loading" id="loading">
                 <div class="spinner"></div>
-                <p style="margin-top: 10px; color: #667eea;">Analyzing...</p>
+                <p style="margin-top: 10px; color: #667eea;">Analysieren...</p>
             </div>
 
             <div class="response-section" id="responseSection">
@@ -256,28 +256,28 @@
             <div class="error" id="errorSection" style="display: none;"></div>
 
             <div class="examples">
-                <h4>📚 Try These Questions:</h4>
-                <div class="example-item" onclick="queryExample('What is error code F01 02?')">
-                    → What is error code F01 02?
+                <h4>📚 Beispiel-Abfragen:</h4>
+                <div class="example-item" onclick="queryExample('F01 02')">
+                    → Fehlercode F01 02
                 </div>
-                <div class="example-item" onclick="queryExample('How do I configure P0001 parameter?')">
-                    → How do I configure P0001 parameter?
+                <div class="example-item" onclick="queryExample('Sicherheitskreis')">
+                    → Sicherheitskreis
                 </div>
-                <div class="example-item" onclick="queryExample('What does XTSS connector do?')">
-                    → What does XTSS connector do?
+                <div class="example-item" onclick="queryExample('P0001')">
+                    → Parameter P0001
                 </div>
-                <div class="example-item" onclick="queryExample('Elevator safety circuit opened - what to check?')">
-                    → Elevator safety circuit opened - what to check?
+                <div class="example-item" onclick="queryExample('XTSS')">
+                    → Komponente XTSS
                 </div>
-                <div class="example-item" onclick="queryExample('Tell me about door control errors')">
-                    → Tell me about door control errors
+                <div class="example-item" onclick="queryExample('Türen')">
+                    → Türfehler
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <p>📖 Powered by Via Series Manual Data | 26 Error Codes • 93 Parameters • 151 Component Definitions</p>
-            <p style="margin-top: 8px; color: #bbb;">Version 1.0 • POC</p>
+            <p>📖 Gestützt auf Via Serie Handbuchdaten | 26 Fehlercodes • 93 Parameter • 151 Komponenten</p>
+            <p style="margin-top: 8px; color: #bbb;">Version 1.0</p>
         </div>
     </div>
 
@@ -337,70 +337,135 @@
 
         async function analyzeQuery(query, kb) {
             const queryLower = query.toLowerCase();
+            const queryTerms = queryLower.split(/\s+/);
 
-            // Search in error codes
-            let errorMatch = null;
+            // Scoring function: higher score = better match
+            function scoreMatch(text, query) {
+                if (!text) return 0;
+                const textLower = text.toLowerCase();
+                let score = 0;
+
+                // Exact match gets highest score
+                if (textLower === query) return 100;
+
+                // Full query match gets high score
+                if (textLower.includes(query)) return 50;
+
+                // Individual term matches
+                for (const term of queryTerms) {
+                    if (textLower.includes(term)) score += 10;
+                }
+
+                return score;
+            }
+
+            let bestMatches = [];
+
+            // Search in error codes (code + description + cause)
             for (const code of kb.error_codes || []) {
-                if (queryLower.includes(code.code.toLowerCase()) ||
-                    queryLower.includes(code.code.replace(' ', '').toLowerCase())) {
-                    errorMatch = code;
-                    break;
+                let score = 0;
+                score += scoreMatch(code.code, queryLower) * 3; // Code matches are strong
+                score += scoreMatch(code.description_de, queryLower) * 2; // Description matches
+                score += scoreMatch(code.cause_solution, queryLower) * 1; // Cause/solution matches
+
+                if (score > 0) {
+                    bestMatches.push({
+                        type: 'error',
+                        score: score,
+                        data: code
+                    });
                 }
             }
 
-            // Search in parameters
-            let paramMatch = null;
+            // Search in parameters (code + description)
             for (const param of kb.parameters || []) {
-                if (queryLower.includes(param.code.toLowerCase())) {
-                    paramMatch = param;
-                    break;
+                let score = 0;
+                score += scoreMatch(param.code, queryLower) * 3;
+                score += scoreMatch(param.description_de, queryLower) * 2;
+
+                if (score > 0) {
+                    bestMatches.push({
+                        type: 'param',
+                        score: score,
+                        data: param
+                    });
                 }
             }
 
-            // Search in abbreviations
-            let abbrevMatch = null;
+            // Search in abbreviations (code + description)
             for (const abbrev of kb.abbreviations || []) {
-                if (queryLower.includes(abbrev.code.toLowerCase())) {
-                    abbrevMatch = abbrev;
-                    break;
+                let score = 0;
+                score += scoreMatch(abbrev.code, queryLower) * 3;
+                score += scoreMatch(abbrev.description_de, queryLower) * 2;
+
+                if (score > 0) {
+                    bestMatches.push({
+                        type: 'abbrev',
+                        score: score,
+                        data: abbrev
+                    });
                 }
             }
 
-            // Build response
-            let responseText = '';
-            let confidence = 'medium';
+            // Sort by score (highest first)
+            bestMatches.sort((a, b) => b.score - a.score);
 
-            if (errorMatch) {
-                responseText += `ERROR CODE: ${errorMatch.code}\n\n`;
-                responseText += `Description: ${errorMatch.description_de}\n\n`;
-                if (errorMatch.cause_solution) {
-                    responseText += `Cause/Solution:\n${errorMatch.cause_solution}\n\n`;
+            // Build response with top match
+            let responseText = '';
+            let confidence = 'low';
+
+            if (bestMatches.length > 0) {
+                const topMatch = bestMatches[0];
+                confidence = topMatch.score > 40 ? 'high' : topMatch.score > 20 ? 'medium' : 'low';
+
+                if (topMatch.type === 'error') {
+                    const code = topMatch.data;
+                    responseText += `FEHLERCODE: ${code.code}\n\n`;
+                    responseText += `Beschreibung: ${code.description_de}\n\n`;
+                    if (code.cause_solution) {
+                        responseText += `Ursache/Lösung:\n${code.cause_solution}\n\n`;
+                    }
+                    responseText += `Handbuchseite: ${code.manual_page}`;
+                } else if (topMatch.type === 'param') {
+                    const param = topMatch.data;
+                    responseText += `PARAMETER: ${param.code}\n\n`;
+                    responseText += `Beschreibung: ${param.description_de}\n\n`;
+                    responseText += `Abschnitt: ${param.section || 'Allgemein'}\n`;
+                    responseText += `Handbuchseite: ${param.manual_page}`;
+                } else if (topMatch.type === 'abbrev') {
+                    const abbrev = topMatch.data;
+                    responseText += `KOMPONENTE/CODE: ${abbrev.code}\n\n`;
+                    responseText += `Definition: ${abbrev.description_de}\n`;
                 }
-                responseText += `Manual Page: ${errorMatch.manual_page}`;
-                confidence = 'high';
-            } else if (paramMatch) {
-                responseText += `PARAMETER: ${paramMatch.code}\n\n`;
-                responseText += `Description: ${paramMatch.description_de}\n\n`;
-                responseText += `Section: ${paramMatch.section || 'General'}\n`;
-                responseText += `Manual Page: ${paramMatch.manual_page}`;
-                confidence = 'high';
-            } else if (abbrevMatch) {
-                responseText += `COMPONENT/CODE: ${abbrevMatch.code}\n\n`;
-                responseText += `Definition: ${abbrevMatch.description_de}\n`;
-                confidence = 'high';
+
+                // Show additional matches if any
+                if (bestMatches.length > 1 && confidence !== 'high') {
+                    responseText += `\n\n--- Weitere Treffer ---\n`;
+                    for (let i = 1; i < Math.min(3, bestMatches.length); i++) {
+                        const match = bestMatches[i];
+                        if (match.type === 'error') {
+                            responseText += `\n• ${match.data.code}: ${match.data.description_de}`;
+                        } else if (match.type === 'param') {
+                            responseText += `\n• ${match.data.code}: ${match.data.description_de}`;
+                        } else {
+                            responseText += `\n• ${match.data.code}: ${match.data.description_de}`;
+                        }
+                    }
+                }
             } else {
-                responseText = `No direct match found in knowledge base for: "${query}"\n\n`;
-                responseText += `Try searching for:\n`;
-                responseText += `• Error codes (e.g., F01 02, F02 06)\n`;
-                responseText += `• Parameters (e.g., P0001, P0016)\n`;
-                responseText += `• Component codes (e.g., XTSS, XSM1)`;
+                responseText = `Keine Treffer in der Wissensdatenbank für: "${query}"\n\n`;
+                responseText += `Versuchen Sie zu suchen nach:\n`;
+                responseText += `• Fehlercodes (z.B. F01 02, F02 06)\n`;
+                responseText += `• Fehlerbeschreibungen (z.B. Sicherheit, Tür)\n`;
+                responseText += `• Parameter (z.B. P0001, P0016)\n`;
+                responseText += `• Komponentencodes (z.B. XTSS, KVF)`;
                 confidence = 'low';
             }
 
             return {
                 text: responseText,
                 confidence: confidence,
-                hasData: errorMatch || paramMatch || abbrevMatch
+                hasData: bestMatches.length > 0
             };
         }
 
@@ -408,9 +473,12 @@
             const responseContent = document.getElementById('responseContent');
             const responseSection = document.getElementById('responseSection');
 
-            let html = '<h3>📋 Analysis Result</h3>';
+            let confidenceLabel = response.confidence === 'high' ? 'Hoch' :
+                                 response.confidence === 'medium' ? 'Mittel' : 'Niedrig';
+
+            let html = '<h3>📋 Suchergebnis</h3>';
             html += `<div class="response-text">${response.text}</div>`;
-            html += `<span class="confidence ${response.confidence}">Confidence: ${response.confidence.toUpperCase()}</span>`;
+            html += `<span class="confidence ${response.confidence}">Genauigkeit: ${confidenceLabel}</span>`;
 
             responseContent.innerHTML = html;
             responseSection.classList.add('show');
@@ -418,7 +486,12 @@
 
         function showError(message) {
             const errorSection = document.getElementById('errorSection');
-            errorSection.textContent = '⚠️ ' + message;
+            // Translate some common error messages
+            let translatedMsg = message;
+            if (message.includes('Please enter')) translatedMsg = 'Bitte geben Sie eine Frage ein';
+            if (message.includes('loading')) translatedMsg = 'Wissensdatenbank wird geladen... Bitte warten.';
+
+            errorSection.textContent = '⚠️ ' + translatedMsg;
             errorSection.style.display = 'block';
         }
 
