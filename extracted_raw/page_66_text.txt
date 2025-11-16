@@ -1,0 +1,41 @@
+=== PAGE 66 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.4.3. Beleuchtung. Schachtgrubenkasten
+XALHS
+Anschlüsse am Schaltschrank der
+Steuerung
+NCANOARBFFH NH
+mmmma
+XRB
+RBF Zur Glühbirnenreihe (optional)
+RBN
+Schachtgrubenkasten aus vier
+Bauteilen
+v / a
+XALH
+SALH
+FH
+N
+N
+C
+O
+A
+A A
+A
+O
+CN
+N HF
+m
+m
+NH HN
+XALH m
+a
+XSTPF
+v
+Anschluss an XSTPF der Sicherheits-
+kreis (siehe 2.4.1.1)
+v
+STPF
+V3.08 – 05/2012 66 MTELIEPVS308_DE

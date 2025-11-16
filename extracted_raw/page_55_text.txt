@@ -1,0 +1,143 @@
+=== PAGE 55 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.2.9. 3. Tonsynthesizer
+Synthetisatoreingänge:
+A, B, C, D, E: Fahrkorbanordnung
+INH: Synthetisatorunterdrückung
+2 0V 4 d C c + - TONSY C N EB T E H K ESIZER SP K SP t K n r 3 4 : : A A b u w fw ä ä r r t t s s f f a a h h r r t t
+2 Parallel-
+widerstände COMINH4321EDCBA
+82 ohm
+COMINH4321EDCBA
+n
++-S20S19S18S17S16S8S4S3+240Vdc
+XSV FAHRKORBDECKE
+XSV FAHRKORB-
+SCHALTERLEISTE
+Anschluss an +-S20S19S18S17S16S8S4S3+240Vdc
+Lautsprecher des + r
+TONSYNTHESIZERS - n
+S20S19S18S17S16S8S4S3+240Vdc S9S5S0E3E2E1E0+24OVdc
++24CHCL0Vdc S15S14S13S12S11S7S2S1+240Vdc E4S6E/S
+rronan
+Anschlüsse an
+VS Display (falls
+24CCHBCLB0Vdc vorhanden)
+XDISMB
+2.2.9.4. Kaufteil-Display
+Zu XDISMB
+von VSCAB
+EMT2
+1
+2
+ON
+RESET
+S F C
+F
+S
+F
+C A N 1 C A N 2
+S B
+G R A B C D E F g g g g g g g
+g
+g n
+n r
+n n r r
+0
+1
+4 c 1 4
+7
+2 1 6
+1
+d
+5 4 3
+2
+2 V
+1 1 1
+1
+E S
+S S
+S S S +
+S S S
+S
+0
+c L d 4 H V 2 C C + 0
+c
+6 7 8 9 0
+d
+1 1 1 1 2
+V
+3 4 8 42 S S S S S S S S
+0 +
+4 cd 1 0 9 5 0 3 2 2 V S S S E E E E + O
+D F
+F S F A
+S
+B S C ,
+i s :
+: R G B
+p
+:
+P
+P , :
+l a f
+f A C Ü
+e
+e
+y
+u ,
+i
+i
+-
+b
+l
+l ß
+E
+D e
+A
+A e
+i
+r ,
+n u
+b r l a
+g
+E
+f
+w B
+w
+s
+ä
+, ä t e
+n ä
+F r t
+g r
+: t r
+t
+s
+e
+i
+s
+E e f
+:
+a
+f
+b t
+a
+a h
+h
+g r
+r
+t e
+t
+n wahl
+3
+4
+5
+6 7 Erweiterte Masterplatte
+8 DIP auf der
+Fahrkorbschalterleiste
+Display auf Fahrkorb-
+schalterleiste
+V3.08 – 05/2012 55 MTELIEPVS308_DE

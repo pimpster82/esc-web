@@ -1,0 +1,56 @@
+=== PAGE 127 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+Aussch altphase:
+In dieser Phase wartet die Steuerung darauf, dass sich die Fahrkorb- und Etagentüren schließen, um den ES6 Ausgang
+des XSM2 Steckers auszuschalten.
+Die Bergungssteuerung ist aktiv, bis sich der ES4 Eingang des XSM2 Steckers ausschaltet.
+Sollte sich der ES4 Eingang des XSM2 Steckers in den Einschalt- oder Bergungsphasen ausschalten oder die
+Stromversorgung wieder hergestellt werden, wird die Bergungsaktion ohne Unterbrechung bis zum Ende ausgeführt.
+5.5.2. Brandmodus laut EN 81-73
+Diese Vorschrift ist für Personen- oder Warentransportaufzüge vorgesehen, die nicht für den Feuerwehreinsatz
+bestimmt sind, wie in der Vorschrift EN 81-72 angegeben.
+Diese Funktionalität kann wie folgt eingeschaltet werden:
+- Manuell:
+In diesem Modus erfolgt die Einschaltung der Brandsteuerung anhand eines Schlüssels, der am
+Etagentableau der Zwischenetage angebracht ist, die als Brandetage konfiguriert wurde (ES3
+Eingang der erweiterten Masterplatte).
+- Automatisch:
+Im automatischen Modus (das Signal kommt von einer Brandzentrale) wird ein spannungsloser
+Kontakt verwendet, der an den ES1 Eingang des XSM2 Steckers angeschlossen wird.
+Die Vorschrift sieht außerdem die Möglichkeit vor, eine alternative Brandetage zu haben, die mit
+einem zusätzlichen Eingang auf der SMQ-Platte eingerichtet wird. Die Ausschaltung der
+Brandsteuerung muss in diesem Modus gleichzeitig über einen anderen Eingang als den der
+Einschaltung erfolgen. Die Tabelle der Eingänge für den Automatikmodus zeigt die Eingänge, die
+jeweils verwendet werden.
+Tabelle der Eingänge für den Automatikmodus.
+TABELLE DER EINGÄNGE FÜR DEN AUTOMATIKMODUS
+Platte Eingang Funktionalitäten Eingangslogik
+VVVF Hydraulisch
+SMQ ES1 ES1 Einschaltung Brandmodus NG Kontakt
+SMQ EA1 ES2 Ausschaltung Brandmodus NO Kontakt
+SMQ EA2 ES3 Alternative Evakuierungsetage NG Kontakt
+Tabelle der von dieser Funktionalität betroffenen Parameter:
+SICHERHEITEN
+Parameter Beschreibung Werte
+P0001 Brandsteuerung 0 : No
+1 : EN 81-72
+2 : Australische Vorschrift
+3 : U36(französische Vorschrift)
+4 : EN 81-73PC
+5 : EN 81-73
+P0002 Etage für Evakuierung / Feuerwehrzugang Etage
+P0003 Alternativetage für Evakuierung / Etage
+Feuerwehrzugang
+Der Unterschied zwischen Option EN 81-73PC und EN 81-73 des Parameters “Brandsteuerung” ist folgender:
+- Beim Parameterwert laut EN 81-73PC, erteilt die Steuerung nach Abschluss der Rücksendung
+des Fahrkorbs auf die Evakuierungsetage den Befehl, die Türen zu öffnen. Nach Ablauf der in der
+Türprogrammierung definierten Zeit erfolgt der Befehl, sie zu schließen. Der Fahrkorb bleibt mit
+geschlossenen Türen auf der Etage, während das Brandsignal aktiv ist.
+- Beim Parameterwert laut EN 81-73 lässt die Brandsteuerung den Aufzug nach Abschluss der
+Rücksendung des Fahrkorbs auf die Evakuierungsetage auf der Etage mit geöffneten Türen
+stehen, solange das Brandsignal aktiv ist.
+Als Default ist die Brandfunktionalität automatisch konfiguriert. Um den manuellen Modus konfigurieren zu können,
+muss der Parameter „Alternativetage für Evakuierung / Feuerwehrzugang“ mit dem Wert 33 festgelegt werden.
+V3.08 – 05/2012 127 MTELIEPVS308_DE

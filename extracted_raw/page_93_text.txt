@@ -1,0 +1,72 @@
+=== PAGE 93 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+3.3.4. Anbringung der Magnete
+Bei der Anbringung der Magnete ist besonders auf deren Stellung hinsichtlich der Magnetschalter zu achten, indem die
+Seiten der Magnete angemessen ausrichtet und die angegebenen Abstände eingehalten werden. Es müssen immer die
+gleichen Schritte eingehalten werden:
+ Es empfiehlt sich, die Führungsschiene vorher zu reinigen.
+ Es müssen keinerlei Klebstoffe eingesetzt werden.
+ Sie dürfen nicht in der Nähe des Begrenzerkabels angebracht werden.
+ Magnete vorzugsweise an der Unterseite der Führungsschiene anbringen. Wenn das nicht möglich ist, weil die
+Magnetstellung mit den Schrauben einer Führungsschienenverbindung übereinstimmt, ist der Magnet auf der Seele
+der Führungsschiene anzubringen (siehe Abbildungen weiter unten). Es muss darauf geachtet werden, dass er
+nicht mit den Gleitschuhen oder der Fangvorrichtung in die Quere kommt.
+ Der Abstand vom Magneten bis zum Ende des Magnetschalters darf höchstens 2 cm (siehe Abbildung links)
+betragen. Bei Führungsschienen mit sehr hoher Seele, bei denen diese Bedingung nicht mit dem an der Unterseite
+angeklebten Magnet erfolgen kann, muss der Magnet wie im obigen Fall auf der Seele angebracht werden.
+ Die Magnete müssen immer mit ihrer Nordseite auf die Führungsschiene angeklebt werden, ausgenommen im Fall
+der Pulsmagneten mit 326 Magnetschalter, bei dem die Magneten mit ihrer Südseite angeklebt werden. Die
+Nordseite ist mit einer Längsnut, wie auf der Abbildung dargestellt, gekennzeichnet.
+< 2cm Südseite
+Nordseite
+Südseite
+Bevorzugte Magnetstellung
+Magnet
+Magnetstellung, falls er mit
+einer Schienenverbindung auf
+großer Höhe zusammenfallen
+Verbindungsschraube sollte.
+Magnet
+Bei der Anbringung der Magnete muss als Erstes das Kriterium oder die Art des Geschwindigkeitswechsels, die von der
+Steuerung vor der Haltestelle ausg 0 e . f 6 ü 3 hrt wird, berücksichtigt werden. 1C v = 0.63m/s
+Die Art des Wechsels hängt von der Entfernung unter den Etagen, der Geschwindigkeit und des Aufzugtyps ab. y = 0.4m
+Die Vía Serie Steuerung betrachtet vier Wechselarten, die auf folge1n.0d0en Abbildungen dargestellt sind:
+Im Anschluss ist für jeden Aufzugstyp die Auswahltabelle des Wechseltyps entsprechend der Geschwindigkeit und der
+Entfernung zwischen Etagen dargestellt.
+ Elektrischer Aufzug mit einer Ges0c.0h0windigkeit 1.00 2.00 3.00 4.00 5.00
+)s
+/m
+N (
+T
+IE
+S K G
+ID
+N IW 0.63 1C v y = = 0 . 0 6 . 3 4 m m /s
+H 1.00
+C
+S
+E
+G
+0.00 1.00 2.00 3.00 4.00 5.00 ABSTAND ZWISCHEN
+S N ANWENDUNGSBEREICH: ETAGEN (m)
+L >= 1m: WECHSEL 1C 1
+y = 0.4
+y
+LEGENDE: P
+y = Bremsabstand
+L
+L = Abstand zwischen Etagen
+P = Impulsbild
+1 >=0.2m
+F W U E N C K H T S I E O L N 1 S C W : E G IS e E sc : hwindigke y itswePchsel mit 2. Pulsbild y P
+L 0
+ANSCHLÜSSE IM MASCHINENRAUM:
+Das P-Signal ist an der P-Kle
+y
+mme
+P
+des> X=0P.O2mS-Pakets angeschlossen.
+0
+V3.08 – 05/2012 93 MTELIEPVS308_DE

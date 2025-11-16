@@ -1,0 +1,51 @@
+=== PAGE 40 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.1.8. 17. Änderung A3 für 3VF Elektroaufzug mit Getriebe
+Schaltschrank Steuerung
+VS - SMQ 3VFMAC - DSP
+24G - XSM1
+KP2 - XSM1 11 - XC2 19 - XC2 32 - XC4 33 -XC4
+g
+A2
+G2R
+rg 11 KLIM 14 2 0 3 V 0 p - - T T R R M M g A1 41
+24VdcKLI
+A
+M
+1
+t G2R KKP
+24Vdc KKP
++24KP2300Vp A2 11
+SALV
+n OFF
+XLIM r n
+0Vdc - XSM1 24Vdc - XSM1 0Vdc - XSM1
+VS - SMQ
++24KP2300Vp
+SALV bei elektrischer Fernsteuerung vorhanden
+B KLIM
+C
+1
+C
+1
+2
+2
+Ausschnitt Anschluss Begrenzerspule
+Der Frequenzumrichter betätigt die Auslösespule des Geschwindigkeitsbegrenzers.
+Frequenzumrichter und Steuerung überwachen den Spulenstatus.
+SYMPTOM URSACHE STEUERUNGSFEHLER UMRICHTERFEHLER
+230 V Stromkreissicherung
+durchgeschmolzen
+Nach einem Aufruf startet Begrenzerspule in schlechtem Zustand
+weder der Aufzug noch wird KLIM ausgeschaltet (keine Auslösung der Err30 Err30
+die Spule ausgelöst. Spule)
+KKP ausgeschaltet (Ablesung zwischen
+Klemmen 11-19 am Umrichter)
+Nach der Fahrt öffnet der
+Aufzug die Türen, schließt
+KLIM ausgelöst (Spule immer aktiv) Err30 Err31
+sie nach ein paar Sekunden
+und bleibt außer Betrieb.
+V3.08 – 05/2012 40 MTELIEPVS308_DE

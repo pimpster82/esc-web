@@ -1,0 +1,95 @@
+=== PAGE 94 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+Elektri scher Aufzug mit zwei Geschwindigkeiten und öldynamischer Aufzug
+)s
+/m 1.20 3C 1P 2C * 1C v = 1.20m/s
+(
+T IE 1.50 1.90 2.60 3.20
+y = 1.50m
+K
+G ID 1.00 3C 1P 2C * 1C v y = = 1 1 .0 .2 0 0 m m /s
+N
+IW 1.20 1.60 2.00 2.60
+H
+C S 0.80 3C 1P 2C * 1C v y = = 0 1 .8 .0 0 0 m m /s
+E
+G 1.00 1.40 1.60 2.20
+0.63 3C 1P 2C* 1C v = 0.63m/s
+y = 0.8m
+0.50 0.80 1.20 1.80
+0.00 1.00 2.00 3.00 4.00 5.00 ABSTAND ZWISCHEN
+ETAGEN (m)
+WECHSEL 3C: WECHSEL 1P: WECHSEL 2C: WECHSEL 1C:
+N N N N
+2 1 1 1
+Standard- y P >=0.4m = y P >=0.4m y P
+z W w e i c s h ch se e l n 2 et C a ge mit L P >=0.4m L P L P >=0.4m L P
+>=0.4m N y Pa = N >=0.4m N y y N >=0.2m
+1 0 0 0
+Kurze = P
+Zwischenetage Lc y y
+Wechsel 3C = N Für öldynamische Installationen:
+0 FZS
+>=0.4m FZS
+y P Pa = = FS FB Wobei:
+Standard- L P >=0.4m FS FB
+zwischenetage y C EC DE D C = 300 mm
+mit Wechsel 2C D  50 mm
+>=0.4m N = E  150 mm
+-1 =
+ANWENDUNGSBEREICH:
+FUNKTIONSWEISE:
+L < y: WECHSEL 3C
+y < L <= y + 0.4: WECHSEL 1P
+WECHSEL 1C: Geschwindigkeitswechsel beim zweiten Impuls (P), der ab der
+y + 0.4 < L <= 2y + 0.4: WECHSEL 2C
+Etagenhöhe vor der Zielhaltestelle gezählt wird.
+2y + 0.4 < L < 2y + 0.2: WECHSEL 2C*
+WECHSEL 2C: Geschwindigkeitswechsel beim ersten Impuls (P), der ab der
+L >= 2y + 0.2: WECHSEL 1C
+Etagenhöhe vor der Zielhaltestelle gezählt wird.
+WECHSEL 1P: Geschwindigkeitswechsel auf der Etagenhöhe (N) vor der
+* Bereich, in dem die Wechselart 2C angewendet
+Zielhaltestelle bei Fahrten zwischen nicht aufeinanderfolgenden Etagen.
+wird und sich der Bremsabstand auf folgender
+Bei Fahrten zwischen aufeinanderfolgenden Etagen vom Typ 1P ist die
+Grundlage erhöht:
+Fahrtgeschwindigkeit langsam.
+WECHSEL 3C: Für Fahrten zwischen nicht aufeinanderfolgenden Etagen erfolgt der
+y' = (L + 0.4) / 2
+Geschwindigkeitswechsel mit dem zusätzlichen Impuls (Zi).
+Bei Fahrten zwischen aufeinanderfolgenden Etagen vom Typ 3C ist die
+LEGENDE:
+Fahrtgeschwindigkeit langsam.
+Diese Art Wechsel ist bei mehreren aufeinanderfolgenden Etagen nicht möglich.
+y = Bremsabstand
+Der Wechsel 3C ist jedoch bei Endetagen möglich. In diesem Fall steht der
+y' = erweiterter Bremsabstand
+Vorendschalter auf der Höhe des Zusatzimpulses (Zi).
+L = Entfernung zwischen Etagen
+Lc = Entfernung zwischen kurzen Etagen
+BETRIEBSWEISE:
+N = Schirm (oder Magnet) der Etagenhöhe
+P = Impulsschirm (oder Magnet)
+1.- Aufzuggeschwindigkeit und Abstand der einzelnen Haltestellen zur unmittelbar
+Zi = zusätzlicher Impulsschirm (oder Magnet)
+höheren Haltestelle.
+FB = Nachregulierungsschirm bei Abwärtsfahrt
+Die Steuerung selbst gibt den entsprechenden Wechseltyp (1P, 1C, 2C oder 3C) und
+FS = Nachregulierungsschirm bei Aufwärtsfahrt
+den Bremsabstand (y) an.
+FZS = Sicherheitsbereich
+Dieser stimmt mit der Angabe auf dem nebenstehenden Diagramm überein.
+Bei öldynamischen Aufzügen setzt sich das Signal 2.- Für diese Etage sind die Impulsmagnete (P) je nach Wechselart anzubringen.
+der Etagenhöhe aus der Schnittstelle von anderen
+zwei, und zwar FB und FS zusammen, die sich in D
+innerhalb des FZS Sicherheitsbereichs überlagern.
+ANSCHLÜSSE IM MASCHINENRAUM:
+Bei zwei Geschwindigkeiten:
+Das N-Signal ist an der NL Klemme des XPOS-Pakets angeschlossen.
+Das P-Signal ist an der P-Klemme des XPOS-Pakets angeschlossen.
+Das Zi-Signal ist an der ES5-Klemme des XSM2-Pakets
+angeschlossen.
+V3.08 – 05/2012 94 MTELIEPVS308_DE

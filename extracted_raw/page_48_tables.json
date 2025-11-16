@@ -1,0 +1,345 @@
+[
+  [
+    [
+      "",
+      "",
+      "",
+      "",
+      "TECHNISCHES PRODUKTHANDBUCH",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      "VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5",
+      ""
+    ],
+    [
+      null,
+      "",
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "",
+      "BAUTEIL",
+      "",
+      "",
+      "ANSCHLUSS",
+      "",
+      "",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      "WANN",
+      ""
+    ],
+    [
+      "",
+      null,
+      null,
+      null,
+      "AN KLEMME",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "PAL",
+      null,
+      null,
+      "A1",
+      null,
+      null,
+      "Immer",
+      null,
+      null
+    ],
+    [
+      "DTG",
+      null,
+      null,
+      "A2",
+      null,
+      null,
+      "Immer",
+      null,
+      null
+    ],
+    [
+      "DTS",
+      null,
+      null,
+      "A3",
+      null,
+      null,
+      "Immer (falls vorhanden)",
+      null,
+      null
+    ],
+    [
+      "TÜRSPERRE / AUSSER BETRIEB",
+      null,
+      null,
+      "A3",
+      null,
+      null,
+      "Wenn kein DTS vorhanden",
+      null,
+      null
+    ],
+    [
+      "TÜRSPERRE / AUSSER BETRIEB",
+      null,
+      null,
+      "A4",
+      null,
+      null,
+      "Wenn DTS vorhanden",
+      null,
+      null
+    ],
+    [
+      "ATTENDANT",
+      null,
+      null,
+      "A5, A6, A7",
+      null,
+      null,
+      "Wenn nur der Modus Feuerwehr der australischen Norm oder wenn 3 der folgenden\nBauteile vorhanden sind: DTS, Türsperre, Feuerwehrmodus EN 81-72 oder\nbevorzugter Service ohne Feuerwehr australische Vorschrift",
+      null,
+      null
+    ],
+    [
+      "FEUERWEHR EN 81-72",
+      null,
+      null,
+      "A3",
+      null,
+      null,
+      "Weder DTS noch Türsperre vorhanden",
+      null,
+      null
+    ],
+    [
+      "FEUERWEHR EN 81-72",
+      null,
+      null,
+      "A4",
+      null,
+      null,
+      "Entweder DTS oder Türsperre vorhanden (nur eins von beiden)",
+      null,
+      null
+    ],
+    [
+      "FEUERWEHR EN 81-72",
+      null,
+      null,
+      "A5",
+      null,
+      null,
+      "DTS und Türsperre vorhanden (beides zusammen), aber kein Attendant-Modus und\nkeine Türsteuerung",
+      null,
+      null
+    ],
+    [
+      "FEUERWEHR EN 81-72",
+      null,
+      null,
+      "A7",
+      null,
+      null,
+      "DTS und Türsperre (beides zusammen) und Türsteuerung vorhanden",
+      null,
+      null
+    ],
+    [
+      "FEUERWEHR EN 81-72",
+      null,
+      null,
+      "A8",
+      null,
+      null,
+      "DTS und Türsperre (beides zusammen) und Attendant-Modus vorhanden",
+      null,
+      null
+    ],
+    [
+      "FEUERWEHR AUSTRALIEN",
+      null,
+      null,
+      "A3, A4",
+      null,
+      null,
+      "Weder DTS noch Türsperre vorhanden",
+      null,
+      null
+    ],
+    [
+      "FEUERWEHR AUSTRALIEN",
+      null,
+      null,
+      "A5, A6",
+      null,
+      null,
+      "Entweder DTS oder Türsperre vorhanden (eins von beiden oder beide)",
+      null,
+      null
+    ],
+    [
+      "BEVORZUGTER SERVICE",
+      null,
+      null,
+      "A3",
+      null,
+      null,
+      "Weder DTS, noch Türsperre noch Feuerwehr-Modus EN 81-72 vorhanden. Die Modi\nAttendant und Feuerwehr australische Vorschrift bestehen nicht gleichzeitig.",
+      null,
+      null
+    ],
+    [
+      "BEVORZUGTER SERVICE",
+      null,
+      null,
+      "A4",
+      null,
+      null,
+      "Entweder DTS, Türsperre oder Feuerwehr-Modus EN 81-72 (nur einer der Drei)\nvorhanden. Die Modi Attendant und Feuerwehr australische Vorschrift bestehen\nnicht zusammen.",
+      null,
+      null
+    ],
+    [
+      "BEVORZUGTER SERVICE",
+      null,
+      null,
+      "A5",
+      null,
+      null,
+      "Zwei der folgenden drei Bauteile sind vorhanden: DTS, Türsperre oder\nFeuerwehrmodus EN 81-72. Die Modi Attendant und Feuerwehr australische\nVorschrift sind nicht vorhanden.",
+      null,
+      null
+    ],
+    [
+      "BEVORZUGTER SERVICE",
+      null,
+      null,
+      "A6",
+      null,
+      null,
+      "DTS, Türsperre und Feuerwehrmodus EN 81-72 (drei gleichzeitig) sind vorhanden.\nDie Modi Attendant und Feuerwehr australische Vorschrift sind nicht vorhanden.",
+      null,
+      null
+    ],
+    [
+      "BEVORZUGTER SERVICE",
+      null,
+      null,
+      "A7",
+      null,
+      null,
+      "Der Modus Feuerwehr australische Vorschrift und zwei der drei folgenden Elemente\nsind vorhanden: DTS, Türsperre oder Feuerwehr-Modus EN 81-72.",
+      null,
+      null
+    ],
+    [
+      "BEVORZUGTER SERVICE",
+      null,
+      null,
+      "A8",
+      null,
+      null,
+      "Der Attendant-Modus und zwei der drei folgenden Bauteile sind vorhanden: DTS,\nTürsperre oder Feuerwehr-Modus EN 81-72.",
+      null,
+      null
+    ],
+    [
+      "BEVORZUGTER SERVICE",
+      null,
+      null,
+      "A8",
+      null,
+      null,
+      "Attendant- und Feuerwehrmodus australische Vorschrift sind vorhanden. Weder\nDTS, noch Türsperrre noch Feuerwehrmodus EN 81-72 sind vorhanden.",
+      null,
+      null
+    ],
+    [
+      "BEVORZUGTER SERVICE",
+      null,
+      null,
+      "A8",
+      null,
+      null,
+      "DTS, Türsperre, Türsteuerung und Feuerwehr-Modus EN 81-72 vorhanden.",
+      null,
+      null
+    ],
+    [
+      "TÜRSTEUERUNG REVISION",
+      null,
+      null,
+      "A3, A4",
+      null,
+      null,
+      "Wenn nur PAL und DTG vorhanden sind, kann der Attendant-Modus bestehen oder\nnicht.",
+      null,
+      null
+    ],
+    [
+      "TÜRSTEUERUNG REVISION",
+      null,
+      null,
+      "A5, A6",
+      null,
+      null,
+      "Eins der folgenden Bauteile ist vorhanden: DTS, Türsperre, Feuerwehrmodus EN 81-\n72 oder bevorzugter Service. Weder der Attendant- noch der Feuerwehr-Modus\naustralische Vorschrift sind vorhanden.",
+      null,
+      null
+    ],
+    [
+      "TÜRSTEUERUNG REVISION",
+      null,
+      null,
+      "A7, A8",
+      null,
+      null,
+      "Der Modus Feuerwehr australische Vorschrift und zwei der drei folgenden Elemente\nsind vorhanden: DTS, Türsperre oder bevorzugter Service",
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "V3.08 – 05/2012",
+      "48",
+      "MTELIEPVS308_DE"
+    ]
+  ]
+]

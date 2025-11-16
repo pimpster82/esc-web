@@ -1,0 +1,39 @@
+=== PAGE 77 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+3.1.3. 1. Sonderbauteile für VVVF Anlagen
+Stellen sie sicher, dass folgendes Material geliefert wird:
+Eingangsfilter unter dem
+Frequenzumrichter. Er hat 2 Ausgänge,
+einer zur Versorgung des Umrichters und
+ein weiterer für die Steuerung.
+Ausgangsfilter, O-Ring am U, V, W
+Ausgang des Umrichters.
+2 geteilte Ferrite, die größere am U, V,
+SCHALTSCHRANK W Ausgang des Umrichters vor dem
+Ausgangsfilter und die andere an den
+Kabeln des Bremswiderstands.
+Bremswiderstand, der sich auf einer
+Seite des Schranks bei einem
+herkömmlichen Aufzug befindet.
+Bei MRL-Aufzügen sind die Anweisungen
+der obigen Punkte zu befolgen.
+Beleuchtungsfilter. Er befindet sich
+oberen Fach des MRL Schranks oder auf
+der unteren Schiene des herkömmlichen
+3VF Schranks.
+Abgeschirmte Versorgung zur
+Antriebsmaschine mit Aluminiumbindern
+und Blechgewindeschrauben, um das
+Geflecht im Schrank und an der
+Maschine zu erden.
+Schlauchschellensatz, Scheiben und
+VERSORGUNG ZUR MASCHINE Blechgewindeschrauben für die Erdung
+der Geflechte der Kommunikationskabel
+(falls vorhanden) und Drehgeber.
+Ringklemmschuh mit
+Blechgewindeschraube für die Erdung
+der R, S, T Versorgung am Blech des
+Steuerschranks.
+V3.08 – 05/2012 77 MTELIEPVS308_DE

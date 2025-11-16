@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "manual_version": "VIASerie_v74",
+    "manual_pages": "12-50",
+    "extraction_date": "2025-11-16T20:55:43.628738",
+    "status": "Template - manual data entry needed",
+    "total_boards": 0,
+    "note": "Hardware information should be extracted from pages 12-50"
+  },
+  "boards": [
+    {
+      "name": "SMQ Board",
+      "location": "Machine room control cabinet",
+      "function": "Safety monitoring and control",
+      "connectors": [
+        "XTSS",
+        "XKV",
+        "XSM1"
+      ],
+      "extraction_status": "example"
+    }
+  ]
+}

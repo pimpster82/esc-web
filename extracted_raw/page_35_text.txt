@@ -1,0 +1,68 @@
+=== PAGE 35 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+INSPEKTIONSKASTEN
+XSM2
+g g
+g g g r 24G0VdcES1ES2ES3ES4ES5ES6
+XSM2
+FSAFSA' FSAFSA' FIAFIA' FIAFIA' FRP24G VS-SMQ
+XFSAH XFSAC XFIAH XFIAC XFRP
+XFRP
+FSAFSA' FIAFIA' FRP24G
+XFSP XFSP
+FSP FSP
+24G 24G
+XFIP XFIP
+FIP FIP
+24G 24G
+XFSAH XFSAH
+XFIAH XFIAH
+V3.08 – 05/2012 35 MTELIEPVS308_DE
+FSAFSA'
+FIAFIA'
+FSAFSA'
+FIAFIA'
+2.1.8.10. Endschalter vor und hinter den Vorendschaltern
+Diese Endschalter begrenzen oder ermöglichen das Fahren mit der Inspektionssteuerung. Gleichzeitig würden die
+Endschalter vor den Vorendschaltern den Fahrkorb im Inspektionsmodus anhalten, wenn sie an diesen Endschalter
+kommt. Auf diese Art entsteht ein ca. 1,5 m großer Sicherheitsraum, der bei niedrigen Schachtköpfen und von Fall zu
+Fall auch bei niedrigen Schachtgruben zwingend ist. Auf die gleiche Art lassen die Endschalter hinter den
+Vorendschaltern ein Verfahren über die Vorendschalter hinaus zu.
+Die zusätzlichen Endschalter müssen wie
+... die Standardendschalter angeordnet
+SIR vi
+STPC werden (siehe 3.3.5.)
+SIB vi
+3C
+vi
+SIS
+vi vi vi vi
+FSAFSA' FIAFIA'
+Schiene des
+Inspektionskastens
+XFSAC XFIAC
+XFSAC XFIAC
+FSAFSA' FIAFIA'
+ES6ES5ES4ES3ES2ES10Vdc24G
+Hängekabel
+Steuerung
+Schiene
+Maschinenraum
+XFSAH XFSAH XFIAH XFIAH
+FSAFSA' FIAFIA'
+Oberes Ende
+g nach dem
+Vorendschalter
+Zum Zum
+Inspektions- Inspektions- r g Unteres Ende
+kasten kasten nach dem
+(Hängekabel (Hängekabel Vorendschalter
+Steuerung) Steuerung)
+Oberes Ende
+vor dem
+g Vorendschalter g
+b/az Unteres Ende
+b/az vor dem
+Vorendschalter

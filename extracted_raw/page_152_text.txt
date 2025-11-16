@@ -1,0 +1,126 @@
+=== PAGE 152 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+ANHANG I. ABKÜRZUNGEN
+A K
+A Filter Typ A K1 Betriebsschütz
+AF Ausgangsfilter K2 Betriebsschütz
+AUF1 Aufzug 1 kap Kapitel
+AUF2 Aufzug 2 KCAP Türöffnungsschütz
+Auf Aufzug KCB Abwärtsfahrtschütz
+B KCCP Schütz Türschließung
+B Filter Typ B KCE Sternschütz
+B02 Stecker Etagentableau
+KCG Allgemeines Schütz
+B33 Stecker Etagentableau KCL Schütz langsame Geschwindigkeit
+BAT Batterie
+KCM Betriebsschütz
+BB Feuerwehrschlüssel
+KCR Schütz schnelle Geschwindigkeit
+BR Betriebsrelais
+KCS Abwärtsfahrtschütz
+BTST Temperatursonde
+KCT Dreiecksschütz
+BW Bremswiderstand
+KD Kastenstecker Doppelzugang
+C
+KG Kilogramm
+Stecker Kabinentableau -
+CB KKP Relais Lektüre begrenzt II
+Inspektionskasten
+KLIM Relais Lektüre begrenzt I
+Stecker Hängekabel Steuerung -
+CB1 Kabinentableau KOM Kommunikation
+CBA_ Hilfsstecker Tableau KRFF Relais Phasenüberwachung
+CBC_ Hilfsstecker Tableau KRFR Bremsrelais
+CBTF Telefonstecker Tableau KRL2 Kontrollrelais der Relais
+Stecker Hängekabel Steuerung KRNS Relais Nenngeschwindigkeit
+CC1
+Fahrkorb KROPA Relais Türöffnung
+Stecker Hängekabel Steuerung KROPC Relais Türschließung
+CC2
+Fahrkorb KRSE Richtungsrelais
+CC3 Stecker Hängekabel Steuerung KVD Abwärtsfahrtrelais
+Fahrkorb
+KVF Relais Phasenüberwachung
+CCA_ Hilfsstecker 1
+KVR Relais schnelle Geschwindigkeit
+CCS Lastwaagenstecker
+KW Kilowatt
+CEL Lichtzellenkontakt
+M
+CF Stecker Gegensprechanlage
+m Braun
+CH1 Stecker Schaltschrank - Schachtanlage
+M Motor
+CH2 Stecker Schaltschrank - Schachtanlage
+MBAS MicroBasic
+CHB1 Stecker Aufrufe Abwärtsfahrt Schacht 1
+MBE MicroBasic Erweiterung
+CHB2 Stecker Aufrufe Abwärtsfahrt Schacht 2
+MES Elektrische Rettungssteuerung
+CHS1 Stecker Aufrufe Aufwärtsfahrt Schacht 1
+MFD Maximale Fahrtdauer
+CHS2 Stecker Aufrufe Aufwärtsfahrt Schacht 2
+MRL Maschinenraumlos
+CPS Sicherheitskontakt 538
+MS-MXP Multiplexplatte
+CR2 Stecker Inspektionskasten
+Mx Metrisch x
+CR3 Stecker Inspektionskasten
+MΩ Megaohm
+CRA_ Hilfsstecker Inspektion
+N
+Stecker Kasten elektrische
+CRD Rettungssteuerung N Etagensignal
+NL Signal für Not-Aus-Etagenhöhe
+D
+P
+D D-Filter
+P/R Roter Knopf MBE-Platte
+DH4 Displaystecker Schacht
+P1 P1 Stecker MicroBasic
+DTG Druckschalter Türen geöffnet
+P2 P2MicroBasic Stecker
+DTS Druckschalter Türschließung
+P3 P3MicroBasic Stecker
+E
+PL1 Roter Knopf MicroBasic Platte
+EF Eingangsfilter
+PS Pferdestärken
+EMV Elektromagnetische Verträglichkeit
+Q
+ESK Endschalterkontakt
+Magnetwärmeschalter
+ESTÖ Endschalter Türöffnung QAC
+Fahrkorbbeleuchtung
+ESTS Endschalter Türschließung
+Magnetwärmeschalter
+F QAH
+Schachtbeleuchtung
+FB Nachregulierungssignal Abwärtsfahrt
+QIG Allgemeiner Steuerungsschalter
+FRTM Wärmerelais langsam
+QIM Steuerungshauptschalter
+FS Nachregulierungssignal Aufwärtsfahrt
+R
+FZS Sicherheitsbereichsignal
+R R-Phase
+G
+r Rot
+Gew Gewicht
+R2AC Relais zweite Beschleunigung
+GRF Korrekturplatte Bremse
+RABL Relais Abwärtsfahrtlicht
+GRV Korrekturplatte Ventile
+RAUFL Relais Aufwärtsfahrtlicht
+H
+RB Stecker Glühbirnenreihe Schacht
+HC Fahrkorblicht RBEXT Relais Leiste Außenaufrufe
+HC´ Fahrkorbdeckenleuchte RCAB Relais Leiste Fahrkorbaufrufe
+HRB Glühbirnenreihe RCT001 Bergungsgleichrichter
+HSS_ Hilfsstecker Schacht RET Startrelais
+H-XP Mutterstecker X Schritte REV Revision (Inspektion)
+I RLFB Relais Licht frei / besetzt
+V3.08 – 05/2012 152 MTELIEPVS308_DE

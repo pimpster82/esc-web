@@ -1,0 +1,46 @@
+=== PAGE 101 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+4. INBETRIEBNAHME
+4.1. Überprüfungen
+Nachdem der gesamte Einbau und die Anschlüsse der Anlage erfolgt sind, müssen bestimmte Überprüfungen vor der
+Inbetriebnahme durchgeführt werden.
+An erster Stelle sind die installierten Elemente und deren ordnungsgemäße Anordnung und Standort zu überprüfen.
+Nach dieser ersten Überprüfung muss die Schrankversorgung ausgeschaltet werden.
+Die auszuführenden Überprüfungen sind im Abschnitt F von Anhang D der EN 81-1/2 Vorschrift enthalten.
+4.1.1. Messung des Isolationswiderstands der verschiedenen Stromkreise.
+Folgende Stromkreise sind für die Festigkeitsprüfungen der Anlagenisolierung zu betrachten:
+ STROMKREIS 1: R, S, T Versorgung
+ STROMKREIS 2: Sicherheitskreis, Klemme 9H des XSSH2 Steckers der VS-SMQ2 Platte
+ STROMKREIS 3: Erste Geschwindigkeit: U, V, W.
+ STROMKREIS 4: Je nach Modell:
+o für 2 Geschwindigkeiten: zweite Geschwindigkeit U1, V1, W1.
+o Für Hydraulikaufzüge: X, Y, Z.
+o Für 3VFMAC: nicht vorhanden
+ STROMKREIS 5: Erde
+ STROMKREIS 6: Beleuchtung, RBF, RBN, CA, NCA, NOA, FH, NH, FC, NGKlemmen der XALH, XRB, XALB Stecker
+Diese Tests müssen ohne Versorgungsspannung an der Steuerung und Beleuchtung erfolgen. Generell muss XTSS von
+der PLATTE des VS-SMQ2 Maschinenraums getrennt werden. Bei einem Hydraulikaufzug muss außerdem bei
+stillstehendem Aufzug außerhalb der Etage und bei geschlossenen Türen XBAT von der OLE1 Platte getrennt werden.
+Je nach Modell muss auch Folgendes ausgeschaltet werden:
+• 2 Geschwindigkeiten: die Erdungskabel, die mit
+o der „t“ Klemme des XSM1 Steckers auf der Plattenoberseite verbunden sind.
+o VS-SMQ2 Platte von der Metalltrennung isolieren.
+• Hydraulikaufzüge: Die gleichen Erdungskabel wie im obigen Punkt und außerdem das Erdungskabel des
+Netzfilters, das hinzugefügt wird (schwarzes Kästchen neben den R, S, T Versorgungsklemmen).
+• Frequenzumrichtung: In diesem Fall müssen neben der Trennung der im obigen Punkt angegebenen
+Erdungskabel die Versorgungskabel des Eingangsfilters, die sich unter der LINE Klemmleiste des Filters befinden,
+gelöst werden (dieser Filter befindet sich unter dem Umrichter).
+Diese Kabel müssen mit einem angemessenen Band isoliert werden.
+Die Testdauer muss 1 Minute und die Testspannung 500 V Dauerstrom betragen. D Prüfspannung ist zwischen
+folgenden Stromkreisen anzusetzen:
+1 2 3 4 5 6
+1 X X X X X X
+5 X X X X X
+1 X X X X
+2 X X X
+3 X X
+4 X
+Die gemessene Isolierungsfestigkeit muss größer / gleich 0,5 MW betragen.
+V3.08 – 05/2012 101 MTELIEPVS308_DE

@@ -1,0 +1,173 @@
+[
+  [
+    [
+      "",
+      "",
+      "",
+      "",
+      "TECHNISCHES PRODUKTHANDBUCH",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      "VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5",
+      ""
+    ],
+    [
+      null,
+      "",
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "",
+      "URSACHEN DES AUSBLEIBENDEN STARTS",
+      null,
+      null,
+      null,
+      ""
+    ],
+    [
+      "",
+      "AXX",
+      "",
+      "",
+      "Verursachendes Bauteil",
+      ""
+    ],
+    [
+      "A01",
+      null,
+      null,
+      "Trafo-Sicherung 110 durchgeschmolzen. Bei Hydraulikaufzügen muss geprüft werden, ob der XKMT1 Stecker auf der\nPCB-OLE1 Platte 110 V AC führt.",
+      null,
+      null
+    ],
+    [
+      "A02",
+      null,
+      null,
+      "Endschalter oder vorherige Kreise bei geöffneten Türen. XSSC und XSSH Steckerklemmen prüfen.",
+      null,
+      null
+    ],
+    [
+      "A03",
+      null,
+      null,
+      "Übertemperatur (Maschinentemperatur, Temperatur im Maschinenraum). TM Klemme des XSM1 Steckers prüfen.",
+      null,
+      null
+    ],
+    [
+      "A04",
+      null,
+      null,
+      "Aktive Überlast. Je nach Wert, der Parameter P0012 auf der Seite der Sicherheiten zugeordnet ist, muss nach folgenden\nVorgaben geprüft werden:\n- Wenn P0012 = 0 oder 3, Einstellung der Waage prüfen (siehe Punkt 5.6.3.1 dieses Handbuchs) und auf der\nFahrkorbplatte den XPSC-Stecker oder auf der Platte des festen Punkts den XPSC1 Stecker prüfen.\n- Bei P0012 = 1, EA1 Klemme des XSM1 Steckers auf der Maschinenraumplatte prüfen.\n- Bei P0012 = 2, IN3 Klemme des XFOT23 Steckers auf der Maschinenraumplatte prüfen.",
+      null,
+      null
+    ],
+    [
+      "A05",
+      null,
+      null,
+      "Komplett eingeschaltet. Je nach Wert, der Parameter P0012 auf der Seite der Sicherheiten zugeordnet ist, muss nach\nfolgenden Vorgaben geprüft werden:\n- Wenn P0012 = 0 oder 3, Einstellung der Waage prüfen (siehe Punkt 5.6.3.1 dieses Handbuchs) und auf der\nFahrkorbplatte den XPSC-Stecker oder auf der Platte des festen Punkts den XPSC1 Stecker prüfen.\n- Bei P0012 = 1, EA2 Klemme des XSM1 Steckers auf der Maschinenraumplatte prüfen.\n- Wenn P0012 = 2, keine Anwendung.",
+      null,
+      null
+    ],
+    [
+      "A06",
+      null,
+      null,
+      "Geöffnete Türenkreis (6H Klemme)",
+      null,
+      null
+    ],
+    [
+      "A07",
+      null,
+      null,
+      "Druckschalterkontakt (DTG) geöffnet. A2 Klemme der ADAP1 Adapterplatte prüfen.",
+      null,
+      null
+    ],
+    [
+      "A08",
+      null,
+      null,
+      "Fahrkorbkreis und Außenriegel geöffnet. 7H–7C, 8C–8H, 9H Klemmen prüfen.",
+      null,
+      null
+    ],
+    [
+      "A09",
+      null,
+      null,
+      "Der Druckschalter zum Fahrkorb- oder Etagenaufruf, wo sich der Fahrkorb befindet, bleibt hängen. Druckschalter prüfen.",
+      null,
+      null
+    ],
+    [
+      "A10",
+      null,
+      null,
+      "Bei Inspektion und nach einer ersten Bewegung ist ein Teil der INS, IS, IB Kreis gebrückt oder der Druckschalter für Auf-\noder Abwärtsfahrt des Inspektionskasten ist hängengeblieben.",
+      null,
+      null
+    ],
+    [
+      "A12",
+      null,
+      null,
+      "Stoppfunktion im Fahrkorb eingeschaltet. 3C und 3’C Klemmen prüfen.",
+      null,
+      null
+    ],
+    [
+      "A14",
+      null,
+      null,
+      "Bei Inspektion wird festgestellt, dass der Schützkontakt hängengeblieben ist. KP1 Klemme des XSM1 Steckers prüfen.",
+      null,
+      null
+    ],
+    [
+      "A15",
+      null,
+      null,
+      "Die Höchstgrenze an zulässigen Fahrten in einer Stunde wurde überschritten (siehe Parameter max. Anz. Fahrten\nStunde).",
+      null,
+      null
+    ],
+    [
+      "A16",
+      null,
+      null,
+      "Bei Inspektion wird festgestellt, dass der Kontakt am Ventil / an der Spule hängengeblieben ist. Dieses Signal kann\nkonfiguriert werden. Parameter P0015, Funktionalität Eingang KP2 auf der Seite der Sicherheiten prüfen.",
+      null,
+      null
+    ],
+    [
+      "A28",
+      null,
+      null,
+      "Druckregler für Maximal- oder Minimaldruck aktiv. EA2 Klemme des XSM1 Steckers prüfen.",
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "V3.08 – 05/2012",
+      "111",
+      "MTELIEPVS308_DE"
+    ]
+  ]
+]

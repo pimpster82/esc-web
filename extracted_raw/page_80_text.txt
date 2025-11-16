@@ -1,0 +1,37 @@
+=== PAGE 80 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+3.1.3. 3. Verkabelung Maschinenraum
+Die Versorgung vom Netz zum Schrank muss derart erfolgen, dass sich die Versorgungskabel nicht mit den
+Steuerkabeln und den Ausgangskabeln der Antriebsmaschine vermischen, indem keine parallelen Wege auf Abständen
+unter 30 cm zugelassen werden. Die Installation muss nach den Anweisungen auf der Abbildung erfolgen.
+ Einfache Installation
+Anschluss links Anschluss rechts
+D
+D 3
+3
+D 2
+2
+D
+D ≥ 300mm
+1
+1
+ Duplex Installation (ähnlich wie Triplex und Cuadruplex)
+Anschluss links Anschluss rechts
+2 2
+D D D D D D
+2 D D 2 D D
+3 2
+2 3
+D D
+4 4
+D ≥ 300mm
+1
+1 1
+1
+1.- STEUERUNG UND MOTORANSCHLUSS (U, V, W)
+2.- NETZANSCHLUSS (R, S, T, t)
+3.- ALLGEMEINER SICHERUNGSKASTEN
+4.- KOMMUNIKATION UNTER SCHRÄNKEN
+V3.08 – 05/2012 80 MTELIEPVS308_DE

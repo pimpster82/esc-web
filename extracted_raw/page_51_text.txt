@@ -1,0 +1,70 @@
+=== PAGE 51 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.2.8. Bedienungssteuerung
+2.2.8.1. Einphasige MP-Bedienung
+* = Die Logia der dargestellten Kontakte ist
+Einphasige Bedienung für geöffnete Türen.
+faston
+C
+TF
+2
+H
+07
+P63RO
+4G1mm2
+v/a
+220 1 1 m
+(gemeinsam) 2 2 n
+Schließen * 3 3 az
+Öfffnen FCCP * 5 4 5 4 n n
+FCAP 7 6 7 6 n g Vom
+SEN TC 9 8 9 8 a m z Inspektionskasten
+1 1 1 0 1 1 1 0 a m z 4 x 0.5mm2
+XOPF
+t C A 0Vp220 24CTCFCCFCA
+XOP1 XOP2
+Farbcodierungen:
+Im Kasten der
+a a z : : g b e la lb u B Fa e h d r ie k n o e rb rP sc L h A a T l T ts E c hrank im 2200Vp A C t FCAFCCTC24C B Fa e h d r ie k n o e rb rP sc L h A a T l T ts E c h im ra nk
+b: weiß anschließen.
+g: grau Die XOP1 und XOP2 Stecker XOP1 XOP2
+m: braun müssen senkrecht PCB OPER
+n: schwarz angeschlossen und 180º XVOP XOPMB
+na: orange zur dargestellten Ansicht
+r: rot gedreht werden.
+v: grün 2200Vp t 0VdcCLBCHB24C
+vi: violett
+2.2.8.2. Einphasige Nicht-MP-Bedienung SEHR WICHTIG:
+Die Bedienungssteuerung kann nicht über
+Endschalter erfolgen, sondern muss über die
+BedienungsPLATTE laufen. Deshalb müssen
+Operador REVECO II die Endschalter wie auf der Abbildung
+verkabelt werden.
+4G1mm2
+v/a
+* = Die Logik der dargestellten Kontakte gilt für
+m geöffnete Türen.
+~M n
+az
+FCCP n 4 x 0.5mm2
+*
+FCAP g
+* m
+SEN TC az
+m
+SPC az Vom Inspektionskasten
+2 x 1
+t C A 0Vp220 24CTCFCCFCA
+XOP1 XOP2
+Im Kasten der BedienerPLATTE 220 0Vp A C t FCAFCCTC 24C
+im Fahrkorbschaltschrank
+anschließen.
+Die XOP1 und XOP2 Stecker XOP1 XOP2 Bedienungs
+müssen senkrecht PCB OPER -PLATTE im
+angeschlossen und 180º zur Fahrkorb-
+dargestellten Ansicht gedreht XVOP XOPMB schalt-
+werden. schrank.
+2200Vp t 0VdcCLBCHB24C
+V3.08 – 05/2012 51 MTELIEPVS308_DE

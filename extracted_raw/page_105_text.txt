@@ -1,0 +1,35 @@
+=== PAGE 105 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+Blinklogik der Kommunikations-LEDs:
+Ausgeschaltet: Zeigt an, dass die Kommunikation nicht konfiguriert ist.
+Fix: Zeigt an, dass keine physische Verbindung unter den Vorrichtungen besteht.
+Schnelles Blinken: Zeigt an, dass die physische Kommunikation ordnungsgemäß abläuft, aber die
+Kommunikation unter den Vorrichtungen nicht richtig. Zum Beispiel: Sie besitzen nicht die gleiche
+Hardwareversion.
+Langsames Blinken: Zeigt an, dass die physische Kommunikation ordnungsgemäß funktioniert.
+Logik der LEDs des Aufzugsstatus:
+OK Led:
+Ausgeschaltet: Aufzug permanent außer Betrieb.
+Blinkend: Ursache des ausbleibenden Starts. Es besteht ein Zustand, der den Aufzug nicht starten
+lässt. (Siehe Tabelle der Ursachen für den Nichtstart).
+Fix: Betriebsbereit
+MODE LED:
+Ausgeschaltet: Aufzug betriebsbereit
+Blinkend: Es gibt 3 Arten des Blinkens:
+1. Einmal blinken zeigt an, dass die Steuerung auf Feuerwehr steht.
+2. Zweimal blinken zeigt an, dass sie sich in Inspektionssteuerung befindet.
+3. Dreimal blinken zeigt an, dass sie sich in Rücksendungssteuerung befindet.
+5.3. Anwenderschnittstelle
+(Alle Angaben zu diesem Punkt werden auf dem Display der MP KONSOLE angezeigt.)
+Die Anwenderschnittstelle ist der Bereich, wo die Steuerung die Information über ihren internen Zustand anzeigt
+(Fehler, Betriebsweisen usw.) und eine Reihe an Bedienungen im Zusammenhang mit der Wartung (Konfigurierung,
+Kalibrierung usw.) zulässt.
+Die Anwenderschnittstelle umfasst 5 Zeichen (mit XXXXX dargestellt), welche die Information anzeigen sollen, sowie 4
+Druckschalter, um im Menü verfahren zu können: SETUP, INTRO, , .
+XXXXX gibt an, dass die
+Kommunikation zwischen
+Konsole und Steuerung nicht
+in Ordnung ist.
+V3.08 – 05/2012 105 MTELIEPVS308_DE

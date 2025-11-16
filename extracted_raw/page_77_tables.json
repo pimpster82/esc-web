@@ -1,0 +1,85 @@
+[
+  [
+    [
+      "",
+      "",
+      "",
+      "",
+      "TECHNISCHES PRODUKTHANDBUCH",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      "VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5",
+      ""
+    ],
+    [
+      null,
+      "",
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "SCHALTSCHRANK",
+      "Eingangsfilter unter dem\nFrequenzumrichter. Er hat 2 Ausgänge,\neiner zur Versorgung des Umrichters und\nein weiterer für die Steuerung.",
+      "",
+      null
+    ],
+    [
+      null,
+      "Ausgangsfilter, O-Ring am U, V, W\nAusgang des Umrichters.",
+      "",
+      null
+    ],
+    [
+      null,
+      "2 geteilte Ferrite, die größere am U, V,\nW Ausgang des Umrichters vor dem\nAusgangsfilter und die andere an den\nKabeln des Bremswiderstands.",
+      "",
+      null
+    ],
+    [
+      null,
+      "Bremswiderstand, der sich auf einer\nSeite des Schranks bei einem\nherkömmlichen Aufzug befindet.\nBei MRL-Aufzügen sind die Anweisungen\nder obigen Punkte zu befolgen.",
+      "",
+      ""
+    ],
+    [
+      null,
+      "Beleuchtungsfilter. Er befindet sich\noberen Fach des MRL Schranks oder auf\nder unteren Schiene des herkömmlichen\n3VF Schranks.",
+      "",
+      ""
+    ],
+    [
+      "VERSORGUNG ZUR MASCHINE",
+      "Abgeschirmte Versorgung zur\nAntriebsmaschine mit Aluminiumbindern\nund Blechgewindeschrauben, um das\nGeflecht im Schrank und an der\nMaschine zu erden.",
+      "",
+      null
+    ],
+    [
+      null,
+      "Schlauchschellensatz, Scheiben und\nBlechgewindeschrauben für die Erdung\nder Geflechte der Kommunikationskabel\n(falls vorhanden) und Drehgeber.",
+      "",
+      null
+    ],
+    [
+      null,
+      "Ringklemmschuh mit\nBlechgewindeschraube für die Erdung\nder R, S, T Versorgung am Blech des\nSteuerschranks.",
+      "",
+      null
+    ]
+  ],
+  [
+    [
+      "V3.08 – 05/2012",
+      "77",
+      "MTELIEPVS308_DE"
+    ]
+  ]
+]

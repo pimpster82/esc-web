@@ -1,0 +1,33 @@
+=== PAGE 139 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.6.4. Menü Betriebsmodus (nodo)
+Dieses Menü bietet 2 Optionen:
+1. ctr 3. Kontrolle der Steuerung im Inspektionsmodus, indem die Druckschalter der Platte des Maschinenraums
+(SMQ) verwendet werden => inaktive Option.
+2. tE5t. Dieses Menü schaltet die Testoption ein. (Siehe Kapitel Testmenü).
+5.6.5. Unterdrückungsmenü (inh)
+In diesem Menü können die im Folgenden angegebenen Steuerungsfunktionen ausgeschaltet werden.
+5.6.5.1. Menü zur Unterdrückung der Außenaufrufe (LLE)
+Damit werden die Außenaufrufe des Aufzugs ausgeschaltet.
+5.6.5.2 Menü zur Unterdrückung der Fahrkorbaufrufe (LLC)
+Damit werden die Fahrkorbaufrufe des Aufzugs ausgeschaltet.
+5.6.5.3 Menü zur Unterdrückung der Lichtzelle (Fot)
+Schaltet alle konfigurierten Lichtzellen aus.
+5.6.5.4 Menü zur Unterdrückung des Gewichts (PE5o)
+Schaltet die Gewichtsablesung der Lastzellen, wie auch aller Lastmessvorrichtungen, die an die Steuerung
+angeschlossen werden können, aus.
+5.6.5.5 Menü zur Unterdrückung der Bedienung (oPEr)
+Schaltet die Öffnung der Bedienungen aus. Die Türen bleiben geschlossen.
+5.6.6. Menü zur Eingabe eines Codes als Zugriffsbeschränkung (ACCE)
+Mit diesem Menü kann ein Code zur Zugriffsbegrenzung eingegeben, eingeschaltet und ausgeschaltet werden.
+5.6.6.1. Einschaltung des Codes zur Zugriffsbeschränkung (Activ)
+Damit kann der Zugriffscode auf das Konfigurationsmenü der Steuerung ein- und ausgeschaltet werden. Um den
+Zugriff einschränken, muss dieser Code unbedingt sofort nach Anwahl seiner Einschaltung eingegeben werden.
+Sobald man sich im Konfigurationsmenü befindet, muss man den  (RECHTS) Knopf drücken, bis das Zugriffsmenü
+(ACCE) erscheint. INTRO Knopf drücken, um in das Menü zu kommen. Um auf das Code-Menü zu kommen, muss man
+mit den (RECHTS) oder (LINKS) Knöpfen verfahren, bis Activ erscheint.
+Wird der Zugriffscode eingeschaltet, fordert das Konfigurationsmenü der Steuerung bei jedem Zugriffsversuch die
+Eingabe dieses Codes an.
+V3.08 – 05/2012 139 MTELIEPVS308_DE

@@ -1,0 +1,72 @@
+=== PAGE 48 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.2.5. Tabelle mit Anschlussprioritäten für die einzelnen Steuerbauteile
+BAUTEIL ANSCHLUSS
+WANN
+AN KLEMME
+PAL A1 Immer
+DTG A2 Immer
+DTS A3 Immer (falls vorhanden)
+TÜRSPERRE / AUSSER BETRIEB A3 Wenn kein DTS vorhanden
+TÜRSPERRE / AUSSER BETRIEB A4 Wenn DTS vorhanden
+Wenn nur der Modus Feuerwehr der australischen Norm oder wenn 3 der folgenden
+ATTENDANT A5, A6, A7 Bauteile vorhanden sind: DTS, Türsperre, Feuerwehrmodus EN 81-72 oder
+bevorzugter Service ohne Feuerwehr australische Vorschrift
+FEUERWEHR EN 81-72 A3 Weder DTS noch Türsperre vorhanden
+FEUERWEHR EN 81-72 A4 Entweder DTS oder Türsperre vorhanden (nur eins von beiden)
+DTS und Türsperre vorhanden (beides zusammen), aber kein Attendant-Modus und
+FEUERWEHR EN 81-72 A5
+keine Türsteuerung
+FEUERWEHR EN 81-72 A7 DTS und Türsperre (beides zusammen) und Türsteuerung vorhanden
+FEUERWEHR EN 81-72 A8 DTS und Türsperre (beides zusammen) und Attendant-Modus vorhanden
+FEUERWEHR AUSTRALIEN A3, A4 Weder DTS noch Türsperre vorhanden
+FEUERWEHR AUSTRALIEN A5, A6 Entweder DTS oder Türsperre vorhanden (eins von beiden oder beide)
+Weder DTS, noch Türsperre noch Feuerwehr-Modus EN 81-72 vorhanden. Die Modi
+BEVORZUGTER SERVICE A3
+Attendant und Feuerwehr australische Vorschrift bestehen nicht gleichzeitig.
+Entweder DTS, Türsperre oder Feuerwehr-Modus EN 81-72 (nur einer der Drei)
+BEVORZUGTER SERVICE A4 vorhanden. Die Modi Attendant und Feuerwehr australische Vorschrift bestehen
+nicht zusammen.
+Zwei der folgenden drei Bauteile sind vorhanden: DTS, Türsperre oder
+BEVORZUGTER SERVICE A5 Feuerwehrmodus EN 81-72. Die Modi Attendant und Feuerwehr australische
+Vorschrift sind nicht vorhanden.
+DTS, Türsperre und Feuerwehrmodus EN 81-72 (drei gleichzeitig) sind vorhanden.
+BEVORZUGTER SERVICE A6
+Die Modi Attendant und Feuerwehr australische Vorschrift sind nicht vorhanden.
+Der Modus Feuerwehr australische Vorschrift und zwei der drei folgenden Elemente
+BEVORZUGTER SERVICE A7
+sind vorhanden: DTS, Türsperre oder Feuerwehr-Modus EN 81-72.
+BEVORZUGTER SERVICE A8 Der Attendant-Modus und zwei der drei folgenden Bauteile sind vorhanden: DTS,
+Türsperre oder Feuerwehr-Modus EN 81-72.
+BEVORZUGTER SERVICE A8 Attendant- und Feuerwehrmodus australische Vorschrift sind vorhanden. Weder
+DTS, noch Türsperrre noch Feuerwehrmodus EN 81-72 sind vorhanden.
+BEVORZUGTER SERVICE A8 DTS, Türsperre, Türsteuerung und Feuerwehr-Modus EN 81-72 vorhanden.
+TÜRSTEUERUNG REVISION A3, A4 Wenn nur PAL und DTG vorhanden sind, kann der Attendant-Modus bestehen oder
+nicht.
+TÜRSTEUERUNG REVISION A5, A6 Eins der folgenden Bauteile ist vorhanden: DTS, Türsperre, Feuerwehrmodus EN 81-
+72 oder bevorzugter Service. Weder der Attendant- noch der Feuerwehr-Modus
+australische Vorschrift sind vorhanden.
+TÜRSTEUERUNG REVISION A7, A8 Der Modus Feuerwehr australische Vorschrift und zwei der drei folgenden Elemente
+sind vorhanden: DTS, Türsperre oder bevorzugter Service
+Wenn mehr als 4 Klemmen für die Steuerelemente erforderlich sind, muss eine zweite Adapterplatte vorhanden sein.
+Die Klemmen der beiden Adapterplatten sind: A1, A2, A3 und A4. Aber auf unserer Tabelle wurden die Klemmen der
+zweiten Adapterplatte wie folgt bezeichnet: A5, A6, A7 und A8; sodass:
+A5 in Wirklichkeit A1 der zweiten Adapterplatte ist.
+A6 in Wirklichkeit A2 der zweiten Adapterplatte ist.
+A7 in Wirklichkeit A3 der zweiten Adapterplatte ist.
+A8 in Wirklichkeit A4 der zweiten Adapterplatte ist.
+Die Prioritätenabstufung lautet wie folgt:
+- DTS
+- Türsperre
+- Attendant-Modus
+- Feuerwehr-Modus EN 81-72
+- Feuerwehr-Modus Australien
+- Bevorzugter Service-Modus
+- Türsteuerung im Inspektionsmodus des Hauptzugangs
+Ausnahme: Der Modus Feuerwehr australische Vorschrift hat Vorrang gegenüber dem Attendant- und Feuerwehr-
+Modus EN 81-72.
+Es ist zu betonen, dass die Modi Feuerwehr australische Vorschrift und Feuerwehr EN 81-72 nicht zusammen bestehen
+können.
+V3.08 – 05/2012 48 MTELIEPVS308_DE

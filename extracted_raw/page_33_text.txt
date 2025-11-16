@@ -1,0 +1,33 @@
+=== PAGE 33 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.1.8. 8. Annäherung mit geöffneten Türen
+PCB
+E KFV 103 00 207+24GNDFSFBFZS 538 Platte im
+538 Schaltschrank Farbcodierungen:
+X538/1 X538/2
+der Steuerung
+a : gelb
+az: blau
+b: weiß
+g: grau
+m: braun
+SN24H 6'S 9S N224H0VdcFSFBFZS g n: schwarz
+g na: orange
+g g r v : : g ro rü t n
+r
+vi: violett
+iv iv grn
+6s - XSSS
+9s - XSSS
+Untere Schiene
+FZSFS FBVEH
+XZSB
+SNNL224G0Vdc0Vdc
+An VS-SMQ- Hängekabel Steuerung
+XNSN
+Platte
+anschließen
+FZSFSFBVEH
+V3.08 – 05/2012 33 MTELIEPVS308_DE

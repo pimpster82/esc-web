@@ -1,0 +1,261 @@
+=== PAGE 122 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.4.9.1. Testmenü einschalten
+Der TEST-Modus ist normalerweise nicht sichtbar. Um ihn anzuzeigen, muss er eingeschaltet werden.
+Auf folgendem Diagramm ist die Anordnung des TEST-Menüs innerhalb des Hauptmenüs dargestellt.
+HAUPT MENÜL
+AUFZUGSTATUS
+VERSIO NEN BEDIENU NGE TES T INFOR MATION FEH LER DA TUM
+(vEr ) N (tE5 t
+(xx xxx)
+(In Fo) (Er ror) (FE CHA)
+(oPEr)
+SERI
+(
+E
+N
+N
+0
+N
+0 2
+U
+5
+M
+)
+M ER FAHR
+(L
+K
+L
+O
+C
+R
+0
+B
+0
+R
+)
+UFE
+DR
+A
+U
+U
+C (
+T
+P K
+O
+v S
+M
+L C
+.
+H A
+T
+A
+E
+) L
+S
+T
+T
+E R
+SIC H
+( K 5
+E
+R E
+R
+E r
+H
+9 IS
+E
+H
+I
+)
+T S- AUFZ
+(
+U
+EA
+G
+5
+F
+C
+E
+)
+H LER
+(
+D
+F
+A
+12
+TU
+11
+M
+)
+SO
+VE
+FT
+R
+W
+SI
+A
+O
+R
+N
+E -
+ABW
+A
+Ä
+U
+R
+F
+T
+R
+S
+U
+F
+F
+A
+E
+H RT
+M
+DR
+AN
+U
+U
+CK
+EL
+S
+L
+C
+E
+H
+R
+A
+T
+LT
+E
+E
+S
+R
+T
+TEM
+VS
+P E
+-S
+R
+M
+A
+Q
+TU R UNRIC ( H E T 3 E v R F F ) E HLER
+U
+(H
+H
+1
+R
+2
+Z
+0
+E
+0
+I
+)
+T
+(v0325) (LLbAJ) (PvL I) (t25)
+SO
+D
+F
+A
+TW
+TU
+A
+M
+R E-
+AUFW
+AU
+Ä
+F
+R
+R
+T
+U
+S
+F
+F
+E
+A HRT DISP LAY POS
+A
+IT
+B
+I
+S
+O
+O
+N
+L
+I
+U
+E
+T
+R
+-
+UNG EREIG NISSE
+(LL5vb) (dI5P) (Ab5) (E5vcE)
+(F1211)
+BEDIEN UNGEN
+G
+A
+E
+B
+W
+LE
+I C
+SU
+H
+N
+TS
+G
+- EREIG
+(
+N
+E
+I
+H
+S
+I
+H
+5
+I
+t
+S
+)
+T ORIE
+(oPEr)
+(P0075)
+KABINENTABLEAU GESPEICHERTE
+(bcA b) FAHRK ORB- FEHLE RRESET
+AUFRUFE (Er5t)
+(LLC00)
+GESPEICHERTE
+ABWÄRT SFAHRT-
+AUFRUFE (LLb00)
+GESPEICHERTE
+ABWÄRT SFAHRT-
+AUFRUF E (LL500)
+AKTIVE
+AUSG ÄNGE
+(oUt)
+AKT IVE
+EING ÄNGE
+(InPUt)
+ANZAHL
+FAH RTEN
+(nVIAJ)
+Um den TESTBETRIEBSMODUS einzuschalten, sind folgende Schritte einzuhalten:
+1.- Auf das SETUP Menü gehen. Zu diesem Zweck muss man den SETUP-Knopf der Konsole 2 Sekunden lang drücken,
+bis auf dem Display SETUP erscheint.
+2.- Beim Loslassen der SETUP-Taste erscheint auf dem Display Prg9 und zeigt an, dass die Konsole schon für die
+Konfigurierung bereit ist. Zwei Mal den Druckschalter(RECHTS) drücken, damit auf dem Display nodo (Node)
+erscheint.
+3.- Sobald man sich im Nodo-Menü befindet, ist der INTRO Knopf zu drücken, um auf das Menü zu gelangen.
+Um den Test einzuschalten, muss man den INTRO-Knopf drücken. Auf dem Display erscheinen die Buchstaben SI.
+Anschließend muss man wieder INTRO drücken, um anzuzeigen, dass es eingeschaltet werden soll.
+V3.08 – 05/2012 122 MTELIEPVS308_DE

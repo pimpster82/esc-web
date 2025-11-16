@@ -1,0 +1,18 @@
+=== PAGE 79 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+Das Ende der Maschine wird je nach Maschinenart auf unterschiedliche Arten befestigt:
+ MACPUARSA PM Maschinen:
+Klemmenabdeckung
+Flansch
+Geflecht
+Hülle
+Geflecht
+Klemmenabdeckung
+Geflecht
+Hülle
+ MACPUARSA PA Maschinen:
+ Nicht-MACPUARSA Maschinen: Unter den obigen Systemen muss das ausgewählt werden, das sich am besten an
+die jeweilige Maschine anpasst. Alle andere Anschlusssysteme des Geflechts müssen angefragt werden.
+V3.08 – 05/2012 79 MTELIEPVS308_DE

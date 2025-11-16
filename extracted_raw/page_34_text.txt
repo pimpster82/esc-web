@@ -1,0 +1,52 @@
+=== PAGE 34 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+la Carril SM 2.1.8. 9. Fahrkorbtürriegel
+ic
+e
+p
+s
+e
+o s
+Schaltschrank Steuerung
+Farbcodierungen:
+a
+PCarril
+7H
+XS
+8H
+S
+6
+H
+H
+2
+9H a : gelb
+2-4-8 VS-SMQ az: blau
+b: weiß
+g: grau
+XSSH2 m: braun
+3. Sin cuarto de máquinas hidráulico Riegelkontakt Fahrkorb n: schwarz
+7H8H6H9H
+na: orange
+r: rot
+v: grün
+v m v m vi: violett
+m
+7H8H6H8'H 8'C9'C 3'C8'C9'C
+XSSH2' XCC_S XCC_C
+7H8H6H8'H 8'C9'C 3'C8'C9'C
+Hängekabel Steuerung
+4. Sin cuarto de máquinas eléctrico XCE
+m SCE
+v SPE
+v
+m
+t v/a
+XCE
+SCE
+SPE
+v
+m
+v/a
+V3.08 – 05/2012 34 MTELIEPVS308_DE

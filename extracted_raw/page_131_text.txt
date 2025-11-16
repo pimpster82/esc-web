@@ -1,0 +1,26 @@
+=== PAGE 131 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.6.3. Sonderbedienungen (oPEr)
+In diesem Menü werden die Vorrichtungen konfiguriert, die an die Steuerung angeschlossen sind.
+oPEr
+PCEro cALib PUL5 PUL5’ Uhrzeit DATUM T oiL voL Ab5
+5.6.3.1. Lastmesssystem
+Das Lastmesssystem muss die Steuerung über die Anzahl der Personen informieren, die sich im Fahrkorbinneren
+befinden.
+Der vorliegende Punkt erklärt die Schritte, die für eine ordnungsgemäße Konfigurierung des Lastmesssystems
+eingehalten werden müssen.
+Die Vía Serie Steuerung lässt folgende Lastzellentypen zu:
+Lastzelle an fester Stelle: Hierbei handelt es sich um eine Vorrichtung, die an einer festen Stelle der Zugseile, und
+zwar konkret am Fahrkorbstrang, befestigt wird.
+Anschluss Maschinenraum
+HINWEIS: Für die
+ordnungsgemäße
+Funktionsweise des
+Produkts muss
+sichergestellt werden,
+dass Jumper J1 entfernt
+wurde.
+Anschluss Lastzelle
+V3.08 – 05/2012 131 MTELIEPVS308_DE

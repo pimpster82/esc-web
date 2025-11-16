@@ -1,0 +1,261 @@
+=== PAGE 18 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2. ANS CHLÜSSE UND ELEKTRISCHE SCHALTPLÄNE
+2.1. Maschinenraum
+2.1.1. Elektrischer Aufzug mit einer Geschwindigkeit
+zwe
+A
+i
+n
+te
+s
+n
+c h
+S
+lü
+te
+s
+c
+s
+k
+e
+e
+d
+rr
+e
+e
+r
+i he
+24Pi24P
+rojo
+0Vdc H-3X24Vdc
+V S o i r c e h X F n e A a X d r h N h s S r c e T k S h i o F t C a s r l k b te r e r i s p k k h o o o S X S e F s m m F c i a S i X S i t c h
+X
+X t a m m h s S c i C h a h o
+P
+P k r h H e C u u c r n k r
+M
+O a k r h e n n B o i 1 - c e o t S i
+B
+i i r U s h k k r r b
+1
+u b t a a S - - n t - t i i g o o n n XPMB1 X X X S P C S O C H S B 1 US 1 5 4 2 I 0 C C 2 R 2 0 P N N V V 4 4 H H H H S L L H S C G d d C C c c CLH 0 C 24 V H P d H cXPMB2 7 8 4 2 3 3 2 0 A A A A 0 2 0 0 B B V V 4 ' 4 C C C C C - + F - + - + F C E G d d I S c c X X X A E S N N SC T C F 0VdcX24Vdc 24P V S - S M Q 24Pi
+X3VF
+P C B X X X M N M S C E N S BUS C C 0 2 N S 0 0 M M 2 M V 4 4 V V N H L L BE S G G d d d M 2 M S c c c - X X X S S T2 M M 0 1 2 XVCBUSC C 0 E E 2 0 0 T N K K E E E E E 0 2 E 2 0 V V 4 V V V 4 0 M S S S A S S A P P S H L L G S G d d d d S C 4 5 6 2 1 2 3 1 2 1 C c c c c E E 2 0 0 T N K K V 4 V M A A P P L G d d 2 1 2 1 c c 2 0V 0S S v/a gn r 2 2 2 2 2 2 2 1 1 2 2 1 g K K K B S M XM ES H-4 M M 2 M 4 B E S G S r a a b g m n n r v v F : i : z : : : a : : : a : r : g w g s o v r g b b c r o r b e t i e r ü a h l o r a a i c l a u n w ß l b e u u o n a t n d g t r i e z e rungen:
+k
+S
+re
+ic X
+i
+h
+s
+S e
+S
+S r
+c
+h H
+h
+e 2
+a
+it
+c
+s
+h
+-
+t
+vi 9 6 5 S S S XSSS 9 6 5 S S S 9 6 8 7 H H H HXSSH2 XBATS ( (- +)
+)
+VSS 0SS0SS XTSS CKLR XKV BS XSV S SV V1 2
+SICHERUNGEN:
+0SS0SSVSS SBRLCK
+RS, AF, TS = 3.15A (06.103 / FH / 3.15)
+vivivi
+F (230Vp TRM) = 3.15A (06.103 / FH / 3.15)
+v/a gg F (110Vs TRM) = 4A (06.103 / FH / 4)
+F (20Vs TRM) = 5A (06.103 / FH / 5)
+sc
+T
+h
+e
+Z
+a
+le
+u
+lt
+f
+m
+k
+o
+r
+n
+e
+-
+is X
+X
+T
+T
+F
+F
+N
+N CT1TEE00
+bbvi F
+F
+R
+2
+4
+E C
+(
+(
+V
+V
+T.
+S
+S
+0
+-
+-
+1
+S
+S
+M
+M
+w
+Q
+Q
+en
+2
+2
+n
+P
+P
+V
+L
+L
+A
+A
+≥
+T
+T
+T
+T
+1
+E
+E
+1
+)
+)
+0
+=
+=
+V d
+3
+3
+c
+.
+.
+1
+1
+5
+5
+(
+A
+A
+3. 1
+(
+(
+0
+0
+5
+6
+6
+A
+.
+.
+1
+1
+)
+0
+0
+3
+3
+/
+/
+F
+F
+H
+H
+/
+/
+3
+3
+.
+.
+1
+1
+5
+5
+)
+)
+RECT.02 wenn V < 110 Vdc (6 A)0
+KVF
+11 14
+XVOP
+Bedienungs-
+anschluss XVOP 2 0V 20 pm v ZA mvm
+M a a n X s s M c c h h A i l n u Q e s n s - XM AQ T 0 F F V V VM 1 2 1 2 dc b A A 2 2 K K B S A A 1 1 CLASS: CLASE / T 40/F 4 5 5 0 0 /6 V 0 A Hz T T I Y P P O E : / TRM 0 Vp230 Vp 3 A 400 Vp ASCENSORES X 1 s K D 8 e V i 0 n e º k u X r z n e 2 u d c 4 r h X d t V T a a d S r n g c S g e , e s S X s t t c S e e h l M c l l t k o e 1 e s n , s r e X A m n n T ü s 2 u i s 0 c n s h d , e t n
+ZA 0 VS20 20 Vs 5 A v/a 0 Vs110 Vs 4 A gedreht werden.
+Beleuchtungsanschluss:
+F F C H , , N N C H , , F S a c h h r a k c o h rb t NC F F N C H H az maz m3 x m 1.5 mm2 A2 ZA KMA1 b vi
+Zur Be X X l A e A u L L c H B h S : t u : F n a S g h c s r h s k a c o c h r h a b t l tung: XALB XALHS FCNC NH F N N R H O C BF A A B sc e h le a u lt c e h SALH r t ungs-
+vmb/az b/az
+ZC
+T
+14
+2 K
+K
+S
+M
+L
+1
+2
+3
+-
++ RECT_01 GRF
+~1
+~2
+T2 KB L2
+T1 L1
+m
+m
+10A 1P+N QIM
+T2 L2 T1 L1 m
+Zur Maschine V W U 1 1 1 m m m / / / n n n T3 KM L3 KB T T 3 3 L L 3 3 mm
+KS T1 L1
+AN H S A C U H P L T U - S S F F S T FR m m m long. < 3m m m m / / / n n n L L L 1 2 3 K V F
+R m/n
+S T m m / / n n
+ZST12H FILTRO S
+Ü
+c
+b
+h
+e
+u
+rs
+tz
+p
+f
+a
+il
+n
+te
+n
+r
+n u
+vo
+n
+r
+g en
+V3.08 – 05/2012 18 MTELIEPVS308_DE

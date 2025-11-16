@@ -1,0 +1,55 @@
+=== PAGE 83 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+Einbau und Befestigung des Hängekabels der Steuerung müssen wie auf Ausschnitt B angegeben erfolgen, indem die
+Baugruppe aus Blech + Gummis, die innerhalb der IP5 geschickt wird, verwendet wird. Nachdem die Hängekabel
+befestigt sind, erfolgen die Verbindungen zwischen den Muttersteckern, die aus den Hängekabeln der Steuerung
+kommen und den Vatersteckern, die auf der unteren Schiene des Fahrkorbschranks angeordnet sind.
+Anschließend erfolgen die Anschlüsse des Hängekabels der Steuerung an die Bauteilen, die im Inspektionskasten
+vorhanden sind. Zu diesem Zweck muss das Hängekabel der Steuerung auf der Seitenwand des Fahrkorbschranks
+durch die Hängekabelbefestigungselemente (Abb. C2) geführt werden. Diese Elemente sind selbstklebend und müssen
+auf gleichem Abstand untereinander auf der Seitenwand des Fahrkorbschranks angeordnet werden. Es müssen alle die
+angebracht werden, die erforderlich sind, damit das Hängekabel am Schrank befestigt ist.
+Schläuche im Omega-Profil ziehen, indem die übrige Länge darüber verbleibt. Nachdem der Einbau auf der
+Fahrkorbdecke beendet ist und um zu verhindern, dass unerwünschtes Material o Schmutz in das Omega-Profil
+eindringt, muss die Schutzvorrichtung wie auf Ausschnitt C angegeben, angebracht werden. Das Gleiche muss auf der
+Unterseite erfolgen, aber in diesem Fall muss die Schutzvorrichtung über das Fahrkorbinnere angebracht werden, um
+ein Herabfallen eines Gegenstands in den Schacht zu vermeiden.
+Im Anschluss ist der Verlauf der Hängekabel der Steuerung dargestellt.
+Magnetschalter
+C Schlauch
+ABDECKUNG CRIMPTITE Obere
+Schiene
+Hängekabel C2
+Steuerung an
+Inspektionskasten.
+Auf der Seite des
+Fahrkorbschranks
+C1
+AUSSCHNITT C
+C2
+MRLA_SV
+BEDIENUNGS-BEDIENUNGS
+PLATTE -PLATTE
+HÄNGEKABEL
+STEUERUNG AUSSCHNITT B C1
+GUMMI DIN125 M6 (2)
+FAHRKORBPLATTE
+DIN127 M6 (2)
+DIN934 M6 (2)
+C2
+BOLZEN
+6x30 (2)
+BLECH
+GUMMI Anordnung der
+TFN-PLATTE, falls
+C1 vorhanden
+NFTX
+C2 XTFN Untere
+Schiene
+HÄNGEKABEL
+STEUERUNG
+Hängekabel Hängekabel
+Steuerung 1 Steuerung 2
+V3.08 – 05/2012 83 MTELIEPVS308_DE

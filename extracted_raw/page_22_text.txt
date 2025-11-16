@@ -1,0 +1,224 @@
+=== PAGE 22 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.1.3. 3. 2SY Frequenzumrichter
+Ansch V S S l o ü i t c r e s e F h X c s a n e k X e A h d r e S h N d r s r k S e c r e T e o i h C r t F i r a k h z b l r w e t e e e i r s i ten ko p k m F o o X h a F S m s m X X e S S C h a S i c i X X t S i S i C u m t h r c c h c i s k o P S S P n h h B r h a k u o k n M i H H e e O a c U k r n r o i r r h c e e 1 2 b a S B i S - - r h k i t r b - t s 1 u t i a - o - n t n i g o n XPMB1 X X X X S S P C S S O C S H B S 1 US 1 5 4 2 9 6 5 I 0 C C 2 R 2 0 P N N V V 4 4 H H H H S S S S L L H S C G d d C C c c 0 C C 24 V L H P d H H cXPMB2 9 6 8 7 7 8 4 2 3 3 2 0 A A A A 0 2 0 0 B B V V 4 ' 4 H H H H C C C C C - + F - + - + F C E G d d I S c c X X X X A E S S N N S S C H T C F 2 XM ES 24Pi 0Vdc V S - S M Q 24P X24Vdc 24P rojo rojo 0Vdc 24Pi P C B G S B S 4 E M M 2 M H-3X24Vdc X3VF X X X M N M S C E N S BUS C C 0 2 N S 0 0 M M 2 M V 4 4 V V N H L L BE S G G d d d M 2 M S c c c - OLEO X X X S S T2 M M 0 1 2 XBATS XVCBUSC C 0 E E 2 0 0 T N K K E E E E E 0 2 E 2 0 V V 4 V V V 4 0 M S S S A S S A P P S H L L G S G d d d d S C 4 5 6 2 1 2 3 1 2 1 C c c c c ( (- + ) ) E E 2 0 0 T N K K V 4 V M A A P P L G d d 2 1 2 1 c c 2 0V 0S S v/a P5 gn r VS-ADAP3VF1 1 1 1 1 1 2 1 1 1 1 8 9 6 7 1 4 5 3 g n H N L g 1 m luminosidad 2 x 0.5 mm2 LED alta A A A A A 2 2 2 2 2 2 2 2 2 2 4 4 4 4 4 V V V V V d d d d d c c c c c K K K K K M R I S 2 N V E N O S E S K L G G G G G 2 2 2 2 2 R R R R R A A A A A 1 1 1 1 1
+h S e c it h s a k c r h e t is VSS 0SS 0SS XTSS CKLR XKV BS XSV S SV V1 2 gg A2KRF1 A1 24Vdc MK-2P KRF2 KRF1,
+8
+9 1 1 1 0 1 2
+D
+X
+i
+K
+e
+V
+X
+u
+2
+n
+4
+d
+V
+X
+d
+T
+c
+S
+,
+S
+X S
+S
+M
+te
+1
+ck
+,
+e
+X
+r
+T20,
+0SS0SSVSS
+vi
+SB
+vi
+RLCK
+3 4
+5
+6 7 X -0
+m a
+d
+w
+n
+a
+e
+ü
+r
+g
+r
+s
+g
+d
+e s
+e
+s
+e
+e
+s
+c
+n
+n
+t
+h
+.
+e
+l s
+l
+o
+l
+e
+t
+s
+e
+n s
+n
+k e r n
+A
+e
+n
+c u h
+s
+n
+i
+t d
+c h
+1
+t
+8
+g
+0
+e
+º
+d
+z
+re
+u
+h
+r
+t
+v/a bvi b 110VacA1 G2R
+KLEA2
+A2
+11
+24Vdc KVOK
+KI
+G2R-2
+NS
+A1
+12
+1 2
+A1
+KCK
+ZA
+A2
+vi
+2
+1
+1
+1
+K
+K
+M
+IN
+O
+S
+K 2
+1
+4
+4 11
+KSE
+1
+1
+2
+4
+Zu sc m h
+B
+a
+v
+T
+e
+l
+e
+t e
+d
+k
+r X
+l
+i s
+e r
+e V o
+e f
+n
+o
+r
+i
+O
+s
+u g
+n
+P n u
+-
+g n s g -
+X X T T F F N N
+XVOP
+PCB TFN
+2 0V 20 p
+CT1TEE00
+KRF1 3 1
+- ~1 RECT_01 GRF
+6 8
+~2 +
+ZA 0 VS20 CLASS: CLASE / T 40/F 20 Vs 4 50 50 /6 0 V A Hz 5 A T T I Y P P O E / : TRM
+v/a
+0 Vp 0 Vs 230 Vp 110 Vs 3 A 4 A ASCENSORES 400 Vp 1 1 4 1 11 KMOK K2VEL 1 1 2 4 11 KC
+1
+1
+1
+K 1
+K
+2 1 1
+V
+1 1 K 4
+O
+L K E K R
+K
+IN N
+1
+1 S
+4
+S 2 2 1 2 4 4 1 KRNS 24 1 2 3 4 5 6 7 8 9 1 1 1
+1 2 3 4 5 6 7 8
+9 1 1 1 0 1 2 0 1 2 X
+X
+-
+-
+I
+20
+M a a n X s s M c c h h A i l n u Q e s n s - XMAQ' T D D B B M - + - + 0Vdc 6 5 4 3
+2
+1
+XRESC
+MASCHINENANSCHLUSS
+Weiß-Weiß: Wärmesonde (TM-0Vdc) Zu 24G Zu NL
+Rot-schwarz: Bremse (F1, F2) an XPOS an XPOS
+Braun-grün: Ventilator (V1, V2) Auf
+10A1P+N QIM
+Schiene 1
+FS
+FT
+MASCHINEN- R R
+ANSCHLUSS S T S T
+HAUPT-
+ZST3 FILTRO
+ANSCHLUSS
+V3.08 – 05/2012 22 MTELIEPVS308_DE

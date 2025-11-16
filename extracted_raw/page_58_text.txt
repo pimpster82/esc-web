@@ -1,0 +1,50 @@
+=== PAGE 58 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+ANSCHLÜSSE:
+2.2.9. 7. Lichtzellen
+TELCO / CARLO GAVAZZI:
+XFOT1 0vdc: blau
+0Vdc24CIN1 24C: braun
+OUT: scharz (schwarzer Empfänger nicht
+FahrkorbPLATTE angeschlossen)
+0Vdc24CIN2IN3IN4 (siehe 2.2.1)
+XAUX
+0Vdc24CIN2IN3IN4 0Vdc24CIN1
+Empfängerr Sender
+Empfänger Sender
+XAUX nur bei mehrfach Zugang
+2.2.9.8. Streifenlichtzellen
+XFOT1 Fahrkorbplatte
+0Vdc24CIN1
+(siehe 2.2.1)
+0Vdc24CIN2IN3IN4
+XAUX
+ANSCHLÜSSE:
+CARLO GAVAZZI: TELCO:
+0Vdc24CIN2IN3IN4 0Vdc24CIN1 0Vdc: schwarz 0Vdc: blau
+r
+b n SINC SINC 2 4C: rot 24C: braun
+r OUT: weiß OUT: schwarz
+n
+SYNC: blau SYNC: nicht verfügbar
+R
+n r b r E G
+n N
+R Ä
+SINC SINC E D F P M
+N E
+E
+S
+R
+E
+G
+N
+R Ä
+E D F P XAUX nur bei
+M Mehrfachzugang
+N
+E E
+S
+V3.08 – 05/2012 58 MTELIEPVS308_DE

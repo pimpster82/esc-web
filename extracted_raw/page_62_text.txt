@@ -1,0 +1,109 @@
+=== PAGE 62 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.3.3. Hängekabel 2. Fahrkorbschalttafelschrank
+ENDE SCHALTSCHRANK ENDE SCHALTSCHRANK FAHRKORB
+STEUERUNG (siehe 2.2.x)
+(siehe 2.1.x)
+v/a INS
+S Kommunikation
+Telefon (siehe 2.2.1) N F T X N N F F T T CHC 0 C 24 V L C d C c U B C X u d Fa e n h r d ( r s k V ie o e h r r b s e o P 2 r L g . A 2 u T . n T 1 g E )
+Be ( d o i p e t n io u n n a g l s , v s e ie rs h o e r g 2 u .1 n . g x )
+1 P
+O V X
+p
+0
+'0 V
+2 2 2
+0
+2 P
+24G
+0Vdc N P
+X
+P (s o i s e i h ti e o n 2 i . e 2 r . u 2 n ) g
+Be ( d o i p e t n io u n n a g l s , v s e ie rs h o e r g 2 u .1 n . g x ) P O V X p 0 V 22 0 24G
+NL
+G be le d i i c e h n s u tr n o g m - C P O X 2P 1P 0 0 V V FB
+0Vdc
+VEH NL
+FS
+8 2
+3 X
+M
+(s
+a
+ie
+g
+h
+n
+e
+e t s
+2
+c
+.
+h
+2
+a
+.2
+lt
+)
+e r
+Drehstrombedienung
+F
+3 P O X
+o
+o
+W
+o U V 0Vdc P
+24G
+7 2 3 M (s a ie g h n e e t s 2 c . h 2 a .2 lt ) e r
+FZS X
+Empfangener Alarm IR L A
+X
++ + -R R LA A A 2 2 4 4 G G ' D M X MRL Positionierung
+BO
+NL
+Lautsprecher A T L A
+X
++ - N VE L
+H
+VEH 1 -E S X Not-Aus-System
+G (o e p g t e io n n s a p l r , e s c i h e a h n e l a 2 g .1 e . 8 .5) IT L A X + -T T N N I I C
+24
+3 G C
+C
+3 X
+Ä
+M
+n
+o
+d
+d
+e
+u
+r
+s
+u ng 3C
+F F e a r h n r s k t o e r u b e ( r o u p n t g io B n e a g l r s e ie n h z e e r 2 i . n 1 .8.6) V L R X L 2 1 R L L R R C R R C L L L 1 2 R V L R X F F e a r h n r b ko e r d b ie nung Begrenzer in
+Wechsel 3C C 3 X C G 3 4 C 2 + I I N N T T - + A T IT L A X Gegensprechanlage
+L Lautsprecher
+- A X
+Nachregulierung (Standard B
+HEV
+Öl) oder Annäherung S Z BF OB
+( g o e p ö t f i f o n n e a te l n e le T k ü t r r e is n c h ) mit X S S Z F F A A L R + - AR+ IR L A X Empfangener Alarm
+L
+N
+Uo
+F
+Positionierung S O P Vo 3 P Drehstrombedienung
+(Standard, siehe 2.1.x) P X cdV0G W o O X
+S R
+42
+V V 0 0 P P 1 2 C P O G be le d i i c e h n s u tr n o g m -
+X
+K V F (o a e o p h r m t s r i o k m o r o n g u r a b u n l P , n ik L g s a A i e t d T i h o e T e n r E 2 u . n 1 d . x) S U B C C X C C C S c H L d 4 N V C C 2 0 I 2 2 0 2 V 2 0 0 p ' 2 0V 20 p 1 P O V X P O V X B B e e d d i i e e n n u u n n g g s s v v e e r r s s o o r r g g u u n n g g
+T T F F N N N F T X Telefon
+v/a
+V3.08 – 05/2012 62 MTELIEPVS308_DE

@@ -1,0 +1,57 @@
+=== PAGE 9 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+1. VOR MONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE
+1.1. Allgemeine Eigenschaften
+Die Haupteigenschaft dieser Anlage besteht aufgrund ihrer verteilte Elektronik in der bedeutenden Vereinfachung der
+Verkabelung, unbeschadet deren Varianten und Leistungen. Dazu kommt der Vorteil unseres schon traditionellen
+Steckverbindungssystems, durch das der Einbau der Anlage schneller und einfacher wird.
+1.2. Leistungen
+1.2.1. VEA-Leistungen
+ Versorgungsspannung: 400 V AC oder 230 V AC, Frequenz 50 oder 60 Hz, je nach lokalem Netz
+ Steuerspannung: 24 V DC.
+ Spannung der Sicherheitskreis: 110 V AC
+ Anrufaufzeichnung, Serienkommunikation, Überlastungs- und Kurzschlussschutz: 24 V DC.
+ Ausgänge mit Stellungsanzeiger (Display) über Serienkommunikation: 24 V DC.
+ Alle zusätzlichen Anzeigen außerhalb über Serienkommunikation: 24 V DC.
+ Sonderschlüssel außerhalb mit Sonderfunktionen (Feuerwehr, außer Betrieb...).
+ Alle zusätzlichen Anzeigen im Fahrkorb über Serienkommunikation: 24 V DC.
+ Schlüssel im Fahrkorb mit Sonderfunktionen (außer Betrieb, DTS2,...).
+ Ausgang für Türbedienung, Möglichkeit für bis zu dreifachem Zugang:
+Standard:
+o 220 V AC Einphasig
+o 220 V AC einphasig + Nockensignal (REVECO I, REVECO II)
+o Dauerstrom
+o 110 V AC, 220 V AC oder 380 V AC Drehstrom
+ Ausgang für Bremse: 20, 48, 60, 80, 220 V AC / DC
+ Elektrische Nocke mit Aufnahme einer zusätzlichen Platte
+ LED für Etagennummer
+ Geschwindigkeitsregulierung durch Hinzufügung des 3VFMAC-DSP Frequenzumrichters.
+ Nachregulierung (nur öldynamisch) und Annäherung bei geöffneten Türen (elektrisch 3VF und öldynamisch) bei
+Einbau des Regulierers 538.
+ Es gibt eine vormontierte elektrische Anlage für maschinenraumlose Aufzüge (MRL). Siehe MRL
+Installationshandbuch.
+ Auf Bestellung können Anlagen mit Sonderleistungen hergestellt werden.
+ Automatische Bergung bei öldynamischen und elektrischen Aufzügen mit Geschwindigkeitsregulierung
+1.2.2. Leistungen der Vía Serie Steuerung
+Mit dieser Steuerung kann eine Gruppe von bis zu 6 Aufzügen mit jeweils 32 Etagen gesteuert werden. Die
+Konfigurierung im komplexesten Fall unterscheidet sich wenig von der einfachsten, ausgenommen in einigen Fällen
+aufgrund der Verwendung von Verstärkerplatten für das Kommunikationssignal.
+Weitere Leistungen:
+ Sehr breites Sortiment an Funktionen, die mit einer Programmierkonsole parametrisiert werden können.
+ Fehlermenü: Dabei wird unter Fahrkorb-, Schacht-, Maschinenraum- und allgemeinen Aufzugfehlern
+unterschieden. Dazu kommt eine Fehlerhistorie.
+ LEDs auf der Vía Serie Platte mit Auskunft über:
+o Sicherheitskreis.
+o Spannung der einzelnen Schaltungen
+o Etagenhöhe
+o Zustand der magnetischen Vorendschalter
+o Steuerung im Inspektionsmodus
+o Steuerung im Rettungsmodus (MES)
+o Impulse
+o Reset
+o Nachregulierungsrichtung
+2
+DTS = Druckschalter Türschließung
+V3.08 – 05/2012 9 MTELIEPVS308_DE

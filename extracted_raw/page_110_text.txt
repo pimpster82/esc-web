@@ -1,0 +1,70 @@
+=== PAGE 110 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.4.3. 2. Aufzugzustände (2. Zahl)
+Im Anschluss sind die folgenden Zustände der Steuerung in der 2. Zahl angegeben, vorausgesetzt, dass der
+Betriebsmodus nicht "Feststellung angeschlossener Vorrichtungen" lautet.
+Aufzug auf Etage mit Verfahren aufwärts
+b . geöffneter Tür, nächster 5 Frei
+Start abwärts
+Aufzug auf Etage mit
+5 . geöffneter Tür, nächster A Türen werden o V
+au
+o
+ß
+rü
+e
+b
+r
+e
+B
+r
+e
+g
+t
+e
+r
+h
+ie
+e
+b
+n d
+Start aufwärts geöffnet
+b Verfahren abwärts C
+Türen werden geschlossen
+5.4.3.3. Informationsblock des Aufzugs (letzte 3 Zeichen)
+Auf dem Display sind folgende Informationsblöcke dargestellt:
+ Aktive Unterdrückungen (in)
+ Fahrkorbstellung (0xx)
+ Ursachen, welche die Fahrkorbbewegung verhindern (Axx)
+ Art des Aufrufs, auf den der Aufzug reagiert. (5xx: Selektive Aufwärtsfahrt; bxx: Selektive Abwärtsfahrt; Cxx:
+Fahrkorb)
+Aktive Unterdrückungen
+Der Block informiert darüber, ob aktive Unterdrückungen bestehen. Folgende Unterdrückungen können aktiv sein:
+- Etagenaufrufe. Man kann keine Etagenaufrufe ausführen.
+- Fahrkorbaufrufe. Man kann keine Fahrkorbaufrufe ausführen.
+- Lichtzelle. Der Eingang der Lichtzelle wird ausgeschaltet. (Es wird keine unterbrochene Lichtzelle
+festgestellt).
+- Bedienungen. Der Öffnungsbefehl der Bedienungen wird ausgeschaltet. Nach Abschluss einer
+Fahrt erfolgt kein Befehl zur Türöffnung.
+N = Normalbetrieb
+b = Fahren in Abwärtsrichtung
+Nbin
+In = Aktive Unterdrückungen
+Zeigt aktive
+Unterdrückungen an.
+(Die Steuerung
+arbei tet nicht mit allen
+Funktionalitäten.)
+Fahrkorbstellung
+Zeigt die Etage an, auf der sich der Fahrkorb befindet. Das erste Zeichen (0) gibt an, dass die Anzeige auf der MP
+KONSOLE der Etage entspricht, auf der sich der Fahrkorb befindet.
+N = Normalbetrieb Nb002
+b = Fahren in Abwärtsrichtung
+0 = Anzeige der Fahrkorbstellung
+02= Etage, auf der sich der Fahrkorb befindet
+(0) zeigt die Zeigt an, auf welcher
+Fahrkorbstellung an. Etage sich der Fahrkorb
+befindet.
+V3.08 – 05/2012 110 MTELIEPVS308_DE

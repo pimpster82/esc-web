@@ -1,0 +1,29 @@
+=== PAGE 78 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+3.1.3. 2. Anschluss der Maschinenversorgung
+Die Versorgung der Antriebsmaschine muss, wie im obigen Abschnitt angegeben, mit abgeschirmtem Kabel erfolgen.
+Die Erdung des Schranks muss immer derart erfolgen, dass Erdungskabel mit Ringklemmschuh und
+Blechgewindeschraube (die mitgeliefert werden) direkt am Blech befestigt werden, indem die an den Klemmen R, S, T
+vorhandene Bohrung verwendet wird.
+Blechgewindeschraube
+Ringklemmschuh Schaltschrankblech Steuerung
+Erdung Netzanschluss
+Im Schrank muss je nach Kabeldurchmesser nach einem der folgenden Schaltpläne vorgegangen werden.
+V V
+U U
+Schaltschrankblech W t W t
+Steuerung Blechgewinde-
+schrauben Schaltschrankblech
+Blechgewinde- Steuerung
+schrauben
+Geflecht
+Geflecht
+Scheibe Scheibe
+Kabel Motoranschluss
+Kabel Motoranschluss
+Das Geflecht dieses Kabels muss an beiden Enden geerdet werden. Der Kontakt zwischen Geflecht und Blech muss
+bestmöglich sein, indem immer die größte Kontaktfläche zwischen beiden gesucht wird.
+RICHTIG FALSCH
+V3.08 – 05/2012 78 MTELIEPVS308_DE

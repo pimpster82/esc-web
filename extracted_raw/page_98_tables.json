@@ -1,0 +1,167 @@
+[
+  [
+    [
+      "",
+      "",
+      "",
+      "",
+      "TECHNISCHES PRODUKTHANDBUCH",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      "VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5",
+      ""
+    ],
+    [
+      null,
+      "",
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "",
+      "ANZAHL",
+      "",
+      "",
+      null,
+      null,
+      "",
+      null,
+      "",
+      "",
+      null
+    ],
+    [
+      null,
+      "MAGNETE JE",
+      null,
+      "",
+      "FS",
+      "",
+      "",
+      "FB",
+      "FZS",
+      "S",
+      ""
+    ],
+    [
+      null,
+      "ABSCHIRMUNG",
+      null,
+      "",
+      null,
+      null,
+      "",
+      null,
+      "",
+      "",
+      null
+    ],
+    [
+      "",
+      "ELEKTRISCH",
+      "",
+      "1 x 150 mm",
+      null,
+      null,
+      "1 x 150 mm",
+      null,
+      "4 x 100 mm",
+      "100 mm",
+      null
+    ],
+    [
+      null,
+      "v ≤ 1,4m/s",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "",
+      "ELEKTRISCH",
+      "",
+      "2 x 100 mm",
+      null,
+      null,
+      "2 x 100 mm",
+      null,
+      "4 x 150 mm",
+      "150 mm",
+      null
+    ],
+    [
+      null,
+      "v > 1,4m/s",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "",
+      null,
+      null,
+      "1 x 100 mm",
+      null,
+      null,
+      "1 x 100 mm",
+      null,
+      "3 x 100 mm",
+      "50 mm",
+      null
+    ],
+    [
+      "",
+      "ÖLDYNAMISCH",
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "V3.08 – 05/2012",
+      "98",
+      "MTELIEPVS308_DE"
+    ]
+  ]
+]

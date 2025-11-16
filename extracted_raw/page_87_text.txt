@@ -1,0 +1,68 @@
+=== PAGE 87 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+3.2.5. Magnetschalter
+Magnetschalter auf die entsprechende Halterung einbauen, die innerhalb IP5 geliefert wird, und an der
+Gleitschuhhalterung oder am Fahrgestell wie auf der Abbildung dargestellt derart befestigen, dass der Abstand der
+Enden des Magnetschalter auf der Unterseite der Führungsschiene unter 2,5 cm beträgt. Bei zwei Magnetschaltern
+muss einer auf jeden Gleitschuh oder auf jeder Seite des Fahrgestells eingebaut werden.
+Der Stromanschluss des Magnetschalter muss auf der unteren Schiene des Fahrkorbschranks erfolgen (siehe Punkt
+2.2.2 für jeweils jeden Fall).
+2
+1
+3
+7
+1
+6
+5 1
+7 5 4 5
+2
+4
+8
+DIREKTBEFESTIGUNG AM DIREKTBEFESTIGUNG AM
+GESTELL BEI PORTALGESTELL GESTELL BEI
+RUCKSACKGESTELL
+BAUTEIL BESTANDTEILE STÜCKZAHLZAHL BEFESTIGUNG BEI ÖL-AUFZUG
+MIT CH1000/M GESTELL ODER
+1 DIN 9021M06 FLACHSCHEIBE 2
+ELEKTROAUFZUG MIT
+RUCKSACKGESTELL P + Q <
+2 SECHSKANTSCHRAUBE DIN 933 M06X45 2 1450 Kg
+MAGNETSCHALTER 325/325PVS-ELEKTRISCH oder
+3 2
+327/328-ÖL
+4 GROWER-SCHEIBE DIN127M06 2
+5 MUTTER DIN934M06 2
+6 BEFESTIGUNGSUNTERTEIL BEI PORTALFAHRGESTELL 2
+7 BEFESTIGUNGSUNTERTEIL BEI RUCKSACKFAHRGESTELL 2
+8 HALTERUNG TYP DREIZACK 2
+3.2.6. Fahrkorbdeckenleuchte
+Der Einbau muss wie auf der Abbildung dargestellt erfolgen. Der Stromanschluss muss auf der Schiene des
+Revisionskasten am XHTC-Stecker (siehe Punkt 2.2.6.) erfolgen.
+5
+6
+Decken-
+BAUTEIL BESTANDTEILE ST.
+leuchte
+Fahrkorb 3 3 1 FLACHSCHEIBE DIN 9021 M06 2
+2
+SECHSKANTSCHRAUBE
+2 2
+DIN 933 M06X45
+MAGNETSCHALTER 325/325PVS-
+3 2
+4 ELEKTRISCH oder 327/328-ÖL
+1
+4 GROWER-SCHEIBE DIN127M06 2
+1
+HALTERUNG BEFESTIGUNG
+5 1
+DECKENLEUCHTE
+3
+2
+6 DECKENLEUCHTE 1
+Längs-
+träger
+Bedienung
+V3.08 – 05/2012 87 MTELIEPVS308_DE

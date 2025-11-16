@@ -1,0 +1,563 @@
+[
+  [
+    [
+      "",
+      "",
+      "",
+      "",
+      "TECHNISCHES PRODUKTHANDBUCH",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      "VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5",
+      ""
+    ],
+    [
+      null,
+      "",
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "RMP",
+      "Relais Türenkreis"
+    ],
+    [
+      "RMR",
+      "Inspektionsrelais"
+    ],
+    [
+      "ROPA",
+      "Relais automatische Türöffnung"
+    ],
+    [
+      "ROPC",
+      "Relais automatische Türschließung"
+    ],
+    [
+      "RPA",
+      "RZS Steuerrelais"
+    ],
+    [
+      "RS",
+      "R Sicherung"
+    ],
+    [
+      "RSB",
+      "Relais Sicherheitsbereich"
+    ],
+    [
+      "RSG",
+      "Relais schnelle Geschwindigkeit"
+    ],
+    [
+      "RSS",
+      "Relais Spannungssteuerung"
+    ],
+    [
+      "RTP",
+      "Wärmeschutzrelais"
+    ],
+    [
+      "S",
+      null
+    ],
+    [
+      "S",
+      "Phase S"
+    ],
+    [
+      "s",
+      "Sekunden"
+    ],
+    [
+      "SAB",
+      "EN 81-21 Vorrichtung"
+    ],
+    [
+      "SAC",
+      "Fangvorrichtungskontakt"
+    ],
+    [
+      "SAF",
+      "Kontakt Schlaffseil"
+    ],
+    [
+      "SAFI",
+      "Kontakt unterer Vorendschalter"
+    ],
+    [
+      "SAFS",
+      "Kontakt oberer Vorendschalter"
+    ],
+    [
+      "SAI (USV)",
+      "Unterbrechungsfreie Stromversorgung"
+    ],
+    [
+      "SAL",
+      "Alarmdruckschalter"
+    ],
+    [
+      "SALB",
+      "Schalter Fahrkorbbeleuchtung"
+    ],
+    [
+      "SALH",
+      "Schalter Schachtbeleuchtung"
+    ],
+    [
+      "SALV",
+      "Schlüssel Begrenzerbetätigung"
+    ],
+    [
+      "SAM",
+      "Dämpferkontakt"
+    ],
+    [
+      "SARF",
+      "Alarmdruckschalter Schachtgrube"
+    ],
+    [
+      "SARI",
+      "Alarmdruckschalter Fahrkorbdecke"
+    ],
+    [
+      "SB",
+      "MES Druckschalter Abwärtsfahrt"
+    ],
+    [
+      "SCHK",
+      "Schlosskreis"
+    ],
+    [
+      "SCHKA",
+      "Schlosskreis außen"
+    ],
+    [
+      "SCHKF",
+      "Schlosskreis Fahrkorb"
+    ],
+    [
+      "SCTH/C",
+      "Klappenkontakt"
+    ],
+    [
+      "SDF",
+      "Steckdose Fahrkorb"
+    ],
+    [
+      "SDS",
+      "Steckdose Schacht"
+    ],
+    [
+      "SEC",
+      "Kontakt Fahrkorbverriegelung"
+    ],
+    [
+      "SEC1",
+      "Kontakt Fahrkorbverriegelung"
+    ],
+    [
+      "SEC2",
+      "Kontakt Fahrkorbverriegelung"
+    ],
+    [
+      "SEN",
+      "Kontakt Bedienungsempfindlichkeit"
+    ],
+    [
+      "SFI",
+      "Kontakt unterer Endschalter"
+    ],
+    [
+      "SFS",
+      "Kontakt oberer Endschalter"
+    ],
+    [
+      "SIB",
+      "Druckschalter Abwärtsfahrt Inspektion"
+    ],
+    [
+      "SIR",
+      "Inspektionsschalter"
+    ],
+    [
+      "SIS",
+      "Druckschalter Aufwärtsfahrt Inspektion"
+    ],
+    [
+      "SLVH/C",
+      "Kontakt Geschwindigkeitsbegrenzer"
+    ],
+    [
+      "SLVR",
+      "Schlüssel Begrenzerbetätigung"
+    ],
+    [
+      "SMB",
+      "MES Druckschalter Abwärtsfahrt"
+    ],
+    [
+      "SMF",
+      "Klemmleiste Kraftstrom"
+    ],
+    [
+      "SMM",
+      "Klemmleiste Maschinenraum"
+    ],
+    [
+      "SMS",
+      "MES Druckschalter Aufwärtsfahrt"
+    ],
+    [
+      "SPCx",
+      "Druckschalter Fahrkorbaufruf x"
+    ],
+    [
+      "SPEx",
+      "Druckschalter Außenaufruf Universal x"
+    ],
+    [
+      "SPRB",
+      "Druckschalter Abwärtsfahrt Inspektion"
+    ],
+    [
+      "SPRS",
+      "Druckschalter Aufwärtsfahrt Inspektion"
+    ],
+    [
+      "SS",
+      "Steuerungssicherung"
+    ],
+    [
+      "SS",
+      "MES Druckschalter Aufwärtsfahrt"
+    ],
+    [
+      "ST",
+      "Stückzahl"
+    ],
+    [
+      "STLC",
+      "Kontakt Seilspannung\nFahrkorbbegrenzer"
+    ],
+    [
+      "STLH",
+      "Kontakt Kabelspannung\nSchachtbegrenzer"
+    ],
+    [
+      "STLH/C",
+      "Kontakt Spannscheibe Begrenzer"
+    ],
+    [
+      "STOP",
+      "Stopppilzschalter Inspektionskasten"
+    ],
+    [
+      "STR",
+      "Steuerungstrafo"
+    ],
+    [
+      "SW1",
+      "Switch"
+    ],
+    [
+      "SYNC",
+      "Synchron"
+    ],
+    [
+      "T",
+      null
+    ],
+    [
+      "T",
+      "Phase T"
+    ],
+    [
+      "t",
+      "Erde"
+    ],
+    [
+      "TK",
+      "Türenkreis"
+    ],
+    [
+      "TS",
+      "T Sicherung"
+    ],
+    [
+      "TS1",
+      "Kontakt Wärmefühler 1"
+    ],
+    [
+      "TS2",
+      "Kontakt Wärmefühler 2"
+    ],
+    [
+      "U",
+      null
+    ],
+    [
+      "U",
+      "U-Phase"
+    ],
+    [
+      "ÜLL",
+      "Überlastleuchte"
+    ]
+  ],
+  [
+    [
+      "USV-APC",
+      "Unterbrechungsfreie Stromversorgung"
+    ],
+    [
+      "V",
+      null
+    ],
+    [
+      "V",
+      "V Phase"
+    ],
+    [
+      "v",
+      "Volt"
+    ],
+    [
+      "v-a",
+      "Grün - gelb"
+    ],
+    [
+      "Vac",
+      "Volt Wechselspannung"
+    ],
+    [
+      "Vdc",
+      "Volt Gleichspannung"
+    ],
+    [
+      "VEA",
+      "Vormontierte elektrische Anlage"
+    ],
+    [
+      "VS",
+      "Version"
+    ],
+    [
+      "VTR",
+      "Ventiltrafo"
+    ],
+    [
+      "VxA",
+      "Vormontierte x Anlage"
+    ],
+    [
+      "W",
+      null
+    ],
+    [
+      "W",
+      "W Phase"
+    ],
+    [
+      "X",
+      null
+    ],
+    [
+      "X324",
+      "Stecker Magnetschalter 324"
+    ],
+    [
+      "X325",
+      "Stecker Magnetschalter 325"
+    ],
+    [
+      "X327",
+      "Stecker Magnetschalter 327"
+    ],
+    [
+      "X328",
+      "Stecker Magnetschalter 328"
+    ],
+    [
+      "X538-1",
+      "538 Stecker"
+    ],
+    [
+      "X538-2",
+      "538 Stecker"
+    ],
+    [
+      "XAFI",
+      "Stecker unterer Vorendschalter"
+    ],
+    [
+      "XAFS",
+      "Stecker oberer Vorendschalter"
+    ],
+    [
+      "XALB",
+      "Stecker Fahrkorbbeleuchtung"
+    ],
+    [
+      "XALH",
+      "Stecker Schachtbeleuchtung"
+    ],
+    [
+      "XALHS",
+      "Stecker Schachtbeleuchtung"
+    ],
+    [
+      "XAM",
+      "Dämpferstecker"
+    ],
+    [
+      "XARN",
+      "Schütz"
+    ],
+    [
+      "XC12",
+      "3VF Stecker"
+    ],
+    [
+      "XC13",
+      "3VF Stecker"
+    ],
+    [
+      "XC2",
+      "3VF Stecker"
+    ],
+    [
+      "XC4",
+      "3VF Stecker"
+    ],
+    [
+      "XC6",
+      "3VF Stecker"
+    ],
+    [
+      "XCE",
+      "Stecker automatische Tür"
+    ],
+    [
+      "XCEN",
+      "Stecker Zentralsteuerung"
+    ],
+    [
+      "XCTS",
+      "Stecker Schachtgrubenkasten"
+    ],
+    [
+      "XENC",
+      "Drehgeberstecker"
+    ],
+    [
+      "XF1",
+      "Stecker Fotozelle 1"
+    ],
+    [
+      "XF2",
+      "Stecker Fotozelle 2"
+    ],
+    [
+      "XFI",
+      "Stecker unterer Endschalter"
+    ],
+    [
+      "XFS",
+      "Stecker oberer Endschalter"
+    ],
+    [
+      "XLP",
+      "Stecker Deckenlicht"
+    ],
+    [
+      "XLVCPH",
+      "Stecker Geschwindigkeitsbegrenzer\nGegengewicht"
+    ],
+    [
+      "XLVH",
+      "Stecker Geschwindigkeitsbegrenzer"
+    ],
+    [
+      "XMAQ",
+      "Stecker Maschinensteuerung"
+    ],
+    [
+      "XPC",
+      "Lastwaagenstecker"
+    ],
+    [
+      "XPCE",
+      "Stecker halbautomatische Tür"
+    ],
+    [
+      "XRB",
+      "Stecker Glühbirnenreihe"
+    ],
+    [
+      "XTFN",
+      "Telefonstecker"
+    ],
+    [
+      "XTH",
+      "Stecker Schachtklappe"
+    ],
+    [
+      "XTLCPF",
+      "Spannungsstecker Begrenzerkabel\nGegengewicht"
+    ],
+    [
+      "XTLF",
+      "Stecker in der Schachtgrube für\nBegrenzerseilspannung"
+    ],
+    [
+      "XTS",
+      "Stecker Wärmesonde und MES"
+    ],
+    [
+      "Y",
+      null
+    ],
+    [
+      "YD",
+      "Abwärtsfahrtventil"
+    ],
+    [
+      "YE",
+      "Not-Aus-Ventil"
+    ],
+    [
+      "YR",
+      "Ventil schnell"
+    ],
+    [
+      "YS",
+      "Ventil Aufwärtsfahrt"
+    ],
+    [
+      "Z",
+      null
+    ],
+    [
+      "ZI",
+      "Zusatzimpuls"
+    ]
+  ],
+  [
+    [
+      "V3.08 – 05/2012",
+      "153",
+      "MTELIEPVS308_DE"
+    ]
+  ]
+]

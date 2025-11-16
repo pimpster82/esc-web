@@ -1,0 +1,62 @@
+=== PAGE 144 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.7.4. Seite Anzeiger
+ANZEIGER
+Beschreibung Werte
+Parameter
+P0001 0: Fix
+1: Blinkend
+Registerart 12
+2: Fortgeschritten 1
+3: Fortgeschritten 2
+P0002 0: Richtung
+Pfeilart 1: Richtung + Tür offen
+2: Nächste Abfahrt
+P0003 0: Nein
+Anzeige Tür geöffnet
+1: Ja
+P0004 0: Nein
+Anzeiger besetzt / verfügbar
+1: Ja
+P0005 0: Nein
+Anzeige Anwesenheit 13
+1: Ja
+P0006 0: Nein
+Anzeige außer Betrieb
+1: Ja
+P0007 0: Nein
+Zwischenetage
+1: Ja
+P0008 Anzeiger Etagenhöhe 0: 0
+Ausgangsetage 1: B
+P0009 0: -
+Anzeiger Untergeschosse 1: Untergeschosse
+2: Parkplatz
+P0010 0: Nein
+Gong
+1: Ja
+P0011 Nicht verwendet
+P0012 Nicht verwendet
+P0013 Nicht verwendet
+P0014 Nicht verwendet
+P0015 Nicht verwendet
+P0016 Nicht verwendet
+12
+Fix: Das entsprechende Register leuchtet so lange, wie der Aufruf aufgezeichnet ist.
+Blinkend in Bewegung: Die Register können wie folgt aussehen:
+Fix: Wenn der Aufruf gespeichert ist und der Aufzug stillsteht.
+Blinkend: Wenn der Aufruf gespeichert ist und der Aufzug fährt.
+Fortgeschritten 1.
+Wenn der Aufzug stillsteht und ein Ziel hat oder besetzt ist, leuchten alle Register aller Etagendruckschalter
+fix.
+Wenn der Aufzug fährt, leuchten alle Etagendruckschalter fix. Davon ausgenommen ist derjenige der
+Zieletage, der blinkt.
+Fortgeschritten 2.
+Wenn der Aufzug stillsteht und ein Ziel hat oder besetzt ist, leuchten alle Register aller Etagendruckschalter
+fix.
+Wenn der Aufzug fährt, blinken alle Register aller Etagendruckschalter.
+13
+Funktionalität Anwesend: Diese Funktionalität wird mit Sonderbestellung eingerichtet.
+V3.08 – 05/2012 144 MTELIEPVS308_DE

@@ -1,0 +1,293 @@
+=== PAGE 23 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.1.4. Elektrischer Aufzug mit Frequenzumrichter für Asynchronmaschinen
+2.1.4.1. 3VF-MAC DSP Frequenzumrichter
+Ansch
+S
+lü
+te
+s
+c
+s
+k
+e
+e
+d
+r
+e
+re
+r
+i h
+zw
+e
+eiten 24Pi24P0Vdc
+S V ic o h F r e e a X X r n h h A S d r e N k S s i o c t C T s h r F k b a r l e te is r k h k S X o e S o p c m i m i S F t c X h o S s a
+X
+S h m F m a s C c k h H e
+P
+a i c h r C u X t r u r h h e
+M
+i a 1 k n - B o n P r i t c o s i k
+B
+n i U O k h k r o i
+1
+b a t e a S S r - - t r t b i u i o o - n n n g XPMB1 X X X S P C S O C H B S 1 US I 0 C C 2 R 2 0 P N N V V 4 4 S L L H S C G d d C C c c 1 5 4 2 H H H H 0 C C 24 V L H P d H H cXPMB2 7 8 4 2 3 3 2 0 A A A A 0 2 0 0 B B V V 4 ' 4 C C C C C - + F - + - + F C E G d d I S c c X X X A E S N N SC T C F 0VdcX24Vdc 24P V S - S M Q 2 24Pi
+X3VF
+P C B X X X M N M S C E N S BUS C C 0 2 N S 0 0 M M 2 M V 4 4 V V N H L L BE S G G d d d M 2 M S c c c -
+OLEO
+X X X S S T2 M M 0 1 2 XVCBUSC C 0 E E 2 0 0 T N K K E E E E E 0 2 E 2 0 V V 4 V V V 4 0 M S S S A S S A P P S H L L G S G d d d d S C 4 5 6 2 1 2 3 1 2 1 C c c c c T T 2 0 0 T N K K V 4 V D M S P P L G d d M F 1 2 c c 2 0V 0S S t v/a gn r na 6 6 6 6 2 1 2 1 ( ( ( ( 2 2 2 2 2 1 2 1 ) ) ) ) g K K 1 2 XM ES a m z M M 2 M 4 B E S G S 1/4 W 1K5 oh r H N L
+Sic
+S
+X h
+c
+k S e
+h
+r S r e
+a
+h H i
+c
+s e
+h
+2 i
+t
+t s- 9 6 5 S S S XSSS 9 6 5 S S S 9 6 8 7 H H H HXSSH2 XBATS ( (-
++
+)
+)
+VSS 0SS 0SS XTSS CKLR XKV BS XSV S SV V1 2 gg
+Die X24 Vdc, XSM1, XT20,
+XKV und XTSS Stecker müssen
+senkrecht angeschlossen und
+180º zur dargestellten Ansicht 0SS b 0SSVSS vi SB vi RLCK
+gedreht werden. v/a b RK
+rn
++
+0V
+5
+dc
+FAENCODER +
+0V
+24
+dc
+bvi
+XSM1 0Vdc
+n 2
+B
+4
+(7
+V
+)
+dc
+0
+MK2P
+0 A1 01-
+KRFR
+11T A2 YB A(2)
+24G
+grvivi
+A1 K2 A2
+A1 K1 A2
+Dr X e X h E V g N e O C b P e r XENC + -C C C C2 1 1 2- + + - r n b m v a COND.
+B
+M
+v
+s
+e
+a
+T
+e
+c
+a
+d
+n
+e
+X
+h
+r
+Z
+s
+i
+s
+s
+l a
+e
+M c
+e u
+o
+c
+l
+h
+n
+f t
+h
+m
+r
+A
+o k
+i
+u
+g
+l n
+n
+u Q
+r
+n
+u
+e
+e -
+s
+g
+n
+n
+i
+s
+s
+g
+-
+-
+X X T T F F N N
+XM AQ
+XVOP
+T 0 F F V V VM 1 2 1 2 dc
+2 0V 20 p mv
+ZC 14 14
+vm
+K2
+K1
+13 13 b b / / a a z z + -
+RECT_01 GRF
+~2 ~1
+KRFR
+6
+8
+3
+1 7
+5T1
+T3C
+CT2
+X
+X
+T4
+XC4 (p.e.)
+37
+37
+36
+36
+4 35
+35
+C 34X
+34
+33
+33
+32
+32
+23
+41
+3 22
+XC6
+C
+42
+21 X
+43
+20
+5
+44
+4
+8C
+1
+45
+3
+1
+X 46
+C
+2
+X
+47
+1
+malla
+/ shield
+48
+19
+949
+18
+CX50
+171615
+0
+14
+1C
+13
+X
+2 11CX 1(+)C(-)X
+12
+C1
+b
+3 12 1
+11
+11
+b
+CX
+T
+CE- V
+W
+SR
+s
+0 Vp230 Vp 3 A 400 Vp
+DSP- 3VFM
+AC-1
+7654 6C 3 X 21
+C2
+CE+
+U
+mm CLASS: CLASE / T 40/F 4 50 50 /6 0 V A Hz TYPE: TIPO / TRM ASCENSORES BB11BB22 mmmmmm
+M
+W
+A
+ei
+S
+ß
+C
+-W
+H
+e
+I
+i
+N
+ß
+E
+:
+N
+W
+A
+ä
+N
+rm
+S
+e
+C
+s
+H
+o
+L
+n
+U
+de
+S S
+(T M-0Vdc)
+0 VS20 20 Vs 5 A 0 Vs110 Vs 4 A
+R
+Rot-schwarz: Bremse (F1, F2) S
+Braun-grün: Ventilator (V1, V2) t 10A 1P + N QIM FS L3L2L1 T mm
+FT
+K S R T M A E A F C S T K C S E H T R R I N F O Ü E M R - V W U 1 1 1 m m m / / / n n n T T T 1 2 3 K2 L L L 1 2 3 T T 1 2 K1 L L 1 2
+ZST3 FILTRO T3 L3
+R HAUPT-
+m m
+m
+S T / /
+/
+n n
+n
+ANSCHLUSS A uf Schiene A carril B B1 2
+V3.08 – 05/2012 23 MTELIEPVS308_DE

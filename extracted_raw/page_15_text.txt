@@ -1,0 +1,134 @@
+=== PAGE 15 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+1.6.3. Elektrischer Aufzug mit Geschwindigkeitsumschaltung
+R S T
+m m m
+FE
+TRM
+m m m FS m QIM m 400Vp 110Vs vi VSS 1H vi
+FT m m 0Vp 0Vs b VS-SMQ
+h
+S
+ei
+i
+t
+c
+s
+h
+k
+e
+r
+r
+e
+-
+is
+S
+Pu
+ie
+n
+h
+k
+e
+t 1.9
+9H vi
+Schütz-
+COND U V W m steuerung
++CE B1
+3VFMAC-DSP CK L R B S
+-CE B2 RF
+vi vi
+U V W C1 C2 m
+m m m m m 35
+3VFMAC-DSP
+L1 L2 L3 34 11 12
+K1
+b n
+T1 T2 T3 vi
+K1 K2 FLC
+vi
+L1 L2 L3
+K2
+T1 T2 T3
+U V W
+M~
+1.6.4. Öldynamischer Aufzug mit Direktstart
+R S T KVF
+PCB OLEO Sicher- Siehe
+m m m FR m m m heitskreis Punkt 1.9
+12BAT vi vi PCB SM
+TRM KMT1
+FS m QIM m 400Vp 110Vsvi KVF vi vi 1H 9H
+A B VSS
+FT m m 0Vp 0Vs b 0SS - PCB SM S st c e h u ü e t r z u - ng
+0SS
+m m m
+CK L S
+12S KMT2 vi
+110Vs vi
+L1 L2 L3 D C vi
+KG L vi
+T1 T2 T3 T
+E
+GRV ZA KG KM
+m m m vi 2~ + vi CV V
+st
+e
+e
+n
+u
+t
+e
+il
+r
+-
+ung
+L1 L2 L3 YD YR YS
+KM 0SS - PCB SM n 1~ - n vi vi vi 0Vs
+T1 T2 T3
+U V W
+SM YD: Abwärtsfahrtventil
+YR: Ventil schnelle Geschwindigkeit (oder
+YD YR YS G
+YS
+e
+:
+s c
+V
+h
+e
+w
+n
+i
+t
+n
+il
+d
+f
+i
+ü
+g
+r
+k e
+d
+i
+o
+ts
+o
+w
+r
+e
+lo
+c
+c
+h
+k
+s e
+o
+l
+d
+)
+er soft stop
+M~
+V3.08 – 05/2012 15 MTELIEPVS308_DE

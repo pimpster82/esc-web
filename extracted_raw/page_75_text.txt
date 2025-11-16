@@ -1,0 +1,48 @@
+=== PAGE 75 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+10mm x 50mm (x4)
+HALTERUNGS- SCHRANK-
+A =
+SCHRANK- B (mm)
+TYP TIEFE (mm)
+BREITE (mm)
+0
+6
+n B 150 500
+im HALTERUNG.150 100
+min 120 200 500, 600
+250 500, 600, 800
+A - 60 HALTERUNG.250 180
+300 600, 800
+Befestigungsbohrungen auf der Schrankunterseite
+3.1.2. Anbringung der Kanäle
+Wenn der Schrank auf der Platte befestigt wird, müssen keine Kanäle im Maschinenraum verlegt werden: Die
+Verkabelung geht dann direkt vom Schrank zum Schacht.
+Wird der Schrank an der Wand befestigt, müssen Kanäle angebracht werden, um die Verkabelung des Maschinenraums
+zu führen und zu schützen. Die Kanäle müssen an der Wand u. / o. am Boden des Maschinenraums mithilfe der
+Bauteile, die auf der linken Abbildung angegeben sind, befestigt werden. Damit der Kabelausgang so gut wie möglich
+geschützt ist, wird empfohlen, einen Einbau wie auf der rechten Abbildung dargestellt vorzunehmen. Dabei wird der
+Kanal abgeschnitten und die Schrankabdeckung in L-Form gebogen. Auf diese Art werden die Kabel, die aus dem
+Schrank heraus kommen, direkt in diesen Kanal geführt. Nachdem die Abdeckung auf dem Kanal angebracht ist, muss
+die untere Abdeckung des Schranks in L-Form eingebaut werden, sodass sie auf den Kanal drückt und verhindert, dass
+sich dieser öffnen kann.
+Befestigungselemente für Kanäle
+Schraube
+Dübel
+Schrank
+Kanal-
+unterteil
+Untere Schrank-abdeckung
+Kanal-
+abdeckung
+Die Kabel, die den Schrank mit der Maschine (innerhalb eines Wellschlauchs) verbinden, müssen mit den Kabelbindern
+der linken Abbildung befestigt werden. Diese müssen wiederum mit den Dübeln und Schrauben befestigt werden, die
+zur Befestigung der Kanäle verwendet wurden.
+Um weitere Kabel zu befestigen, die lose im Maschinenraum verbleiben, müssen die Schrauben und Bänder der
+rechten Abbildung verwendet werden.
+Kabelbinder
+Schelle Schraube
+HINWEIS: Alle Befestigungselemente befinden sich innerhalb der IP-5.
+V3.08 – 05/2012 75 MTELIEPVS308_DE

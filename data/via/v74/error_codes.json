@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "manual_version": "VIASerie_v74",
+    "manual_pages": "113-127",
+    "extraction_date": "2025-11-16T21:06:46.610898",
+    "status": "Populated from structured tables",
+    "total_f_codes": 26,
+    "total_a_codes": 0,
+    "note": "Error codes extracted from FEHLERTABELLE (structured table extraction)"
+  },
+  "f_codes": [
+    {
+      "code": "F01 02",
+      "family": "01",
+      "number": "02",
+      "description_de": "Sicherheitskreis geöffnet",
+      "cause_solution": "Die Sicherheitskreis zwischen Punkt 1H und 3C wurde geöffnet.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F01 03",
+      "family": "01",
+      "number": "03",
+      "description_de": "Aufzug geparkt nach Feststellung eines F0102 Fehlers (nur Hydraulikaufzüge).",
+      "cause_solution": "Wenn die Sicherheitskreis nach der Öffnung zwischen 1H und 3C schließen sollte, würde der Fahrkorb auf der unteren Etage mit geschlossenen Türen stehen bleiben und der Aufzug wäre außer Betrieb, indem er F0103 anzeigt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F01 09",
+      "family": "01",
+      "number": "09",
+      "description_de": "110 V Versorgungsfehler (STR Sicherung, Phasenfehler an KVF)",
+      "cause_solution": "Es fehlen 110 V an der VSS Klemme des XTSS Steckers der VS- SMQ Platte.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F01 20",
+      "family": "01",
+      "number": "20",
+      "description_de": "Geschwindigkeitsbegrenzer",
+      "cause_solution": "Es wurde eine Fahrkorbfahrt mit höherer Geschwindigkeit als der für diese Anlage zugelassenen Höchstgeschwindigkeit festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F01 29",
+      "family": "01",
+      "number": "29",
+      "description_de": "Unbeabsichtigte Fahrkorbbewegung (nur bei Anlagen laut Änderung A3).",
+      "cause_solution": "Es wurde eine unbeabsichtigte Bewegung festgestellt. Der Fahrkorb durchquert den gesamten Türentriegelungsbereich mit geöffneten Türen, ohne auf Etagenebene stehen zu bleiben.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F01 30",
+      "family": "01",
+      "number": "30",
+      "description_de": "Kontakt des Monitoringsystems bei Anlagen laut Änderung A3 hängengeblieben",
+      "cause_solution": "An der KP2 Klemme ist keine Spannung vorhanden, wenn der Aufzug mit geöffneten Türen auf der Etage steht. Kontakt des Ventils oder Begrenzerspule prüfen, je nachdem, ob es sich um einen Hydraulik- oder einen elektrischen Asynchronaufzug handelt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F02 06",
+      "family": "02",
+      "number": "06",
+      "description_de": "Etagentürkreis geöffnet während einer Fahrt",
+      "cause_solution": "Beim Fahren des Aufzugs wurde eine Öffnung der Türkreis (Punkt 6H) festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F02 07",
+      "family": "02",
+      "number": "07",
+      "description_de": "Riegelkreis geöffnet während einer Fahrt",
+      "cause_solution": "Beim Fahren des Aufzugs wurde eine Öffnung der Riegelkreis (Punkte 7H, 8H, 9H) festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F03 05",
+      "family": "03",
+      "number": "05",
+      "description_de": "Wiederholte Fehler am Kreis der Fahrkorbtüren",
+      "cause_solution": "Nach wiederholten Versuchen, die Türen zu schließen, wurde kein Schließen des Riegelkontakts 7H-8H, 8H-9H festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F03 55",
+      "family": "03",
+      "number": "55",
+      "description_de": "Kontakte der externen Riegel oder des Fahrkorbriegels der Sicherheitskreis überbrückt.",
+      "cause_solution": "Nach einer anfänglichen Rücksendung oder nach einem Ausgang des Inspektionsmodus wird keine Schaltung an der Riegelkreis, Punkte 8H-9H, festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 04",
+      "family": "06",
+      "number": "04",
+      "description_de": "Schütz hängengeblieben",
+      "cause_solution": "Bei stillstehendem Aufzug mit geöffneten Türen wird Spannungsmangel an der KP1-Klemme festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 18",
+      "family": "06",
+      "number": "18",
+      "description_de": "Kommunikationsfehler mit 3VF Umrichter",
+      "cause_solution": "Wenn die Schütze nach einem Betriebsbefehl nicht anziehen, versteht die Steuerung, dass der Umrichter nicht richtig funktioniert. In diesem Fall unterbricht die Steuerung den Startbefehl und versucht ihn nach einigen Sekunden erneut. Bei gearless Anlagen laut Änderung A3 wird der Eingang der KP2 Klemme mit der Funktion “Umrichterfehler” konfiguriert (Parameter “Eingangsfunktion KP2” mit Wert 1). Die Logik dieses Eingangs lautet: bei 24 V Ausbleiben = Fehler.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 20",
+      "family": "06",
+      "number": "20",
+      "description_de": "Fehler manuelle Rückstellung",
+      "cause_solution": "Wenn die Steuerung mit manueller Rückstellung (Parameter „manuelle Rückstellung“ auf den Werten 1 oder 2) konfiguriert ist, erscheint dieser Fehler, wenn versucht wird, die Steuerung neuzustarten, indem sie nach einem Fehler, der keine automatische Rückstellung zulässt, aus- und eingeschaltet wird. Die Rückstellung ist nicht möglich, ohne vorher auf Inspektionsmodus zu gehen.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 34",
+      "family": "06",
+      "number": "34",
+      "description_de": "Kontakt der Aufwärts- oder Abwärtsdruckschalter des Inspektionskasten hängengeblieben.",
+      "cause_solution": "Die Auf- und Abwärtsdruckschalter führen zwei Funktionen aus: Einerseits geben sie der Steuerung die Bewegungsrichtung an und auf der anderen Seite überbrücken sie die Sicherheitskreis, indem sie das Verfahren des Aufzugs zulassen. Dieser Fehler zeigt an, dass der Kontakt, der der Überbrückung der Sicherheitskreis zugeordnet ist, hängengeblieben ist.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 40",
+      "family": "06",
+      "number": "40",
+      "description_de": "Maximal- oder Minimaldruckregler",
+      "cause_solution": "An der EA2-Klemme ist keine Spannung vorhanden. Am Hydraulikaggregat wurde eine ungeeignete Spannung festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F06 41",
+      "family": "06",
+      "number": "41",
+      "description_de": "Inspektion: Jumper P15 entfernt",
+      "cause_solution": "P15 Jumper anbringen und dem Parameter „Inspektionsgeschwindigkeit“ den Wert 0,6 zuordnen.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 17",
+      "family": "09",
+      "number": "17",
+      "description_de": "Konfiguration Block P",
+      "cause_solution": "Möglicher Schaden am internen Speicher. Parameter überprüfen. Sollte der Fehler weiter bestehen, muss mit dem Kundendienst Kontakt aufgenommen werden.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 30",
+      "family": "09",
+      "number": "30",
+      "description_de": "Konfiguration Block C",
+      "cause_solution": "Möglicher Schaden am internen Speicher. Parameter überprüfen. Sollte der Fehler weiter bestehen, muss mit dem Kundendienst Kontakt aufgenommen werden.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 31",
+      "family": "09",
+      "number": "31",
+      "description_de": "Konfiguration Block S",
+      "cause_solution": "Möglicher Schaden am internen Speicher. Parameter überprüfen. Sollte der Fehler weiter bestehen, muss mit dem Kundendienst Kontakt aufgenommen werden.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 32",
+      "family": "09",
+      "number": "32",
+      "description_de": "Konfiguration Block E",
+      "cause_solution": "Möglicher Schaden am internen Speicher. Parameter überprüfen. Sollte der Fehler weiter bestehen, muss mit dem Kundendienst Kontakt aufgenommen werden.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 40",
+      "family": "09",
+      "number": "40",
+      "description_de": "Interner Plattenfehler",
+      "cause_solution": "Platte beschädigt. Reparatur notwendig.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 41",
+      "family": "09",
+      "number": "41",
+      "description_de": "Unvereinbarkeit 1",
+      "cause_solution": "Die Hardwareversionen der Platten des Maschinenraums und des Fahrkorbs sind unvereinbar.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F09 42",
+      "family": "09",
+      "number": "42",
+      "description_de": "Unvereinbarkeit 2",
+      "cause_solution": "Die Hardwareversionen der Platten des Maschinenraums und des Fahrkorbs sind unvereinbar.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F10 01",
+      "family": "10",
+      "number": "01",
+      "description_de": "Maximale Fahrtdauer",
+      "cause_solution": "Kein Signal des Positionssensors (Klemme P des XPOS Steckers) innerhalb einer längeren Zeit als der im Parameter für maximale Fahrtdauer (MFD) festgelegten Zeit.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F11 08",
+      "family": "11",
+      "number": "08",
+      "description_de": "Orientierungsverlust Aufzug",
+      "cause_solution": "Nach Beendigung einer Fahrt wurde eine (zu hohe oder zu niedrige) Abweichung zwischen der Pulszahl, die während der Fahrt gezählt und der Pulszahl, die dieser Fahrt zugeordnet ist, festgestellt.",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "F11 13",
+      "family": "11",
+      "number": "13",
+      "description_de": "Aufzug auf Zwischenetage bei geöffnetem Vorendschalter",
+      "cause_solution": "Während einer Fahrt wurde ein geöffneter (spannungsloser) unterer Vorendschalter (AFI Klemme XANTF Stecker) oder",
+      "manual_page": 113,
+      "extraction_status": "from_table"
+    }
+  ],
+  "a_codes": []
+}

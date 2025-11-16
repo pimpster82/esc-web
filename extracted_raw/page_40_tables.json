@@ -1,0 +1,95 @@
+[
+  [
+    [
+      "",
+      "",
+      "TECHNISCHES PRODUKTHANDBUCH",
+      ""
+    ],
+    [
+      null,
+      null,
+      "VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5",
+      ""
+    ]
+  ],
+  [
+    [
+      "",
+      ""
+    ],
+    [
+      "",
+      null
+    ]
+  ],
+  [
+    [
+      "",
+      "SYMPTOM",
+      "URSACHE",
+      "",
+      "STEUERUNGSFEHLER",
+      "",
+      "UMRICHTERFEHLER",
+      ""
+    ],
+    [
+      "230 V\ndurch\nNach einem Aufruf startet Begre\nweder der Aufzug noch wird KLIM\ndie Spule ausgelöst. Spule\nKKP a\nKlem",
+      null,
+      "Stromkreissicherung\ngeschmolzen",
+      null,
+      "Err30",
+      null,
+      "Err30",
+      null
+    ],
+    [
+      null,
+      null,
+      "nzerspule in schlechtem Zustand",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "ausgeschaltet (keine Auslösung der\n)",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      "usgeschaltet (Ablesung zwischen\nmen 11-19 am Umrichter)",
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "Nach der Fahrt öffnet der\nAufzug die Türen, schließt\nKLIM\nsie nach ein paar Sekunden\nund bleibt außer Betrieb.",
+      null,
+      "ausgelöst (Spule immer aktiv)",
+      null,
+      "Err30",
+      null,
+      "Err31",
+      null
+    ]
+  ],
+  [
+    [
+      "V3.08 – 05/2012",
+      "40",
+      "MTELIEPVS308_DE"
+    ]
+  ]
+]

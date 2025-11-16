@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "manual_version": "VIASerie_v74",
+    "source": "manual + field_knowledge",
+    "extraction_date": "2025-11-16T20:55:43.643283",
+    "status": "Template - awaiting field data",
+    "note": "Known issues and workarounds - updated from field experience"
+  },
+  "known_issues": [
+    {
+      "component": "CAB Board",
+      "problem": "Bus-Signal-Verarbeitung fehlerhaft",
+      "symptoms": [
+        "Türen öffnen/schließen manchmal nicht (sporadisch)",
+        "A07 Falschmeldung",
+        "Tür reagiert zeitweise nicht auf Befehle"
+      ],
+      "frequency_via": 0.4,
+      "solution": "CAB Board austauschen",
+      "extraction_status": "example"
+    }
+  ]
+}

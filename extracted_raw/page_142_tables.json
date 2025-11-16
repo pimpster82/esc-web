@@ -1,0 +1,271 @@
+[
+  [
+    [
+      "",
+      "",
+      "",
+      "",
+      "TECHNISCHES PRODUKTHANDBUCH",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      "VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5",
+      ""
+    ],
+    [
+      null,
+      "",
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "ANLAGE 2",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "",
+      "Parameter",
+      "",
+      "Beschreibung",
+      "",
+      "",
+      "Werte",
+      "",
+      "",
+      "Maßeinheit",
+      ""
+    ],
+    [
+      "P0001",
+      null,
+      null,
+      "Personenzahl",
+      null,
+      "1..20",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0002",
+      null,
+      null,
+      "Fahrstuhlart",
+      null,
+      "0: 1 Geschwindigkeit\n1: 2 Geschwindigkeiten\n2: 3VF\n3: Hydraulisch\n4: 3VF Synchronisch",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0003",
+      null,
+      null,
+      "Anordnung",
+      null,
+      "0: Impulse\n1: Drehgeber",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0004",
+      null,
+      null,
+      "Abstand Etagenhöhen",
+      null,
+      "1..9999",
+      null,
+      null,
+      "mm",
+      null,
+      null
+    ],
+    [
+      "P0005",
+      null,
+      null,
+      "Wechselart (Information)",
+      null,
+      "0: 1C\n1: 2C\n2: 1P\n3: 3C",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0006",
+      null,
+      null,
+      "Bremsabstand (Information mit\nImpulspositionierung)",
+      null,
+      "1..9999",
+      null,
+      null,
+      "mm",
+      null,
+      null
+    ],
+    [
+      "P0007",
+      null,
+      null,
+      "Nenngeschwindigkeit",
+      null,
+      "0: 0,6\n1: 0,8\n2: 1\n3: 1,2\n4: 1,4\n5: 1,6\n8\n6: 2,0\n8\n7: 2,5\n8\n8: 3,0",
+      null,
+      null,
+      "m/s",
+      null,
+      null
+    ],
+    [
+      "P0008",
+      null,
+      null,
+      "Inspektionsgeschwindigkeit",
+      null,
+      "0: Langsam\n1: 0.6",
+      null,
+      null,
+      "m/s",
+      null,
+      null
+    ],
+    [
+      "P0009",
+      null,
+      null,
+      "9\nSenkrechttyp Schacht",
+      null,
+      "0: V8\n1: V7",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0010",
+      null,
+      null,
+      "3 VF Steuerungsmodus",
+      null,
+      "0: MP\n1: Kaufteil",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0011",
+      null,
+      null,
+      "Hydraulikstart",
+      null,
+      "0: Direkt\n1: E-T MP\n2: E-T GMV",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0012",
+      null,
+      null,
+      "Soft-Starter",
+      null,
+      "0: Nein\n1: Ja",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0013",
+      null,
+      null,
+      "Door Lock",
+      null,
+      "0: Nein\n1: Ja",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0014",
+      null,
+      null,
+      "Softstopp",
+      null,
+      "0: Nein\n1: MP\n2: GMV/KLEEMAN",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0015",
+      null,
+      null,
+      "4\nSenkrecht geteilt",
+      null,
+      "0: Nein\n1: Ja",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0016",
+      null,
+      null,
+      "Nicht verwendet",
+      null,
+      "",
+      null,
+      null,
+      "",
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "V3.08 – 05/2012",
+      "142",
+      "MTELIEPVS308_DE"
+    ]
+  ]
+]

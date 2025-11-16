@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "manual_version": "VIASerie_v74",
+    "manual_pages": "14-50",
+    "extraction_date": "2025-11-16T20:55:43.637704",
+    "status": "Template - manual data entry needed",
+    "total_connectors": 0,
+    "note": "Wiring connector information from pages 14-50"
+  },
+  "connectors": [
+    {
+      "code": "XSSH2",
+      "board": "SMQ",
+      "purpose": "Safety circuit connection",
+      "pins": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "extraction_status": "example"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+=== PAGE 153 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+RMP Relais Türenkreis USV-APC Unterbrechungsfreie Stromversorgung
+RMR Inspektionsrelais V
+ROPA Relais automatische Türöffnung V V Phase
+ROPC Relais automatische Türschließung v Volt
+RPA RZS Steuerrelais v-a Grün - gelb
+RS R Sicherung Vac Volt Wechselspannung
+RSB Relais Sicherheitsbereich Vdc Volt Gleichspannung
+RSG Relais schnelle Geschwindigkeit VEA Vormontierte elektrische Anlage
+RSS Relais Spannungssteuerung VS Version
+RTP Wärmeschutzrelais VTR Ventiltrafo
+S VxA Vormontierte x Anlage
+S Phase S W
+s Sekunden W W Phase
+SAB EN 81-21 Vorrichtung X
+SAC Fangvorrichtungskontakt X324 Stecker Magnetschalter 324
+SAF Kontakt Schlaffseil X325 Stecker Magnetschalter 325
+SAFI Kontakt unterer Vorendschalter X327 Stecker Magnetschalter 327
+SAFS Kontakt oberer Vorendschalter X328 Stecker Magnetschalter 328
+SAI (USV) Unterbrechungsfreie Stromversorgung X538-1 538 Stecker
+SAL Alarmdruckschalter X538-2 538 Stecker
+SALB Schalter Fahrkorbbeleuchtung XAFI Stecker unterer Vorendschalter
+SALH Schalter Schachtbeleuchtung XAFS Stecker oberer Vorendschalter
+SALV Schlüssel Begrenzerbetätigung XALB Stecker Fahrkorbbeleuchtung
+SAM Dämpferkontakt XALH Stecker Schachtbeleuchtung
+SARF Alarmdruckschalter Schachtgrube XALHS Stecker Schachtbeleuchtung
+SARI Alarmdruckschalter Fahrkorbdecke XAM Dämpferstecker
+SB MES Druckschalter Abwärtsfahrt XARN Schütz
+SCHK Schlosskreis XC12 3VF Stecker
+SCHKA Schlosskreis außen XC13 3VF Stecker
+SCHKF Schlosskreis Fahrkorb XC2 3VF Stecker
+SCTH/C Klappenkontakt XC4 3VF Stecker
+SDF Steckdose Fahrkorb XC6 3VF Stecker
+SDS Steckdose Schacht XCE Stecker automatische Tür
+SEC Kontakt Fahrkorbverriegelung XCEN Stecker Zentralsteuerung
+SEC1 Kontakt Fahrkorbverriegelung XCTS Stecker Schachtgrubenkasten
+SEC2 Kontakt Fahrkorbverriegelung XENC Drehgeberstecker
+SEN Kontakt Bedienungsempfindlichkeit XF1 Stecker Fotozelle 1
+SFI Kontakt unterer Endschalter XF2 Stecker Fotozelle 2
+SFS Kontakt oberer Endschalter XFI Stecker unterer Endschalter
+SIB Druckschalter Abwärtsfahrt Inspektion XFS Stecker oberer Endschalter
+SIR Inspektionsschalter XLP Stecker Deckenlicht
+SIS Druckschalter Aufwärtsfahrt Inspektion Stecker Geschwindigkeitsbegrenzer
+SLVH/C Kontakt Geschwindigkeitsbegrenzer
+XLVCPH
+Gegengewicht
+SLVR Schlüssel Begrenzerbetätigung XLVH Stecker Geschwindigkeitsbegrenzer
+SMB MES Druckschalter Abwärtsfahrt XMAQ Stecker Maschinensteuerung
+SMF Klemmleiste Kraftstrom XPC Lastwaagenstecker
+SMM Klemmleiste Maschinenraum XPCE Stecker halbautomatische Tür
+SMS MES Druckschalter Aufwärtsfahrt XRB Stecker Glühbirnenreihe
+SPCx Druckschalter Fahrkorbaufruf x XTFN Telefonstecker
+SPEx Druckschalter Außenaufruf Universal x XTH Stecker Schachtklappe
+SPRB Druckschalter Abwärtsfahrt Inspektion Spannungsstecker Begrenzerkabel
+SPRS Druckschalter Aufwärtsfahrt Inspektion
+XTLCPF
+Gegengewicht
+SS Steuerungssicherung Stecker in der Schachtgrube für
+XTLF
+SS MES Druckschalter Aufwärtsfahrt Begrenzerseilspannung
+ST Stückzahl XTS Stecker Wärmesonde und MES
+Kontakt Seilspannung Y
+STLC
+Fahrkorbbegrenzer YD Abwärtsfahrtventil
+STLH Kon
+S
+t
+c
+a
+h
+k
+a
+t
+c
+K
+h
+a
+tb
+b
+e
+e
+g
+ls
+r
+p
+e
+a
+n
+n
+z
+n
+er
+u ng YE Not-Aus-Ventil
+YR Ventil schnell
+STLH/C Kontakt Spannscheibe Begrenzer
+STOP Stopppilzschalter Inspektionskasten
+YS Ventil Aufwärtsfahrt
+Z
+STR Steuerungstrafo
+ZI Zusatzimpuls
+SW1 Switch
+SYNC Synchron
+T
+T Phase T
+t Erde
+TK Türenkreis
+TS T Sicherung
+TS1 Kontakt Wärmefühler 1
+TS2 Kontakt Wärmefühler 2
+U
+U U-Phase
+ÜLL Überlastleuchte
+V3.08 – 05/2012 153 MTELIEPVS308_DE

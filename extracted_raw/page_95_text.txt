@@ -1,0 +1,56 @@
+=== PAGE 95 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+ Elektrischer Aufzug mit Frequenzumrichtung
+V (m/s)
+1.60 3C 1P 2C * 1C v y = = 1 2 .6 .4 0 0 m m /s
+2.40 2.80 4.40 5.00
+T IE K 1.40 3C 1P 2C * 1C v y = = 1 2 .4 .2 0 0 m m /s
+G ID 2.20 2.60 4.00 4.60
+N
+IW 1.20 3C 1P 2C * 1C v y = = 1 2 .2 .0 0 0 m m /s
+H
+C 2.00 2.40 3.60 4.20
+S
+E
+G 1.00 3C 1P 2C * 1C v y = = 1 1 .0 .5 0 5 m m /s
+1.55 1.90 2.70 3.30
+0.80 3C 1P 2C * 1C v y = = 0 1 .8 .2 0 0 m m /s
+1.20 1.60 2.00 2.60
+0.63 3C 1P 2C* 1C v y = = 0 . 0 6 . 3 8 m m /s
+0.50 0.80 1.20 1.80
+L (m)
+0.00 1.00 2.00 3.00 4.00 5.00 ABSTAND ZWISCHEN
+ETAGEN
+WECHSEL 1C: WECHSEL 2C:
+N N N N
+2 1 1 1
+P >=0.4m = P >=0.4m y P
+y P y
+L P >=0.4m L L P >=0.4m L P
+1 Y >=0.4m N y Pa = N 1 >=0.4m N y y N >=0.2m
+1 0 0 0
+L = P L Y
+Lc =
+N
+y y Y
+0 Y
+0
+P
+>=0.4m
+Pa
+0
+y
+L P >=0.4m
+y
+>=0.4m
+N
+-1
+WECHSEL 1P:
+2
+L
+1
+L
+0
+V3.08 – 05/2012 95 MTELIEPVS308_DE

@@ -1,0 +1,42 @@
+=== PAGE 124 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.4.9. 2. Automatischer Test der Etagendruckschalter (PvL A)
+Dieser Test prüft die vorhandenen und angeschlossenen Etagendruckschalter. Wird der Test eingeschaltet, werden die
+Etagendruckschalter automatisch überprüft. Mit der Mac-Bus-Linie wird geprüft, ob sie eingeschaltet sind und eine
+Verbindung mit der Maschinenraumplatte besteht.
+Die Anzahl der Druckschalter entspricht dem Parameter der Etagenanzahl der Anlage.
+Das Ergebnis der Überprüfung kann wie folgt ausfallen:
+i.O.: Auf dem Display der Konsole erscheint Po und zeigt an, dass mindestens ein Druckschalter pro Etage der
+Anlage vorhanden ist und dieser gleichzeitig eine richtige Verbindung mit der Platte des Maschinenraums hat.
+n.i.O.: Nach Abschluss des Tests erscheint auf dem Konsolendisplay die Nummer der Etage, die ausgefallen
+ist – in diesem Fall Etage 01. Sollte mehr als eine Etage ausgefallen sein, wird nur die erste Etage angezeigt,
+die ausgefallen ist.
+Der Test wird mit Knopfdruck auf einen beliebigen Druckschalter der Konsole beendet.
+5.4.9.3. Manueller Test des Etagentableaus (PvL I)
+Mit diesem Test wird manuell und individuell die ordnungsgemäße Funktionsweise des Etagendruckschalters geprüft.
+Wird dieser Test eingeschaltet, wartet die Platte des Maschinenraums auf den Knopfdruck der Etagentableau.
+Sobald der Knopfdruck auf eines Etagentableau festgestellt wird, zeigt die Konsole die Etage an, auf der dieses Tableau
+konfiguriert ist und alle Ausgänge dieses Druckschalters werden aktiviert (Pfeil aufwärts, Pfeil abwärts, Aufzeichnung
+des Abwärts- / Aufwärtsdruckschalters, usw.). Nach 5 Sekunden kehrt er auf den Normalzustand zurück.
+Auf dem Display wird folgende Information angezeigt:
+Anzeige auf Display
+Anzeige auf Display
+ohne Knopfdruck
+nach Knopfdruck
+auf
+auf
+Außendruckschalter
+Außendruckschalter
+Der Test wird mit Knopfdruck auf einen beliebigen Druckschalter der Konsole beendet.
+5.4.9.4. Displaytest (dI5P)
+Test zur Prüfung der Anzeigedisplays auf der Etage.
+Bei diesem Test werden alle Displays geprüft, die an die Vía Serie Steuerung angeschlossen sind, d. h. die MP-Displays
+(die per Kommunikationsbus angeschlossen sind), wie auch die der Kaufteile (die mit einem diskreten Draht
+angeschlossen sind).
+Beim Einschalten des Tests werden zunächst alle Displayteile eingeschaltet (Segmente, Überlastausgang, Ausgang
+Gewichtsstange).
+Nach dieser Einschaltung werden die Symbole, die den einzelnen Etagen der Anlage zugeordnet sind, mit 2 Sekunden
+Intervall durchlaufen.
+V3.08 – 05/2012 124 MTELIEPVS308_DE

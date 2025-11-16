@@ -1,0 +1,68 @@
+=== PAGE 46 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+3 Reihen Druckschalter bis 16 Haltestellen
+1. ADAPTERPLATTE 2. ADAPTERPLATTE
+Fahrkorb- 2. Adapter- 16 Aufruf- Aufruf-
+platte platte druck- druck-
+13 14 15 schalter C NO (+) (-) schalter C NO (+) (-)
+XC22 C2 E5,E6,E7,E8 1 24 Vdc E1 S1 0 Vdc 3 24 Vdc E1 S1 0 Vdc
+S5,S6,S7,S8
+10 11 12
+2 24 Vdc E5 S5 0 Vdc 6 24 Vdc E2 S2 0 Vdc
+E1,E2,E3,E4 7 8 9
+XC21 C1 S1,S2,S3,S4 4 24 Vdc E2 S2 0 Vdc 9 24 Vdc E3 S3 0 Vdc
+4 5 6
+1 2 3 5 24 Vdc E6 S6 0 Vdc 12 24 Vdc E4 S4 0 Vdc
+1.
+Adapterplatte
+7 24 Vdc E3 S3 0 Vdc 13 24 Vdc E5 S5 0 Vdc
+E1,E2,E3,E4
+XC11 C1
+S1,S2,S3,S4 8 24 Vdc E7 S7 0 Vdc 14 24 Vdc E6 S6 0 Vdc
+E5,E6,E7,E8 10 24 Vdc E4 S4 0 Vdc 15 24 Vdc E7 S7 0 Vdc
+XC12 C2
+S5,S6,S7,S8
+11 24 Vdc E8 S8 0 Vdc 16 24 Vdc E8 S8 0 Vdc
+Numerische Tastatur
+1. 2. ADAPTERPLATTE
+2. Aufrufdruckschalter ADAPTERPLATTE
+Adapterplatte Aufruf- Aufruf-
+druck- druck-
+1 2 3 schalter C NO schalter C NO
+XC11 C1
+E
+S
+1
+1
+,
+,
+E
+S
+2
+2
+,
+,
+E
+S
+3
+3
+,
+,
+E
+S
+4
+4 4 5 6 * 24 Vdc E1 - 24 Vdc E1
+7 8 9 7 24 Vdc E2 9 24 Vdc E2
+XC21 C2 E S 5 5 , , E S 6 6 , , E S 7 7 , , E S 8 8 * 0 - 4 24 Vdc E3 6 24 Vdc E3
+1 24 Vdc E4 3 24 Vdc E4
+1. Adapter-
+plattte
+0 24 Vdc E5
+E1,E2,E3,E4
+XC12 C1
+S1,S2,S3,S4 8 24 Vdc E6
+5 24 Vdc E7
+2 24 Vdc E8
+V3.08 – 05/2012 46 MTELIEPVS308_DE

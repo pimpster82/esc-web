@@ -1,0 +1,64 @@
+=== PAGE 141 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.7. VÍA SERIE Parameter
+Alle Angaben zu diesem Punkt können auf dem Display der MP Konsole angezeigt und konfiguriert werden.
+5.7.1. Seite Anlage 1
+ANLAGE 1
+Parameter Beschreibung Werte Maßeinheit
+P0001 Anzahl Haltestellen der Anlage 1... 32 Etagen
+0: Simplex
+1: Duplex
+P0002 Art der Anlage
+2: Triplex
+3: Cuadruplex
+P0003 Aufzug Nummer 1..6
+0: Universal
+1: Selektiv gemischt
+P0004 Funktionsweise
+2: Selektive Abwärtsfahrt
+3: Selektive Auf-/ Abwärtsfahrt
+0: Manuell
+P0005 Art der Türen 1: Halbautomatisch
+2: Automatisch
+0: Herkömmlich (Reveco II)
+P0006 Bedienungsart 1: Mechanische Verriegelung
+(Reveco-Go!)
+0: Geöffnet
+1: Geschlossen
+P0007 Türen beim Anhalten
+2: Geschlossen Ausgangsetage,
+restliche Türen geöffnet
+P0008 Anzahl Zugänge 1..3
+P0009 Zugang Ausgangsetage 1: 1
+2: 2
+P0010 Zugang Untergeschosse
+3: 1, 2
+4: 3
+P0011 Restliche Zugänge 5: 1, 3
+6: 2, 3
+7: 1, 2, 3
+P0012 Höhe Ausgangsetage 1..32
+Asymmetrische untere
+P0013 0 – 32 Anzahl Höhen
+Etagenhöhen
+Asymmetrische obere
+P0014 0 - 32 Anzahl Höhen
+Etagenhöhen
+0: untere 6
+P0015 Rücksendungsetage
+1: obere
+7
+0: 1C
+1: 2C
+P0016 Art des Tableau
+2: 3C
+3: Tastatur
+Anzahl Untergeschosse = Etagenhöhe Ausgangsetage - 1
+Anzahl Etagenhöhen selektiv gemischt = Anzahl Untergeschosse + 1
+6
+Pflicht für Hydraulikaufzüge (EN 81-2)
+7
+C = Säule
+V3.08 – 05/2012 141 MTELIEPVS308_DE

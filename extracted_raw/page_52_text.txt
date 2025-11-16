@@ -1,0 +1,59 @@
+=== PAGE 52 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.2.8. 3. Reveco II / Reveco-Go! Bedienung
+SEHR WICHTIG:
+Die REVECO II Betriebsweise entspricht dem “B” Modus,
+ausgenommen im Fall, wenn sie dem Not-Aus-System
+der Türöffnung zugeordnet ist. In diesem Fall muss es
+der “A”-Modus sein.
+5G1mm2 g
+C4 C4 Das Not-Aus-Systemmodell muss TA II.
+C3 C3 (Siehe technisches Handbuch der Bedienung).
+C2 C2
+n
+C1 C1
+v/a
+az
+V2 V2 m
+V1 V1 m
+OBX OBX az
+OB2 OB2
+2 x 0.5 Vom Inspektionskasten
+m
+SPC az
+2 x 1
+XPC XPC
+t C A 0Vp220 24CTCFCCFCA
+XOP1 XOP2
+Im Kasten der
+BedienerPLATTE im
+Fahrkorbschaltschrank 2200Vp A C t FCAFCCTC24C
+anschließen.
+Die XOP1 und XOP2 XOP1 XOP2 Bediener-
+S an te g c e k s e c r h l m os ü s s e s n e n u n se d n 1 k 8 re 0 c º h t PCB OP P Fa LA hr T k T o E r b im -
+zur dargestellten Ansicht XVOP XOPMB schalt-
+gedreht werden. schrank
+2200Vp t 0VdcCLBCHB24C
+2.2.8.4. Bedienung einphasige Versorgung und Nockensignal
+4G1mm2
+Schließsignal
+(bei ausbleibendem System wird
+geöffnet)
+Einphasige Versorgung
+SEN TC
+2 x 0.5
+t C A 0Vp220 24CTCFCCFCA
+XOP1 XOP2
+Im Kasten der 2200Vp A C t FCAFCCTC 24C
+BedienerPLATTE im Bedienungs-
+Fahrkorbschaltschrank PLATTE im
+anschließen. XOP1 XOP2 Fahrkorb-
+Die XOP1 und XOP2 Stecker PCB OP schaltschrank
+müssen senkrecht
+angeschlossen und 180º zur XVOP XOPMB
+dargestellten Ansicht
+gedreht werden.
+2200Vp t 0VdcCLBCHB24C
+V3.08 – 05/2012 52 MTELIEPVS308_DE

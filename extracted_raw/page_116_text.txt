@@ -1,0 +1,19 @@
+=== PAGE 116 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.4.5. 2. Verfahren von einem Fehler zum anderen
+Um von einem gespeicherten Fehler zum anderen zu verfahren, muss man den Druckschalter(RECHTS) oder
+(LINKS) drücken.
+Mit dem Druckschalter(RECHTS) kann man die älteren Fehler anzeigen.
+Vorfall Vorfall Vorfall
+01 F 01 02 F 12 03 F 04
+Familiennummer Familiennummer Familiennummer
+Vorfallnummer Vorfallnummer Vorfallnummer
+Mit dem Druckschalter(LINKS) kann man die neueren Fehler anzeigen.
+Vorfall Vorfall Vorfall
+01 F 01 02 F 12 03 F 04
+Familiennummer
+Familiennummer Familiennummer
+Vorfallnummer Vorfallnummer Vorfallnummer
+V3.08 – 05/2012 116 MTELIEPVS308_DE

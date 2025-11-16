@@ -1,0 +1,55 @@
+=== PAGE 96 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+WECHSEL 3C:
+3
+Y
+L
+Y
+2
+Y
+Lc
+Y
+1
+L Y
+Y
+0
+ANWENDUNGSBEREICH: FUNKTIONSWEISE:
+L < y: WECHSEL 3C WECHSEL 1C: Geschwindigkeitswechsel beim zweiten Impuls
+y < L <= y + 0.4: WECHSEL 1P (P), der ab der Etagenhöhe vor der Zielhaltestelle gezählt wird.
+y + 0.4 < L <= 2y + 0.4: WECHSEL 2C
+2y + 0.4 < L < 2y + 0.2: WECHSEL 2C* WECHSEL 2C: Geschwindigkeitswechsel beim ersten Impuls
+L >= 2y + 0.2: WECHSEL 1C (P), der ab der Etagenhöhe vor der Zielhaltestelle gezählt wird.
+* Bereich, in dem die Wechselart 2C angewendet wird und sich WECHSEL 1P: Geschwindigkeitswechsel auf der Etagenhöhe
+der Bremsabstand auf folgender Grundlage erhöht: (N) vor der Zielhaltestelle bei Fahrten zwischen nicht
+aufeinanderfolgenden Etagen.
+y' = (L + 0.4) / 2 Bei Fahrten zwischen aufeinanderfolgenden Etagen vom Typ 1P
+ist die Fahrtgeschwindigkeit die zweite im
+LEGENDE: Geschwindigkeitsumrichter festgelegte Geschwindigkeit und
+der Wechsel erfolgt mit dem mittleren Impuls (P).
+y = Bremsabstand
+y' = erweiterter Bremsabstand WECHSEL 3C: Für Fahrten zwischen nicht
+L = Entfernung zwischen Etagen aufeinanderfolgenden Etagen erfolgt der
+Lc = Entfernung zwischen kurzen Etagen Geschwindigkeitswechsel mit dem zusätzlichen Impuls (Zi).
+N = Schirm (oder Magnet) der Etagenhöhe Bei Fahrten zwischen aufeinanderfolgenden Etagen vom Typ
+P = Impulsschirm (oder Magnet) 3C ist die Fahrtgeschwindigkeit die zweite im
+Zi = zusätzlicher Impulsschirm (oder Magnet) Geschwindigkeitsumrichter festgelegte Geschwindigkeit und
+VN = Nenngeschwindigkeit der Wechsel erfolgt mit dem mittleren Impuls (P).
+V2 = Zwischengeschwindigkeit Diese Art Wechsel ist bei mehreren aufeinanderfolgenden
+Etagen nicht möglich.
+Der Wechsel 3C ist jedoch bei Endetagen möglich. In diesem
+ANSCHLÜSSE IM MASCHINENRAUM: Fall steht der Vorendschalter auf der Höhe des Zusatzimpulses
+(Zi).
+Das N-Signal ist an der NL-Klemme des XPOS-Pakets
+angeschlossen. BETRIEBSWEISE:
+Das P-Signal ist an der P-Klemme des XPOS-Pakets
+angeschlossen. 1.- Aufzuggeschwindigkeit und Abstand der einzelnen
+Das Zi-Signal ist an der ES5-Klemme des XSM2-Pakets Haltestellen zur unmittelbar höheren Haltestelle.
+angeschlossen. Die Steuerung selbst gibt den entsprechenden Wechseltyp (1P,
+1C, 2C oder 3C) und den Bremsabstand (y) an.
+Dieser stimmt den Angaben auf den obigen Diagrammen
+überein.
+2.- Für diese Etage sind die Impulsmagnete (P) je nach
+Wechselart anzubringen.
+V3.08 – 05/2012 96 MTELIEPVS308_DE

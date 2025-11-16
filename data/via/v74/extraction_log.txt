@@ -1,0 +1,3 @@
+[2025-11-16T20:36:21.915768] PDF opened: 155 pages
+[2025-11-16T20:37:40.318770] Extracted 565 tables from 154 pages
+[2025-11-16T20:37:43.245950] Extracted text from 155 pages

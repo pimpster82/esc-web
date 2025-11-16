@@ -1,0 +1,53 @@
+=== PAGE 126 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.4.9.6. Test Kabinentableau (bot)
+Bei diesem Test werden Display und Druckschalter der Kabinentableau geprüft.
+Bei diesem Test wird die ordnungsgemäße Verbindung der Kabinentableau mit der Fahrkorbplatte geprüft.
+Nachdem der Test eingeschaltet ist, müssen die Druckschalter der Kabinentableau gedrückt werden, um ihren richtigen
+Anschluss zu prüfen. Beim Knopfdruck erscheint auf dem Fahrkorbdisplay die diesem Druckschalter zugeordnete
+Etagennummer. Gleichzeitig leuchtet sein Register auf. Das ist nur eingeschaltet, wenn es sich um ein Vía Serie
+Display handelt.
+Um ein Reset des Tests auszuführen, kann der DTG Druckschalter gedrückt werden. Nach diesem Knopfdruck schalten
+alle evtl. Eingeschalteten Druckschalter aus, bis neue Knopfdrücke erfolgen.
+Der Test wird mit Knopfdruck auf einen beliebigen Druckschalter der Konsole beendet.
+5.5. Funktionalitäten
+In diesem Abschnitt werden folgende Funktionalitäten beschrieben:
+ Automatische Bergung
+ Brandmodus laut EN 81-73
+ EN 81, -1/2 + Änderung A3
+5.5.1. Automatische Bergung
+Die automatische Bergung wurde geschaffen, um bei einem Ausfall der Gebäudestromversorgung den im
+Aufzugsfahrkorb eingesperrten Personen helfen zu können. Mit diesem System wird die Versorgung des Aufzugs
+während der Zeit aufrecht erhalten, die notwendig ist, damit die Steuerung eine kontrollierte Fahrt des Fahrkorbs bis
+zu nächsten Etage ausführen kann und somit die Bergung der darin eingeschlossenen Personen ermöglicht.
+Diese Funktionalität kann im Parameter „Bergungssteuerung“ eingerichtet werden, die sich auf der „Sicherheitenseite“
+dieses Handbuchs befindet.
+SICHERHEITEN
+Parameter Beschreibung Abkürzung Werte Stückzahl
+0: Nein
+P0004 Bergungssteuerung
+1: Ja
+Beschreibung der Phasen der automatischen Bergung.
+Phase der Ausschaltung:
+In dieser Phase wird die Steuerung über den Eingang ES4 des XSM2 Pakets darüber informiert, dass der Aufzug von
+Akkus und nicht vom Gebäudestrom versorgt wird. Zu diesem Zeitpunkt geht die Steuerung in den Bergungsmodus
+über, indem sie folgende Tätigkeiten ausführt:
+- Der Aufzug wird gestoppt.
+- Er wartet 5 Zehntelsekunden ab, bevor der ES6 Ausgang des XSM2 Steckers eingeschaltet wird,
+um dem Umrichter mitzuteilen, dass er auf Bergungsmodus gehen soll.
+- Bei elektrischen 3VF Aufzügen wartet er 5 Sekunden und bei hydraulischen Aufzügen 2
+Sekunden ab, bevor er auf die Bergungsphase übergeht. In diesem Zeitraum wird geprüft, ob
+sich der Aufzug auf der Etage befindet oder nicht. Wenn sich der Aufzug auf der Etage befindet,
+erteilt die Steuerung den Befehl, die Türen zu öffnen und geht auf die Ausschaltphase über.
+Befindet er sich außerhalb einer Etage, geht sie auf die Bergungsphase über.
+Bergungsphase:
+In dieser Phase prüft die Steuerung, ob die Sicherheitkreis geschlossen ist. Ist dem nicht der Fall, wird der Befehl
+erteilt, die Türen zu schließen. Nachdem die Türen geschlossen sind, ordnet die Steuerung den Start in
+Abwärtsrichtung bei langsamer Geschwindigkeit an. Bei 3VF Aufzügen fährt der Fahrkorb auf die
+nächstgelegene Etage, die den geringeren Stromverbrauch erfordert. Bei Hydraulikaufzügen fährt der
+Fahrkorb immer auf die unmittelbar darunter liegende Etage.
+Sobald die Etagenhöhe festgestellt wird, erteilt die Steuerung den Befehl, die Türen zu öffnen und geht auf die
+Ausschaltphase über.
+V3.08 – 05/2012 126 MTELIEPVS308_DE

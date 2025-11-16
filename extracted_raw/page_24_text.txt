@@ -1,0 +1,158 @@
+=== PAGE 24 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.1.4. 2. OMRON L7 Frequenzumrichter
+X3VF de VS_SMQ
+P5
+VS-ADAP3VF1 1 1 1 1 1 2 1 1 1 1 8 9 6 7 1 4 5 3 r g
+24G-
+XSM
+1 n
+ES4-
+XSM 2 24Vdc A2 G2R-2K2VELA1
+0Vdc-
+XSM
+1
+24Vdc
+A2
+G2R-2KRSEA1
+gg g 24Vdc
+A2
+G2R-2KINSA1
+v/a
+0SS A2
+110Vac
+A
+KCK
+G2R-2
+A1
+CK
+- XKV 24Vdc
+24Vdc
+A
+A
+2
+2
+G2R-2
+G2R-2K
+KM
+RN
+O
+S
+K
+A
+A
+1
+1
+S T R m m m
+a a F z a : : r g b b e c la l o b u d ie rungen: L N PE MANIOBRA FILTRO N L' ' 4 0 0 V 0 p V p - T - R TR M M R S T R S T EIN F G IL A T N E G R S-
+b g : : w gr e a i u ß
+10A 1P
++ N
+QIM
+nnnv/a
+m n
+n
+r v v : i :
+:
+a
+:
+:
+r
+:
+g
+s
+o v
+b c
+r
+o
+t i
+r
+ü
+h
+o
+r
+a
+a
+n
+w
+le
+u
+n
+a
+t
+n
+g
+t
+r
+e
+z
+XM AQ T 0 F F V V VM 1 2 1 2 dc
+v
+3 - TS
+g
+m
+4 - TS
+g ZC az b T T 3 3 L L K K 3 3 2 1 + -
+RECT_01 GRF
+~2 ~1 6 3 KRFR 1 8 b b / / a a z z 11
+T
+T 0
+0 R
+R V
+V M
+M s
+s
+L L
+L
+1 2
+3
+( (
+(
+R S
+T)
+) ) + + 1 2
+R M K E H N R U R BEI 10 PS ODER
+FV
+(1A)
+110VS-TRM 220Vp - TRM 0Vp - TRM 0SS - XTSS RK v r
+A2
+RECTIFICADOR v n
+K1A1
+S - XKV B - XKV * * 21 KCK 24 K K 2 2 V V 2 1 1 1 1 1K K E E I M N
+K
+L L O S
+C
+2 1 1 4 4 2 K
+K
+1
+1
+1
+1
+K K R R 1
+1
+2
+4
+K N N 11 R 2 1 1 1 S S SE 2 1 4 4 14 12 S S S S S S
+B S
+1 2 3 4 5 6
+B C
+O M R O N S Y S D R IV
+E - L
+A2
+K2A1 BB1 7
+N AU U T R O W TU Ä N H I R N E G N D A N D S E C S H LIESSEN A AU UT T M 3
+M
+4
+KP1 - XSM1 K1 gris K2 M
+21 22 22 21 1
+XENC + -C C C C2 1 1 2- + + - r n b m v a 2 3 4 5 6 7 C C C C 1 1 2 2 + - + - PCB PGX-2 24G - XSM1 r XSM 1 0Vdc m 24Vdc MK2P A2 KRFRA1 M B1 2
+m B2
+B B1
+2
+U
+V
+V W U m m m T T 1 2 K1 L L 1 2 T1 K2 L1 m m m W
+T2 L2
+V3.08 – 05/2012 24 MTELIEPVS308_DE

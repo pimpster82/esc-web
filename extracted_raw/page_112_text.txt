@@ -1,0 +1,26 @@
+=== PAGE 112 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.4.4. Datumsmenü
+Auf diesem Menü werden Datum und Uhrzeit der Steuerung mit 1 Sekunde Intervall angezeigt.
+1 s Intervall HXXXX
+Zeichen für Zeichen für
+Stunde Minuten
+FXXXX
+Zeichen Zeichen
+für Tag für Monat
+5.4.5 Fehlermenü
+Auf diesem Menü werden die Vorfälle der Anlage angezeigt. Diese Vorfälle bestehen aus Fehlern, Ereignissen und
+Alarmen:
+ Fehler: Es werden bis zu 128 Fehler gespeichert. Damit sind Fehler im Zusammenhang mit dem Aufzug gemeint
+(F0102, F0103 usw.).
+ Ereignisse und Alarme: Es werden bis zu 128 Alarme (laut EN 81-28) und Ereignisse, die in der Anlage eintreten
+können, angezeigt. Mit Ereignissen sind die Änderungen der Funktionsweise der Steuerung gemeint. (Eintritt in
+Inspektion, Verlassen der Inspektion usw.)
+Die Steuerung kann zwischen quittierten Fehlern, d. h. Fehlern, die vom Wartungstechniker geprüft wurden, und nicht
+quittierten Fehlern unterscheiden.
+ ERST: Mit diesem Vorgang werden alle aktuellen Fehler des Systems quittiert. Diese Fehler werden ins
+Fehlerhistoriemenü übertragen.
+ Fehlerhistorie: Hier werden die Fehler gespeichert, die mit dem ERST-Befehl quittiert wurden.
+V3.08 – 05/2012 112 MTELIEPVS308_DE

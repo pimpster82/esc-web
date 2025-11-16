@@ -1,0 +1,156 @@
+=== PAGE 61 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.3. Hängekabel Steuerung
+2.3.1. Hängekabel 1. Beleuchtung und Sicherheitskreis
+ENDE SCHALTSCHRANK ENDE SCHALTSCHRANK
+STEUERUNG FAHRKORB
+3C
+Alarm ( i s d ie e h n e ti f 2 iz . i 1 e . r 8 u . n 7 g ) A IX
+v/a
++ - A A I I 7
+8
+4 2
+C
+C
+C C C _ C S
+S X
+Sic ( h S e t r a h n e d i a ts r k d r , e s is ie F h a e h 2 rk .2 o . r 7 b )
+C
+8 9
+3
+' '
+'
+C C
+C _ C
+C X Fahrkorbriegel in Fahrkorb
+Alarm außerhalb E A X + -E E A A 2 2 ' ' C 'C
+S
+E M C X E B l e e r k g t u ri n s g c s h s e t euerung
+Geländeranzeiger R B IX + -R R B B F F A IA C A IF X U Vo n r t e e n re d s s c E h n a d lt e e v r or
+C
+Beleuchtung Frankreich R F A X 1A L F F A SA C A S F X Oberes Ende vor Vorendschalter
+B
+Unt B e e re le s u E c n h d tu e n v g o F r ahrkorb
+L
+A X C A CF
+CN
+AF NC FC B L A X Fahrkor ( b si b e e h le e u 2 c . h 2 t . u 6 n ) g
+Vorendschalter (Standard, IF X AIF C
+O
+V
+si
+o
+b e
+r
+h e
+e
+r e
+n
+e
+d
+2 s
+s
+. E 1
+c
+n
+h
+.8 d
+a
+. e
+l
+1
+t e
+0 v
+r
+) o
+(
+r
+S tandard,
+C A S
+F X AS
+AF
+F
+A L 1 R F A X Beleuchtung Frankreich
+s E ( ie s le i h e k e h t r e 2 i s . 2 1 c . . h 1 8 e . . 8 1 B . 0 1 e ) ) r gungssteuerung S E M C X C C ' ' ' 2 2 B B R R - + R B IX Geländeranzeiger
+Fahrkorbriegel S _ C C
+X
+C C ' ' 8 9 A A E E - + E A X Alarm außerhalb
+1
+C 2 C
+C
+8
+7 3 L F
+X
+C 4
+2 C 4 5
+2
+C'3
+S icherheitskreis in Fahrkorb
+C S
+C 3
+I
+I
+A
+A
+-
++ A IX Alarmidentifizierung
+1
+2 m
+oh
+i
+n
+t
+e
+X C
+X
+C
+C
+_
+C
+C
+_ C S
+X C
+C
+7
+8
+C
+1 C 4
+2
+C'3 v/a
+C
+3
+2.3.2. Hängekabel 3. Gegengewichtsbauteile
+v/a Sicherheits-
+S k G o i e c n g h t e e a n r k h g t e e e i w t a s i m c - h t P TN C X a/v H P 1 1 H P 2 2 2 2 H P 1 1 H P v/a X C N TP P TN C X
+C
+V LR X a/v H P 1 1 H P 2 2
+RLC
+1 2 L L R R R R L L 1 2CLR 2 2 H P
+1
+1
+H
+P X R LV C X C N TP F G b G
+k
+G e
+o
+e e e e r
+n
+g s g g n
+t
+r c e e b
+a
+e h n n
+k
+e n w g g
+t
+d z
+e
+e e i e i n e w w r
+a
+d n i i
+m
+i a c c u g m h h n k t t g e its-
+Ohne Fernbedienung Mit Fernbedienung
+V3.08 – 05/2012 61 MTELIEPVS308_DE

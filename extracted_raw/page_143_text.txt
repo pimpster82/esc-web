@@ -1,0 +1,52 @@
+=== PAGE 143 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.7.3 Seite Programmierungen
+SYSTEMZEITEN
+Parameter Beschreibung Abkürzung Werte Maßeinheit
+P0001 Programmierung maximale Fahrtdauer MFD 1..250 Sekunden
+P0002 Programmierung maximale Schließdauer MTC 1..250 Sekunden
+P0003 Zeit nächste Fahrt TPS 1..250 Sekunden
+P0004 Zeit nächste Fahrt Ausgangsetage TPSL 1..250 Sekunden
+P0005 Zeit nächste Fahrt kurz TPSC 1..250 Sekunden
+P0006 Programmierung für außen TEXT 1..250 Sekunden
+P0007 Maximale Dauer Türkreis TMSP 1..250 Sekunden
+P0008 Verlängerte Öffnungsdauer Türen TAPP 1..250 Sekunden
+P0009 Dauer Rücksendung zur Hauptetage 0..1410 Minuten
+P0010 Programmierung Hydraulikaufzug 1..250 Zehntel
+P0011 Uhrzeit Beginn Nachtmodus Uhrzeit
+P0012 Uhrzeit Ende Nachtmodus Uhrzeit
+Verzögerung Türschließung wegen
+P0013 TFOT 1..60 Sekunden
+Hindernis
+P0014 Nicht verwendet
+P0015 Nicht verwendet
+P0016 Nicht verwendet
+TPS : Hierbei handelt es sich um die Zeit, die ab Ankunft des Fahrkorbs auf der Etage verstreicht, bis sie wieder für
+die nächste Fahrt betriebsbereit ist.
+TPSL : Diese Zeit ist wie TPS, gilt aber nur für die Ausgangsetage.
+TPSC : Diese Zeit ersetzt TPS oder TPSL, wenn mehrere Aufrufe verzeichnet werden, egal ob aus dem Fahrkorb oder
+von der Etage, je nach Wert des Parameters Programmierung nächste Fahrt kurz (Parameter P0007 der Komfort-
+Seite).
+TMSP : Wird für „vorübergehend außer Betrieb wegen DTG“ oder „geöffneter Türenkreis“ verwendet.
+TAPP : Wenn im Fahrkorb ein verlängerter Druckschalter zur Türöffnung vorhanden ist. Nur bei Sonderbestellung.
+TFOT : Nachdem ein Hindernis festgestellt wird (FOT, SEN o DTG)11, bleibt der Befehl zur Türöffnung während der Zeit
+besteht, die zum Schließen bis zum Hindernis zzgl. der in diesem Parameter spezifizierten Zeit gebraucht wurde.
+TEXT: Extrazeit, um Fahrkorbaufrufe ausführen zu können. Sie haben Priorität gegenüber Außenaufrufen,
+vorausgesetzt, dass keine bestimmte Fahrtrichtung vorgegeben ist (selektive Steuerung). Diese Programmierung
+beginnt nach TPS Abschluss mit der Zählung.
+MTC: Maximal verfügbare Dauer, bis die Fahrkorbtür schließt (die Tür gilt als geschlossen, wenn der Kontakt der
+Sicherheitkreis der Fahrkorbpräsenz geschlossen ist (8C-8H)).
+Wenn die Steuerung den Befehl erteilt, die Türen zu schließen, beginnt die interne Programmierung zu zählen. Wenn
+diese interne Programmierung MTC überschreitet, ohne dass die Tür geschlossen ist, erteilt die Steuerung den Befehl
+zum Öffnen, indem die TPS Programmierung zu zählen beginnt.
+MFD: Dieser Parameter legt die Höchstzeit für den Steuerungsbetrieb ohne Feststellung eines Impulses (die
+Etagensignale werden nicht gerechnet) fest.
+Die Programmierung beginnt mit der Zählung, wenn die Schütze anziehen, und wird jedes Mal zurückgesetzt, wenn die
+Steuerung einen Impuls empfängt.
+10
+Bei Hydraulikaufzügen hat P0009 zwingend den Wert ≥ 1 (EN 81-2)
+11
+FOT = Lichtzelle, SEN = Empfindlichkeit der Bedienung, DTG = Türöffnung
+V3.08 – 05/2012 143 MTELIEPVS308_DE

@@ -1,0 +1,28 @@
+=== PAGE 117 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.4.6. Informationsmenü
+In diesem Menü werden folgende Informationen dargestellt:
+SEr00
+Zeigt den letzten Punkt der Sicherheitskreis an, der geschlossen ist.
+cerrado
+t 23
+Zeigt die Maschinenraumtemperatur in ºC an.
+AbS
+Zeigt die Fahrkorbstellung im Schacht in mm an.
+P0000
+Zeigt das Gewicht der Fahrkorblast in kg an.
+LLC00
+Zeigt die offenen Fahrkorbaufrufe an.
+LLb00
+Zeigt die offenen Etagenaufrufe für Abwärtsfahrt an.
+LLS00
+Zeigt die offenen Etagenaufrufe für Aufwärtsfahrt an.
+oUt
+Zeigt den Status der Ausgänge an. Siehe Menü “oUt”.
+InPUt
+Zeigt den Status der Eingänge an. Siehe Menü “InPUt”.
+nVIAJ
+Zeigt die Anzahl der ausgeführten Fahrten seit Inbetriebnahme an.
+V3.08 – 05/2012 117 MTELIEPVS308_DE

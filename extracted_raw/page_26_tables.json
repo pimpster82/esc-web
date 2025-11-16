@@ -1,0 +1,100 @@
+[
+  [
+    [
+      "",
+      "",
+      "",
+      "",
+      "TECHNISCHES PRODUKTHANDBUCH",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      "VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5",
+      ""
+    ],
+    [
+      null,
+      "",
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      null,
+      null,
+      "0 2 V 4G dc 1 5 4 2 I C C 2 R 0 P N N V 4 H H H H S L L H S C d C C c 0 C C 24 V L H P d H H cXPMB2 7 8 4 2 3 3 2 0 A A A A 0 2 0 0 B B V V 4 ' 4 C C C C C - + F - + - + F C E G d d I S c c X X X A E S N N SC T C F 0VdcX24Vdc 24P V S - S M Q 24Pi P C B O X X X M N M S C E N S BUS C C 0 2 N S 0 0 M M 2 M V 4 4 V V N H L L BE S G G d d d M 2 M S c c c - X X X S S T2 M M 0 1 2 XVCBUSC C 0 E E 2 0 0 T N K K E E E E E 0 2 E 2 0 V V 4 V V V 4 0 M S S S A S S A P P S H L L G S G d d d d S C 4 5 6 2 1 2 3 1 2 1 C c c c c\n9 6 5 S S S 9 6 8 7 H H H HXSSH2 XBATS ( (- )\n+ )\nVSS 0SS 0SS XTSS CKLR XKV BS XSV S SV V1 2\nXKV XKV\ny XTSS\n0SS0SSVSS SBRLCK\nKT\nKEA1\nA2\nZA\nKE\nKTA1\nA2\nZA\nKMA1\nA2\nZA",
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      "T T 24 D S G d M F c 22 22\nKE\n21\n22\nKT\n21\n2 0V 0S S"
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      ""
+    ],
+    [
+      "XVOP",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      "XCEN",
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      ""
+    ],
+    [
+      "U2",
+      "PP C C 0 K V S P M A A d 1 2 M c 0Vdc BA XKMT1\n- XSM1\n- 0 + V B V B E A d A H T c T 0 C R + - - 0 + + V B V V V B V F E E A d d E A E E M T c c T H X X X0 B V A E T OE P C B -O LE 1 L 1 2 3 OX A XKET XCV C VR V C E V V S D D L T BX X XKMT1 X K K C M E V T T 2 XKMT2 L T E C D V V C VR D S V 2 - ~ RECT_01 GRV 1 + ~\nKT\nT1 L1 T1 L1\nT2 L2 KE T2 L2\nT3 L3 T3 L3\nKM\nT1 L1\nT2 L2\nT3 L3\nL L L 1 2 3 K V F T R R E M M L 4 4 E - - M T T A A E 3 3 C 2 3 A ( ( N 4 2 I 0 3 Q 0 0 U V V E ) )",
+      "BA\n- 0 + + B V B V A d A E T c T H XBAT OE P C B LOX A C D BX\n-VEXVE -O CVVS\n+",
+      "XKMT1\nXKMT2 RECT_01 GRV\nXKMT1KMT2\n2~ 1~\nD\nXCV C V V R D - +",
+      null
+    ],
+    [
+      "V W2\n2\nU1\nV W1\n1\nR",
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "V3.08 – 05/2012",
+      "26",
+      "MTELIEPVS308_DE"
+    ]
+  ]
+]

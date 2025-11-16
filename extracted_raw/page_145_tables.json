@@ -1,0 +1,217 @@
+[
+  [
+    [
+      "",
+      "",
+      "",
+      "",
+      "TECHNISCHES PRODUKTHANDBUCH",
+      ""
+    ],
+    [
+      null,
+      null,
+      null,
+      "",
+      "VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5",
+      ""
+    ],
+    [
+      null,
+      "",
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "",
+      "SCHUTZ",
+      null,
+      null,
+      null,
+      null,
+      null,
+      ""
+    ],
+    [
+      "",
+      "Parameter",
+      "",
+      "Beschreibung",
+      "",
+      "",
+      "Werte",
+      ""
+    ],
+    [
+      "P0001",
+      null,
+      "Beschränkte Fahrkorbaufrufe",
+      null,
+      null,
+      "0: Nein\n1: Code",
+      null,
+      null
+    ],
+    [
+      "P0002",
+      null,
+      "Zwingender Halt im Erdgeschoss",
+      null,
+      null,
+      "0: Nein\n1: Ja",
+      null,
+      null
+    ],
+    [
+      "P0003",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0004",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0005",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0006",
+      null,
+      "Löschsystem Fahrkorbaufrufe",
+      null,
+      null,
+      "0: Ohne Löschung\n1: Wird die Türkreis oder Lichtzelle nicht geschaltet,\nwerden die gespeicherten Fahrkorbaufrufe gelöscht.\n2: Maximale Anzahl gespeicherter Fahrkorbaufrufe: 3\n3: Maximale Anzahl gespeicherter Fahrkorbaufrufe: 6\n4: Löschung der Fahrkorbaufrufe, wenn kein Gewicht im\nFahrkorb festgestellt wird.",
+      null,
+      null
+    ],
+    [
+      "P0007",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0008",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0009",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0010",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0011",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0012",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0013",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0014",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0015",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ],
+    [
+      "P0016",
+      null,
+      "Nicht verwendet",
+      null,
+      null,
+      "",
+      null,
+      null
+    ]
+  ],
+  [
+    [
+      "V3.08 – 05/2012",
+      "145",
+      "MTELIEPVS308_DE"
+    ]
+  ]
+]

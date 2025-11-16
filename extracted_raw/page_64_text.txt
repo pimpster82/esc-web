@@ -1,0 +1,34 @@
+=== PAGE 64 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+Riegel und Vorhandensein von Außentüren (der Fall der halbautomatischen Türen ist dargestellt).
+VS-SMQ2 PLATTE FARBCODIERUNG VERKABELUNG:
+XSSH2
+(Schaltschrank
+7H8H6H9H Steuerung) 1H, 2H: grau (SLVH, SFI, SFS)
+4H, 5H:violett (STH, SPT, STOPF)
+6H, 7H: grün (SPE)
+8H, 9H: braun (SCE)
+Erde: grün / gelb
+XSSH2
+7H8H6H9H
+XPCE
+SCE Riegel und Außentüren
+SPE
+vorhanden
+XPCE
+SCE Riegel und Außentüren
+SPE
+vorhanden
+XPCE
+SCE
+SPE Riegel und Außentüren
+vorhanden
+XSSH2 ALLE TÜREN AUTOMATISCH
+XCE
+7H8H6H9H SCE
+XCE SCE
+Bei Doppelzugang sind die Türschläuche des zweiten Zugangs länger, um
+an die 2. Vertikale zu gelangen.
+V3.08 – 05/2012 64 MTELIEPVS308_DE

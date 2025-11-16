@@ -1,0 +1,82 @@
+=== PAGE 114 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+oberer Vorendschalter (AFS Klemme XANTF Stecker)
+festgestellt und der Aufzug steht nicht auf den letzten Etagen.
+Es wurde festgestellt, dass beide Vorendschalter geöffnet sind.
+F 11 14 Beide Vorendschalter geöffnet
+AFI und AFS Klemmen des XANTF Steckers spannungslos.
+Während einer Abwärtsfahrt geht die AFI Klemme des XANTF
+Der obere Vorendschalter öffnet sich in
+F 11 15 Steckers von geschlossen auf geöffnet über (von
+Abwärtsrichtung.
+spannungsführend auf spannungslos).
+Während einer Aufwärtsfahrt geht die AFS Klemme des XANTF
+Der untere Vorendschalter öffnet sich in
+F 11 16 Steckers von geschlossen auf geöffnet über (von
+Aufwärtsrichtung.
+spannungsführend auf spannungslos).
+Nach Beendigung einer Fahrt und bei stillstehendem Aufzug auf
+F 11 26 Fehlendes CPS Signal der Etage verschwindet das Signal des Sicherheitskontakts der
+538 Platte (CPS). CPS-Kontakt und FZS Magnet prüfen.
+Nach Beendigung einer Fahrt wird festgestellt, dass am CPS
+F 11 27 CPS Kontakt hängengeblieben Signal keine Schaltung erfolgte. CPS Kontakt und FZS, FB und
+FS Magnete prüfen.
+Ablesefehler des absoluten Über CAN wird keine Kommunikation mit der absoluten
+F 11 56
+Positionierungssystems. Positionierungsvorrichtung empfangen.
+Die aus dem internen Speicher abgelesenen Werte über die
+Ungültige Werte aus dem internen
+F 11 57 Stellung der Höhen sind fehlerhaft. Parameter des Abstands
+Speicher abgelesen
+zwischen Etagen prüfen.
+Die vom Drehgeber gesendete Stellung entspricht keiner am
+Aufzug konfigurierten Stellung. Prüfen, ob sich die von der
+absoluten Positionierungsvorrichtung gesendete Stellung
+F 11 58 Ungültige Drehgeberstellung abgelesen
+innerhalb der Stellungsgrenzen befindet, die für die
+Aufzugsetagen konfiguriert sind. Siehe Einbauhandbuch
+absolute Vía Serie Positionierung
+Während einer Fahrt wurde ein geöffneter (spannungsloser)
+Fehler der Vorendschalter mit dem unterer Vorendschalter (AFI Klemme XANTF Stecker) oder
+F 11 60
+absoluten Positionierungssystem oberer Vorendschalter (AFI Klemme XANTF Stecker) festgestellt
+und der Aufzug steht nicht auf den letzten Etagen.
+Übermäßige Kommunikationsdauer bei Datenempfang. Wenn
+Kommunikationsfehler mit dem sich der Aufzug in Bewegung befindet, überschreitet die Dauer
+F 11 61
+absoluten Positionierungssystem zur Aktualisierung der Positionierungsdaten die eingestellte
+Zeit.
+F 12 45 Übertemperatur am Motor Übertemperatur am Motor. TM Klemme des XSM1 Steckers
+F 12 46 Übertemperatur im Maschinenraum Der interne Fühler der SMQ Platte zeigt Übertemperatur an.
+Geöffnete Türkreis während zu langer Das Signal der geöffneten Tür (Punkt 6H) wurde länger als 3
+F 13 11
+Zeit Minuten festgestellt.
+Eines der Bauteile, die an die IN1, IN2 oder IN3 Klemme des
+FOT1 oder XCAUX Fahrkorbsteckers (Druckschalter Türöffnung,
+Der Türwiederöffnungkreis (DTG, FOT,
+F 13 12 Lichtzelle oder Empfindlichkeit) angeschlossen sind, ist geöffnet
+SEN) löst zu lange aus.
+und zeigt an, dass ein Hindernis oder eine
+Türöffnungsanforderung besteht.
+F 25 5x Wiederholte Fehler X gibt die Art des sich wiederholenden Fehlers an.
+TABELLE DER EREIGNISSE UND ALARME
+Ereignis
+Familiennummer Fehlernummer Fehlerursache
+oder Alarm
+S 41 01 Unterbrechung der Hauptversorgung des Aufzugs
+S 41 02 Wiederherstellung der Hauptversorgung des Aufzugs
+S 42 01 Der Aufzug arbeitet im Inspektionsmodus.
+S 42 02 Der Aufzug verlässt den Inspektionsmodus.
+S 43 01 Der Aufzug arbeitet im Feuerwehrmodus.
+S 43 02 Der Aufzug verlässt den Feuerwehrmodus.
+S 45 01 Prioritärer Fahrkorbservice. Es werden keine Etagenaufrufe bedient.
+Vom Anwender reservierter Aufzug. Reagiert auf keine Aufrufe
+S 45 02
+(Fahrkorb, Etage).
+S 46 01 Betrieb mit Notstromversorgung
+S 46 02 Rückkehr zum Betrieb mit Versorgung aus dem Stromnetz
+S 55 01 Überlast
+A 90 01 Alarmknopf ausgelöst
+V3.08 – 05/2012 114 MTELIEPVS308_DE

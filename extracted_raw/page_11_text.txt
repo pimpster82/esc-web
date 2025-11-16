@@ -1,0 +1,47 @@
+=== PAGE 11 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+NENN-
+VERSORGUNGS
+SPANNUNG LEISTUNG - QF FF QIM QAH QAC FA
+STROMSTÄRKE
+QUERSCHNITT*
+V PS kW A mm2 C-Kurve 300 mA C-Kurve C-Kurve 30 mA
+4 3 12 4 16 25
+5 3.7 14 4 16 25
+5.5 4 16 4 20 25
+7.5 5.5 22 6 25 25
+10 7.5 28 10 32 40
+220/230 13.5 10 40 10 40 40
+15 11 42 16 50 63
+20 15 54 25 63 63
+25 18.5 68 35 80 80
+30 22 80 50 100 100
+34 25 84 50 100 100
+4 3 7 4 10 25
+5 3.7 8 4 10 25 6 10 6 25
+5.5 4 9 4 10 25
+7.5 5.5 12 4 16 25
+10 7.5 16 4 20 25
+13.5 10 21 6 25 25
+15 11 22.5 6 25 25
+380/400
+20 15 30 10 32 40
+25 18.5 37 10 40 40
+30 22 44 16 50 63
+34 25 50 16 50 63
+40 30 60 25 63 63
+50 37 72 35 80 80
+61 45 85 50 100 100
+* Richtwert
+Abkürzungen:
+QF: Kraftmagnetwärmeschalter: dreipolig, 10KA, UNE 60947.2, C-Kurve
+FF: Kraftdifferenzial: tetrapolig, UNE-EN 61008, 300 mA Empfindlichkeit, AC Klasse
+QIM: Steuermagnetwärmeschalter: zweipolig, UNE-EN 60898, 6A, C-Kurve, 6KA Abschaltleistung.
+QAC: Magnetwärmeschalter Fahrkorbbeleuchtung: zweipolig, UNE-EN 60898, 6A, C-Kurve, 6KA
+Abschaltleistung.
+QAH: Magnetwärmeschalter Schachtbeleuchtung: zweipolig, UNE-EN 60898, 10A, C-Kurve, 6KA
+Abschaltleistung.
+FA: Beleuchtungsdifferenzialschalter: zweipolig, UNE-EN 60947.2, C-Kurve, 10 KA Abschaltleistung.
+V3.08 – 05/2012 11 MTELIEPVS308_DE

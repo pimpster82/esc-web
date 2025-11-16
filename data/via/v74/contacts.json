@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "manual_version": "VIASerie_v74",
+    "manual_pages": "154-155",
+    "extraction_date": "2025-11-16T20:55:43.632817",
+    "status": "Template - manual data entry needed",
+    "total_contacts": 0,
+    "note": "Service contact information from pages 154-155 (ANHANG II)"
+  },
+  "contacts": [
+    {
+      "code": "7H",
+      "name": "Shaft Door Contact",
+      "location": "Door safety system",
+      "function": "Monitors shaft door closure",
+      "extraction_status": "example"
+    }
+  ]
+}

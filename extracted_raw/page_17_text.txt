@@ -1,0 +1,71 @@
+=== PAGE 17 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+1.8. Allgemeiner Telefonieschaltplan
+Siehe spezifisches Handbuch des Notruftelefons (MTELFONOMAC3xxx_XX).
+1.9. Sicherheitskreis
+CK
+110Vs 9H KONTAKTERLÄUTERUNG
+TRM
+9´C
+CPS Regulierer
+SCC KPF Melderkontakt Anwesenheit Schachtgrube
+KZS
+KVF Phasenüberwachungskontakt
+KVF 8´C KZS Sicherheitsbereichskontakt
+SAC Verkeilungskontakt
+9S 8´H SAFC Schlaffseilkontakt in Fahrkorb
+SAM Kontakt Schachtgrubendämpfer
+1H 9S SCE SCC Kontakt Fahrkorbtürriegel
+538 SCE Kontakt Außentürriegel
+8H SEC Kontakt Fahrkorbverriegelung
+STLH (CPS) 6'S SEM Kontakt Maschinenverzahnung
+8C SFI Kontakt unterer Endschalter
+SPC SFS Kontakt oberer Endschalter
+SIB Druckschalter Abwärtsfahrt bei Revision
+SIR Revisionsschalter
+1M 7C SIS Druckschalter Aufwärtsfahrt bei Revision
+SLVH Kontakt Geschwindigkeitsbegrenzer im Schacht
+7H
+SMB Druckschalter Abwärtsfahrt MES /
+Inspektionsschaltschrank
+2M
+SMS Druckschalter Aufwärtsfahrt MES /
+SPE Inspektionsschaltschrank
+SPC Anwesenheitskontakt Fahrkorbtür
+SAM 6S 6H SPE Anwesenheitskontakt Außentür
+SPT Kontakt Teleskopdämpfer
+6S SPM Mobiler Kontakt Auftrittstufe
+STC Klappenkontakt in Fahrkorb
+STH Kontakt Schachtklappe
+SFI STPSM STLH Kontakt Kabelspannung Schachtbegrenzer
+SMS SMB STPT Kontakt Zusatzstopp Fahrkorbdecke
+STOPB Stopppilzschalter auf Fahrkorbschalterleiste
+STPC Stopppilzschalter auf Revisionskasten
+SFS STPF Stopppilzschalter auf Schachtgrubenkasten
+KPF
+SLVH SEM
+5'S
+2H
+2C SMB SMS
+Pisten VS-SM PLATTE
+SAC X PLATTENklemmen
+X Klemmen der elektrischen Anlage
+SAFC X Ablesepunkt
+In Abhängigkeit 5S
+Nicht in EN 81 vorgesehene Kontakte
+3C d S a ch vo la n f , f s o e b il k e o in n takt 5H *
+vorhanden ist oder
+STH
+nicht.
+STOPB
+SPT
+SIR
+SIB
+SIS STPF
+SPM
+3'C 4H
+4C
+SEC STC STPT STPC
+V3.08 – 05/2012 17 MTELIEPVS308_DE

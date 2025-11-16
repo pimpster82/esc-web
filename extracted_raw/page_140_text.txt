@@ -1,0 +1,29 @@
+=== PAGE 140 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.6.6.2 Eingabe des Codes zur Zugriffsbeschränkung (cod)
+Sobald man sich im Konfigurationsmenü befindet, muss man die  (RECHTS) Taste drücken, bis das Zugriffsmenü
+(ACCE) erscheint. INTRO Knopf drücken, um auf das Menü zu kommen. Um auf das Code-Menü zu kommen, muss
+man mit den (RECHTS) oder (LINKS) Tasten verfahren, bis cod erscheint.
+001
+SETUP 2 Sekunden
+lang drücken
+5ETUP
+Prog ACCE
+Mit dem 
+Druckschalter zum INTRO drücken, um in das
+nächsten Menü Menü zu gelangen.
+fahren
+cod
+Vorgehensweise zur Änderung des Codes für Zugriffsbeschränkung
+Die Codeänderung muss in zwei Phasen erfolgen:
+ 1. Phase: Neuen Zugriffscode mithilfe der  (RECHTS) oder  (LINKS) Tasten zur Änderung der Zeichen und
+des INTRO Knopfs eingeben, um den Wert des gewählten Zeichens zu erhöhen. Nachdem der neue Code
+eingegeben ist, muss man den SETUP Knopf drücken, um zur zweiten Phase zu gelangen.
+ 2. Phase: Bestätigung des neuen Zugriffscodes. Zu diesem Zweck muss man den im obigen Schritt eingegebenen
+Zugriffscode erneut eingeben. Wenn der eingegebenen zweite Code beim Drücken des SETUP Knopfs nicht mit
+dem Code der ersten Phase übereinstimmt, erscheint der (PF) Fehler und der Code wird nicht gespeichert. Wenn
+beide Codes übereinstimmen, wird der neue Zugriffscode gespeichert und die Konsole kehrt wieder zum cod Menü
+zurück.
+V3.08 – 05/2012 140 MTELIEPVS308_DE

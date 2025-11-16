@@ -1,0 +1,66 @@
+=== PAGE 142 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.7.2. Seite Anlage 2
+ANLAGE 2
+Parameter Beschreibung Werte Maßeinheit
+P0001 Personenzahl 1..20
+0: 1 Geschwindigkeit
+1: 2 Geschwindigkeiten
+P0002 Fahrstuhlart 2: 3VF
+3: Hydraulisch
+4: 3VF Synchronisch
+0: Impulse
+P0003 Anordnung
+1: Drehgeber
+P0004 Abstand Etagenhöhen 1..9999 mm
+0: 1C
+1: 2C
+P0005 Wechselart (Information)
+2: 1P
+3: 3C
+Bremsabstand (Information mit
+P0006 1..9999 mm
+Impulspositionierung)
+0: 0,6
+1: 0,8
+2: 1
+3: 1,2
+4: 1,4
+P0007 Nenngeschwindigkeit m/s
+5: 1,6
+8
+6: 2,0
+8
+7: 2,5
+8
+8: 3,0
+0: Langsam
+P0008 Inspektionsgeschwindigkeit m/s
+1: 0.6
+P0009 Senkrechttyp Schacht 9 0: V8
+1: V7
+0: MP
+P0010 3 VF Steuerungsmodus
+1: Kaufteil
+0: Direkt
+P0011 Hydraulikstart 1: E-T MP
+2: E-T GMV
+0: Nein
+P0012 Soft-Starter
+1: Ja
+0: Nein
+P0013 Door Lock
+1: Ja
+0: Nein
+P0014 Softstopp 1: MP
+2: GMV/KLEEMAN
+P0015 Senkrecht 4 geteilt 0: Nein
+1: Ja
+P0016 Nicht verwendet
+8
+Kein Standard: bitte nachfragen
+9
+Senkrecht Schacht = senkrechte Verkabelung der Schachtbauteile (Etagendruckschalter, Displays usw.)
+V3.08 – 05/2012 142 MTELIEPVS308_DE

@@ -1,0 +1,67 @@
+=== PAGE 147 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.7.7. Seite Sonderbedienungen / Betriebsweise
+SONDERBEDIENUNGEN / BETRIEBSWEISE
+Parameter Beschreibung Werte
+0: Nein
+P0001 Sonderbedienungen Zwischenetage 1: FSP 16
+2: LPVH 17
+0: Nein
+1: RC / IS (18)
+P0002 Sonderbedienungen Fahrkorb
+2: Attendant
+3: LVINHLLC 19
+P0003 Fahrkorbcode Sonderbedienungen
+0: Individuell
+P0004 Art der Parketage 1: Gruppenparkplatz 20
+2: Intelligenter Parkplatz 21
+P0005 Etagenhöhe Parketage 1 Etagennummer
+P0006 Etagenhöhe Parketage 2 Etagennummer
+P0007 Etagenhöhe Parketage 3 Etagennummer
+0: Alle
+Etagenhöhnen mit Rücksendung auf
+P0008 1: Untere Etage
+Etage mit Ausgang
+2: 2 untere Etagen
+0: Nein
+1: Etagenhöhe + Impulse
+P0009 Simulierung
+2: Aufrufe
+3: Beide (Wert 1 und 2)
+0: Nein
+P0010 Sonderaufrufe
+1: Parkplatz 22
+P0011 EXT-CALL Platte 1 0: Nein
+P0012 EXT-CALL Platte 2 1: Etagenaufrufe aus Etage 1 bis 8
+P0013 EXT-CALL Platte 3 2: Etagenaufrufe aus Etage 9 bis 16
+3: Etagenaufrufe aus Etage 17 bis 24
+4: Fahrkorbaufrufe aus Etage 1 bis 8
+5: Fahrkorbaufrufe aus Etage 9 bis 16
+6: Fahrkorbaufrufe aus Etage 17 bis 24
+P0014 EXT-CALL Platte 4 7: Filterung Fahrkorbaufrufe
+australische Norm von 1 bis 15
+8: Filterung Fahrkorbaufrufe
+australische Norm von 16 bis 30
+P0015 Nicht verwendet
+P0016 Nicht verwendet
+16
+Permanent außer Betrieb auf Etage. Erfordert Schlüssel auf Etage.
+17
+Schlüssel prioritäre Anrufe, Krankenhausanruf. Erfordert Schlüssel auf Etage.
+18
+Reservation Controls. Erfordert Schlüssel in Fahrkorb.
+19
+Schlüssel Unterdrückung Fahrkorbaufrufe. Erfordert Schlüssel auf Etage.
+20
+Gruppenparken: Bei Aufzuggruppen wird jeder Aufzug auf die Parketage zurückgesendet, die ihm in P0005, P0006
+und P0007 zugeordnet wurde (anfragen).
+21
+Intelligentes Parken: Wie Gruppenparken, aber indem sichergestellt wird, dass sich immer einer der Aufzüge in
+P0005 befindet.
+22
+Diese Funktionalität ist für Aufzugruppen. Sie wird eingeschaltet, wenn Parkplatzetagen vorhanden sind, die von
+keinem Aufzug bedient werden können. Dieser Parameter wird an dem Aufzug, der auf alle Etage fahren kann, auf 1
+gesetzt.
+V3.08 – 05/2012 147 MTELIEPVS308_DE

@@ -1,0 +1,80 @@
+=== PAGE 14 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+1.6 Allgemeine Steuerschaltpläne
+1.6.1. Elektrischer Aufzug mit einer Geschwindigkeit
+R S T
+KVF
+m m m
+FR m m m
+m PCB SM
+TRM
+m FS m QIM m 400Vp 110Vs vi KVF vi VSS 1H vi
+m FT m m 0Vp 0Vs b h S ei i t c s h k e r r e - is S Pu ie n h k e t 1 .9
+9H vi
+m m m
+Schütz-
+steuerung
+CK L R B S
+L1 L2 L3 L1 L2 L3
+KB KS
+T1 T2 T3 T1 T2 T3 vi vi vi
+KM KB KS
+b b b
+L1 L2 L3
+KM
+T1 T2 T3
+U V W
+M~
+1.6.2. Elektrischer Aufzug mit zwei Geschwindigkeiten
+R S T KVF
+m m m FR m m m
+PCB SM
+TRM
+m FS m m QIM m 400Vp 110Vs vi KVF vi VSS 1H vi
+m FT m m m 0Vp 0Vs b
+h
+S
+ei
+i
+t
+c
+s
+h
+k
+e
+r
+r
+e
+-
+is
+S
+Pu
+ie
+n
+h
+k
+e
+t 1 .9
+9H vi
+m m m
+Schütz-
+steuerung
+CK L R B S
+L1 L2 L3 L1 L2 L3
+KB KS
+T1 T2 T3 T1 T2 T3 LK
+vi vi vi vi
+KL A KR KB KS
+b b b b
+m m m m m m
+L1 L2 L3 L1 L2 L3
+KL KR
+T1 T2 T3 T1 T2 T3
+U1 V1 W1
+m m m
+U
+M~ V
+W
+V3.08 – 05/2012 14 MTELIEPVS308_DE

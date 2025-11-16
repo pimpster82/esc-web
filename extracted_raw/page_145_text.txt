@@ -1,0 +1,34 @@
+=== PAGE 145 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+5.7.5. Seite Schutz
+SCHUTZ
+Parameter Beschreibung Werte
+0: Nein
+P0001 Beschränkte Fahrkorbaufrufe
+1: Code
+0: Nein
+P0002 Zwingender Halt im Erdgeschoss
+1: Ja
+P0003 Nicht verwendet
+P0004 Nicht verwendet
+P0005 Nicht verwendet
+0: Ohne Löschung
+1: Wird die Türkreis oder Lichtzelle nicht geschaltet,
+werden die gespeicherten Fahrkorbaufrufe gelöscht.
+P0006 Löschsystem Fahrkorbaufrufe 2: Maximale Anzahl gespeicherter Fahrkorbaufrufe: 3
+3: Maximale Anzahl gespeicherter Fahrkorbaufrufe: 6
+4: Löschung der Fahrkorbaufrufe, wenn kein Gewicht im
+Fahrkorb festgestellt wird.
+P0007 Nicht verwendet
+P0008 Nicht verwendet
+P0009 Nicht verwendet
+P0010 Nicht verwendet
+P0011 Nicht verwendet
+P0012 Nicht verwendet
+P0013 Nicht verwendet
+P0014 Nicht verwendet
+P0015 Nicht verwendet
+P0016 Nicht verwendet
+V3.08 – 05/2012 145 MTELIEPVS308_DE

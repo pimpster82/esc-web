@@ -1,0 +1,20 @@
+=== PAGE 73 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.5.5. Inspektionskasten
+Der Inspektionskasten wird auf der Innenseite der Tür des Modernisierungsschranks angebracht. Das Not-Aus wird
+nicht wie im Standardfall im Inspektionskasten angebracht, sondern auf der Seite des Modernisierungsschranks.
+Außerdem werden bei der Modernisierung alle Bauteile, die im Standardfall auf der Schiene des Inspektionskastens
+angebracht werden, auf der Schiene des Modernisierungsschranks angebracht.
+S IR S IS S IB Lautsprecher
+S S S
+Stroman schluss STPC IB IS IR CT20T0A0
+n g
+SHTC
+b b
+m a m iv iv g r g g n g b b
+FC NC FC' 3C 4CINS24CIS IB ALT-ALT+TFNTFN
+a/v
+XPCR
+V3.08 – 05/2012 73 MTELIEPVS308_DE

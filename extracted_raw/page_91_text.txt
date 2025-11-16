@@ -1,0 +1,49 @@
+=== PAGE 91 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+Sobald die Kanäle und Schachtverkabelung angebracht sind, müssen die innerhalb IP5 gelieferten Endschalter
+und Vorendschalter an den entsprechenden Halterungen angebracht werden. Sie müssen dann an den
+Führungsschienen auf der entsprechenden Höhe, wie auf der Abbildung dargestellt, befestigt werden. Wenn es
+aufgrund der Anlagenkonfigurierung nicht möglich ist, diese Bauteile an den Führungsschienen zu befestigen,
+müssen sie direkt an der Schachtwand befestigt werden. Zu diesem Zweck sind die in IP5 gelieferten Dübel
+und Schwellenschrauben zu verwenden. Es muss immer berücksichtigt werden, dass die Endschalter ca. 5 cm
+später ausgelöst werden müssen, nachdem der Aufzug die Endhaltestellen überfahren hat sowie immer bevor
+der Fahrkorb oder das Gegengewicht die Schachtgrubendämpfer berühren. Außerdem ist zu berücksichtigen,
+dass die Auslösung der Vorendschalter einen Moment nach Geschwindigkeitsänderung an den letzten
+Haltestellen erfolgen muss. Zu diesem Zweck muss der Höhenunterschied zwischen Vorendschalter und
+Pulsmagnet ca. 2 cm mehr als der Höhenunterschied zwischen Magnetschalter und Auslösemagnet des
+Endschalters betragen, der vorher am Fahrgestell befestigt wurde.
+Einbau Vorendschalter und Endschalter:
+3 4 5
+2
+6
+IP4
+1 7
+13 <2cm
+XAFS/
+/XAFI
+8B SAAFMGO
+10 9
+14 12 11
+IP4
+XFS/
+/XFI
+BAUTEIL BESTANDTEILE ST.
+1 DIN 933 M05 X 50 SCHRAUBE 2
+2 DIN127M05 FLACHSCHEIBE 2
+„L“-PROFIL HALTERUNG
+3 1
+ENDSCHALTER / VORENDSCHALTER
+4 DIN933 M08 X 35 SCHRAUBE 2
+5 FLACHSCHEIBE DIN 127 M05 2
+6 GROWER-SCHEIBE DIN125M05 2
+7 MUTTER DIN934M05 2
+8 GROWER-SCHEIBE DIN125M10 2
+9 MUTTER DIN 934 M10 2
+10 DIN 125 M08 GROWER SCHEIBE 2
+11 FLACHSCHEIBE DIN 125 M08 2
+12 MUTTER DIN934M08 2
+13 „PLR“ PROFIL 310 mm 1
+14 M10 FLANSCH 2
+V3.08 – 05/2012 91 MTELIEPVS308_DE

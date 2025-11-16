@@ -1,0 +1,43 @@
+=== PAGE 72 ===
+
+TECHNISCHES PRODUKTHANDBUCH
+VORMONTIERTE ELEKTRISCHE ANLAGE VÍA SERIE V8.5
+2.5.3. Bedienungsanschluss
+220
+C42
+r
+r
+o
+Zur Fahrkorb- BHC
+na
+v m
+PLAT TE c B dV LC
+0
+n 220i
+2200Vp
+cdV0BLCBHCC42 022pV0 t
+XVOP Auf Schiene vm
+2200Vp
+C42BHCBLCcdV0 t pV0022
+V
+BMPOX POVX S 0P XVOP
+E
+R
+2POX 1POX
+00
+C42CTCCFACF t C A pV0022
+2.5.4. Sicherheitskreis
+PCB DE
+OPERADOR
+Der restliche Sicherheitskreis wird standardmäßig verkabelt. Siehe Punkt 2.2.7.
+vi
+zu XPCR
+(Schrankseite)
+vi
+3C2C4C8C 7C
+m a z a z m a z m Zur Schiene
+XSSC_C
+SAC SAFC SPC
+2x1mm2 2x1mm2 2x1mm2
+L=5 L=1.5 L=3
+V3.08 – 05/2012 72 MTELIEPVS308_DE
