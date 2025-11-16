@@ -76,6 +76,44 @@ python3 validate_cli.py
 
 ---
 
+## 🌐 ONLINE DEPLOYMENT (Railway.app)
+
+### Why Deploy Online?
+- GitHub Pages can only host static content (HTML/CSS/JS)
+- ESC needs a **Python backend** to run Claude AI
+- Deploy on Railway for **free with $5/month credit**
+
+### Step 1: Create Railway Account
+1. Go to https://railway.app
+2. Sign up with GitHub (fastest option)
+3. Authorize Railway to access your GitHub account
+
+### Step 2: Deploy to Railway
+1. In Railway dashboard: **New Project** → **Deploy from GitHub**
+2. Select `pimpster82/esc-web` repository
+3. Railway auto-detects the Procfile and deploys
+4. Wait for build to complete (2-3 minutes)
+
+### Step 3: Set Environment Variables
+In Railway project settings:
+1. Click **Variables**
+2. Add: `ANTHROPIC_API_KEY` = your-api-key
+3. Deploy will redeploy with new variables
+
+### Step 4: Get Your URL
+- Railway gives you a URL: `https://esc-web.railway.app`
+- Your online ESC is now live!
+- Update bookmarks, share with your team
+
+### Troubleshooting
+| Problem | Solution |
+|---------|----------|
+| Build fails | Check Railway logs, ensure requirements.txt is updated |
+| API not responding | Verify ANTHROPIC_API_KEY is set in Railway variables |
+| Slow response | Claude API takes 2-5 seconds, this is normal |
+
+---
+
 ## 📚 DOCUMENTATION (Start Here)
 
 ### 🎯 Project Overview (5 min read)
