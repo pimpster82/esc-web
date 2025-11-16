@@ -127,7 +127,7 @@ class KnowledgeLoader:
         for abbrev in self.abbreviations:
             code = abbrev.get('code', '').lower()
             desc = abbrev.get('description_de', '').lower()
-            if query_lower in code or query_lower in desc:
+            if code in query_lower or desc in query_lower or query_lower in code or query_lower in desc:
                 results.append(abbrev)
         return results
 

@@ -13,7 +13,11 @@ import sys
 from pathlib import Path
 
 # Add scripts to path
-sys.path.insert(0, str(Path(__file__).parent / "scripts"))
+script_dir = Path(__file__).parent / "scripts"
+sys.path.insert(0, str(script_dir))
+
+# Change to scripts directory for relative paths to work
+os.chdir(script_dir)
 
 from ai_diagnostics import DiagnosticSystem
 
