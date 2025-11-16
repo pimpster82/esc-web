@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2025-11-16T23:54:37.077525",
+    "query": "F01 02",
+    "response": "Sicherheitskreis geöffnet - Safety circuit open",
+    "feedback": "correct",
+    "confidence": "HIGH",
+    "notes": "Correct description and cause"
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-11-16T23:54:37.099855",
+    "query": "SMQ Component",
+    "response": "Safety Monitoring Board",
+    "feedback": "correct",
+    "confidence": "HIGH",
+    "notes": ""
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-11-16T23:54:37.127955",
+    "query": "Power test",
+    "response": "Check power supply",
+    "feedback": "unsure",
+    "confidence": "MEDIUM",
+    "notes": "Needs more detail"
+  },
+  {
+    "id": 4,
+    "timestamp": "2025-11-16T23:58:37.460840",
+    "query": "F01 02",
+    "response": "Sicherheitskreis geöffnet",
+    "feedback": "correct",
+    "confidence": "HIGH",
+    "notes": "Good"
+  }
+]
