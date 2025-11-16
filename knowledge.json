@@ -1,9 +1,10 @@
 {
   "metadata": {
     "title": "Via Series Elevator Knowledge Base",
-    "version": "1.0",
-    "data_entries": 270,
-    "last_updated": "2025-11-16"
+    "version": "1.1",
+    "data_entries": 271,
+    "last_updated": "2025-11-16",
+    "enhancements": "Added hardware boards from hardware.json"
   },
   "error_codes": [
     {
@@ -1649,6 +1650,18 @@
       "code": "XTFN",
       "description_de": "Telefonstecker",
       "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "SMQ",
+      "description_de": "SMQ Board - Safety monitoring and control",
+      "location": "Machine room control cabinet",
+      "connectors": [
+        "XTSS",
+        "XKV",
+        "XSM1"
+      ],
+      "type": "hardware",
+      "extraction_status": "example"
     }
   ]
 }
