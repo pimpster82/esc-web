@@ -1,10 +1,78 @@
-# ESC - ELEVATOR SERVICE COMPANION (POC)
-## Knowledge Assistant for MacPuarsa Via Elevators
+# ESC - Elevator Service Companion
+## AI-Powered Diagnostic System for MacPuarsa Via Elevators
 
-**Status:** Extraction Complete ✅ (Ready for data population)
-**Model:** MacPuarsa Via (all versions)
-**Timeline:** 4 weeks
-**Current Phase:** Phase 1 - Data Population (⏳ In Progress)
+**Status:** Production Ready ✅ (Claude AI Integration Complete)
+**Model:** MacPuarsa Via v74
+**Knowledge Base:** 279 entries (152 components, 26 error codes, 93 parameters, 8 guides)
+**Current Phase:** Phase 2 - AI Integration Complete ✅ | Phase 3 - Validation & Feedback 🚀
+
+---
+
+## 🤖 FEATURES
+
+### AI-Powered Diagnostics
+- **Claude AI Integration** - Uses Anthropic's Claude for intelligent diagnosis
+- **Multi-language Support** - German (Deutsch) and English
+- **Context-Aware Responses** - Maintains conversation history for better accuracy
+- **Confidence Levels** - HIGH/MEDIUM/LOW assessment for each response
+- **Hierarchical Knowledge Base** - 279 entries covering:
+  - 152 Components & Hardware
+  - 26 Error Codes (F-codes, A-codes)
+  - 93 Parameters & Settings
+  - 8 Practical Guides & Procedures
+
+### Web Interface
+- **Modern UI** - Clean, responsive web interface at `http://localhost:5000`
+- **Real-time Responses** - Instant AI diagnostic feedback
+- **Feedback System** - Rate responses as Correct/Incorrect/Unsure
+- **Validation Tracking** - Collect feedback to improve AI accuracy
+
+### REST API
+- **Diagnostic Endpoint** - `POST /api/query` for AI diagnostics
+- **Feedback Collection** - `POST /api/feedback` for validation data
+- **Knowledge Summary** - `GET /api/knowledge-summary` for system info
+- **Validation Statistics** - Track accuracy metrics over time
+
+### CLI Tool
+- **Interactive Mode** - `python3 scripts/validate_cli.py`
+- **Direct Testing** - Query the AI from command line
+- **Session Statistics** - See accuracy metrics per session
+
+---
+
+## 🚀 QUICK START
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/pimpster82/esc-web.git
+cd ESC
+
+# Install dependencies
+pip install anthropic flask flask-cors
+
+# Set API key
+export ANTHROPIC_API_KEY="your-api-key-here"
+```
+
+### Run the Web Server
+```bash
+# Start the API server
+python3 web_api.py
+
+# Open in browser: http://localhost:5000
+```
+
+### Use the CLI
+```bash
+cd scripts
+python3 validate_cli.py
+
+# Interactive prompts:
+# 📋 Query: F01 02
+# ✓ Correct / ✗ Incorrect / ? Unsure / s Skip: ✓
+# 📝 Notes (optional): Accurate and helpful
+```
 
 ---
 
