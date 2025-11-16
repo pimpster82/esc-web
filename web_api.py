@@ -18,6 +18,7 @@ import os
 os.chdir(script_dir)
 
 from ai_diagnostics import DiagnosticSystem
+from validation_manager import ValidationManager
 
 # Initialize Flask app - use correct static folder path
 static_folder = str(Path(__file__).parent / "web")
@@ -31,6 +32,14 @@ try:
 except Exception as e:
     print(f"❌ Failed to initialize diagnostic system: {e}")
     diagnostic_system = None
+
+# Initialize validation manager
+try:
+    validation_manager = ValidationManager()
+    print("✅ Validation manager initialized")
+except Exception as e:
+    print(f"❌ Failed to initialize validation manager: {e}")
+    validation_manager = None
 
 
 @app.route('/')
@@ -131,6 +140,142 @@ def knowledge_summary():
             "success": True,
             "summary": summary
         })
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "error": str(e)
+        }), 500
+
+
+# ==================== VALIDATION ENDPOINTS ====================
+
+@app.route('/api/feedback', methods=['POST'])
+def submit_feedback():
+    """Submit validation feedback for a query/response
+
+    Request body:
+    {
+        "query": "string",
+        "response": "string",
+        "feedback": "correct|incorrect|unsure",
+        "confidence": "HIGH|MEDIUM|LOW",
+        "notes": "optional notes"
+    }
+    """
+    if not validation_manager:
+        return jsonify({
+            "success": False,
+            "error": "Validation manager not initialized"
+        }), 500
+
+    try:
+        data = request.get_json()
+        query = data.get('query', '')
+        response = data.get('response', '')
+        feedback = data.get('feedback', '').lower()
+        confidence = data.get('confidence', 'MEDIUM')
+        notes = data.get('notes', '')
+
+        # Validate feedback value
+        if feedback not in ['correct', 'incorrect', 'unsure']:
+            return jsonify({
+                "success": False,
+                "error": "Invalid feedback value. Must be one of: correct, incorrect, unsure"
+            }), 400
+
+        # Add feedback
+        record = validation_manager.add_feedback(
+            query=query,
+            response=response,
+            feedback=feedback,
+            confidence=confidence,
+            notes=notes
+        )
+
+        return jsonify({
+            "success": True,
+            "record": record
+        })
+
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "error": str(e)
+        }), 500
+
+
+@app.route('/api/validation/summary', methods=['GET'])
+def validation_summary():
+    """Get validation summary and statistics"""
+    if not validation_manager:
+        return jsonify({
+            "success": False,
+            "error": "Validation manager not initialized"
+        }), 500
+
+    try:
+        summary = validation_manager.get_summary()
+        return jsonify({
+            "success": True,
+            "summary": summary
+        })
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "error": str(e)
+        }), 500
+
+
+@app.route('/api/validation/feedback', methods=['GET'])
+def get_validation_feedback():
+    """Get all validation feedback
+
+    Query parameters:
+    - limit: Maximum number of records (default: all)
+    - type: Filter by type (correct, incorrect, unsure)
+    """
+    if not validation_manager:
+        return jsonify({
+            "success": False,
+            "error": "Validation manager not initialized"
+        }), 500
+
+    try:
+        limit = request.args.get('limit', type=int)
+        feedback_type = request.args.get('type', type=str)
+
+        feedback = validation_manager.get_feedback(
+            limit=limit,
+            feedback_type=feedback_type
+        )
+
+        return jsonify({
+            "success": True,
+            "feedback": feedback,
+            "count": len(feedback)
+        })
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "error": str(e)
+        }), 500
+
+
+@app.route('/api/validation/export', methods=['GET'])
+def export_validation():
+    """Export validation data as CSV"""
+    if not validation_manager:
+        return jsonify({
+            "success": False,
+            "error": "Validation manager not initialized"
+        }), 500
+
+    try:
+        csv_data = validation_manager.export_csv()
+        return csv_data, 200, {
+            'Content-Type': 'text/csv',
+            'Content-Disposition': 'attachment; filename=validation_feedback.csv'
+        }
     except Exception as e:
         return jsonify({
             "success": False,
