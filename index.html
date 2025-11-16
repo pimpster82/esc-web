@@ -316,15 +316,177 @@
             padding-top: 10px;
             margin-top: 10px;
         }
+
+        .feedback-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .feedback-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .feedback-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .feedback-btn {
+            padding: 8px 16px;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.2s;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        .feedback-btn:hover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+
+        .feedback-btn.correct {
+            border-color: #4caf50;
+            color: #2e7d32;
+        }
+
+        .feedback-btn.correct:hover {
+            background: #c8e6c9;
+            border-color: #2e7d32;
+        }
+
+        .feedback-btn.incorrect {
+            border-color: #f44336;
+            color: #d32f2f;
+        }
+
+        .feedback-btn.incorrect:hover {
+            background: #ffcdd2;
+            border-color: #d32f2f;
+        }
+
+        .feedback-btn.unsure {
+            border-color: #ff9800;
+            color: #e65100;
+        }
+
+        .feedback-btn.unsure:hover {
+            background: #ffe0b2;
+            border-color: #e65100;
+        }
+
+        .feedback-btn.selected {
+            font-weight: 700;
+            transform: scale(1.05);
+        }
+
+        .feedback-btn.correct.selected {
+            background: #4caf50;
+            color: white;
+            border-color: #2e7d32;
+        }
+
+        .feedback-btn.incorrect.selected {
+            background: #f44336;
+            color: white;
+            border-color: #d32f2f;
+        }
+
+        .feedback-btn.unsure.selected {
+            background: #ff9800;
+            color: white;
+            border-color: #e65100;
+        }
+
+        .feedback-notes {
+            margin-top: 15px;
+            display: none;
+        }
+
+        .feedback-notes.show {
+            display: block;
+        }
+
+        .feedback-notes textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.9em;
+            resize: vertical;
+            min-height: 60px;
+            transition: border-color 0.2s;
+        }
+
+        .feedback-notes textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .feedback-submit {
+            margin-top: 10px;
+            padding: 8px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .feedback-submit:hover:not(:disabled) {
+            background: #764ba2;
+        }
+
+        .feedback-submit:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .feedback-message {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 600;
+            display: none;
+        }
+
+        .feedback-message.success {
+            background: #c8e6c9;
+            color: #2e7d32;
+            display: block;
+        }
+
+        .feedback-message.error {
+            background: #ffcdd2;
+            color: #d32f2f;
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>🛗 ESC</h1>
-            <p>Elevator Service Companion - Via Serie Diagnose</p>
+            <p>Elevator Service Companion - AI Diagnose-System</p>
             <p style="font-size: 0.95em; margin-top: 10px;">
-                <span class="status">✓ 270 Einträge bereit</span>
+                <span class="status" id="statusBadge">🔄 Verbindung wird geprüft...</span>
             </p>
         </div>
 
@@ -333,10 +495,10 @@
                 <input
                     type="text"
                     id="queryInput"
-                    placeholder="Fehlercodes, Parameter, Komponenten... (z.B. 'F01 02', 'Sicherheit', 'P0001')"
+                    placeholder="Stelle eine Frage (z.B. 'Was ist SMQ?', 'F01 02 Problem', 'Sicherheitskreis')"
                     autocomplete="off"
                 >
-                <button onclick="submitQuery()">Suchen</button>
+                <button onclick="submitQuery()" id="submitBtn">Frage stellen</button>
             </div>
 
 
@@ -358,26 +520,39 @@
 
             <div class="response-section" id="responseSection">
                 <div class="response" id="responseContent"></div>
+                <div class="feedback-section" id="feedbackSection">
+                    <div class="feedback-label">War diese Antwort hilfreich?</div>
+                    <div class="feedback-buttons">
+                        <button class="feedback-btn correct" onclick="selectFeedback('correct')">✓ Ja, korrekt</button>
+                        <button class="feedback-btn incorrect" onclick="selectFeedback('incorrect')">✗ Nein, falsch</button>
+                        <button class="feedback-btn unsure" onclick="selectFeedback('unsure')">? Unsicher</button>
+                    </div>
+                    <div class="feedback-notes" id="feedbackNotes">
+                        <textarea id="feedbackText" placeholder="Optionale Notizen (z.B. was war falsch?)..."></textarea>
+                        <button class="feedback-submit" onclick="submitFeedback()">Feedback speichern</button>
+                        <div class="feedback-message" id="feedbackMessage"></div>
+                    </div>
+                </div>
             </div>
 
             <div class="error" id="errorSection" style="display: none;"></div>
 
             <div class="examples">
-                <h4>📚 Beispiel-Abfragen:</h4>
-                <div class="example-item" onclick="queryExample('F01 02')">
-                    → Fehlercode F01 02
+                <h4>📚 Beispiel-Fragen:</h4>
+                <div class="example-item" onclick="queryExample('Was ist SMQ?')">
+                    → Was ist SMQ?
                 </div>
-                <div class="example-item" onclick="queryExample('Sicherheitskreis')">
-                    → Sicherheitskreis
+                <div class="example-item" onclick="queryExample('Was ist Fehlercode F01 02?')">
+                    → Was ist Fehlercode F01 02?
                 </div>
-                <div class="example-item" onclick="queryExample('P0001')">
-                    → Parameter P0001
+                <div class="example-item" onclick="queryExample('Der Aufzug funktioniert nicht, Sicherheitskreis ist offen')">
+                    → Sicherheitskreis Problem
                 </div>
-                <div class="example-item" onclick="queryExample('XTSS')">
-                    → Komponente XTSS
+                <div class="example-item" onclick="queryExample('Wie konfiguriere ich die Fahrtdauer?')">
+                    → Fahrtdauer konfigurieren
                 </div>
-                <div class="example-item" onclick="queryExample('Türen')">
-                    → Türfehler
+                <div class="example-item" onclick="queryExample('Welche Komponente ist XTSS?')">
+                    → XTSS Komponente
                 </div>
             </div>
         </div>
@@ -389,25 +564,40 @@
     </div>
 
     <script>
-        // Load knowledge base on startup
-        let knowledgeBase = null;
+        // API configuration
+        const API_BASE_URL = window.location.origin;
+        let apiConnected = false;
 
-        async function loadKnowledgeBase() {
+        // Check API connection on startup
+        async function checkApiConnection() {
             try {
-                const response = await fetch('knowledge.json');
-                knowledgeBase = await response.json();
-                console.log('Knowledge base loaded:', {
-                    errors: knowledgeBase.error_codes?.length || 0,
-                    parameters: knowledgeBase.parameters?.length || 0,
-                    abbreviations: knowledgeBase.abbreviations?.length || 0
-                });
+                const response = await fetch(`${API_BASE_URL}/api/knowledge-summary`);
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.success) {
+                        apiConnected = true;
+                        const summary = data.summary;
+                        const badge = document.getElementById('statusBadge');
+                        badge.textContent = `✅ ${summary.total} Einträge geladen | AI bereit`;
+                        console.log('API connected. Knowledge base:', summary);
+                    }
+                }
             } catch (error) {
-                console.error('Failed to load knowledge base:', error);
+                console.error('API connection failed:', error);
+                updateStatus('offline');
             }
         }
 
-        // Load knowledge base on page load
-        loadKnowledgeBase();
+        function updateStatus(status) {
+            const badge = document.getElementById('statusBadge');
+            if (status === 'offline') {
+                badge.textContent = '⚠️ Offline Modus - nur Stichwortsuche';
+                badge.style.background = '#ffccbc';
+            }
+        }
+
+        // Check connection on page load
+        checkApiConnection();
 
         function queryExample(text) {
             document.getElementById('queryInput').value = text;
@@ -418,12 +608,7 @@
             const query = document.getElementById('queryInput').value.trim();
 
             if (!query) {
-                showError('Bitte geben Sie einen Suchbegriff ein');
-                return;
-            }
-
-            if (!knowledgeBase) {
-                showError('Wissensdatenbank wird geladen... Bitte warten.');
+                showError('Bitte geben Sie eine Frage ein');
                 return;
             }
 
@@ -433,268 +618,83 @@
             document.getElementById('resultsContainer').classList.remove('show');
 
             try {
-                const response = await analyzeQuery(query, knowledgeBase);
-                if (response.allMatches && response.allMatches.length > 0) {
-                    displayResults(response);
+                if (apiConnected) {
+                    // Use Claude AI via API
+                    await submitQueryToAI(query);
                 } else {
-                    showError('Keine Treffer in der Wissensdatenbank gefunden');
+                    showError('API nicht verfügbar. Bitte starten Sie den Server: python3 web_api.py');
                 }
             } catch (error) {
-                showError('Fehler bei der Analyse: ' + error.message);
+                showError('Fehler: ' + error.message);
             } finally {
                 showLoading(false);
             }
         }
 
-        async function analyzeQuery(query, kb) {
-            const queryLower = query.toLowerCase();
-            const queryTerms = queryLower.split(/\s+/);
+        async function submitQueryToAI(question) {
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/query`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        question: question,
+                        use_history: true
+                    })
+                });
 
-            // Scoring function: higher score = better match
-            function scoreMatch(text, query) {
-                if (!text) return 0;
-                const textLower = text.toLowerCase();
-                let score = 0;
+                const data = await response.json();
 
-                // Exact match gets highest score
-                if (textLower === query) return 100;
-
-                // Full query match gets high score
-                if (textLower.includes(query)) return 50;
-
-                // Individual term matches
-                for (const term of queryTerms) {
-                    if (textLower.includes(term)) score += 10;
+                if (data.success) {
+                    displayAIResponse(data);
+                } else {
+                    showError('Fehler: ' + (data.error || 'Unbekannter Fehler'));
                 }
-
-                return score;
-            }
-
-            let bestMatches = [];
-
-            // Search in error codes (code + description + cause)
-            for (const code of kb.error_codes || []) {
-                let score = 0;
-                score += scoreMatch(code.code, queryLower) * 3; // Code matches are strong
-                score += scoreMatch(code.description_de, queryLower) * 2; // Description matches
-                score += scoreMatch(code.cause_solution, queryLower) * 1; // Cause/solution matches
-
-                if (score > 0) {
-                    bestMatches.push({
-                        type: 'error',
-                        score: score,
-                        data: code
-                    });
-                }
-            }
-
-            // Search in parameters (code + description)
-            for (const param of kb.parameters || []) {
-                let score = 0;
-                score += scoreMatch(param.code, queryLower) * 3;
-                score += scoreMatch(param.description_de, queryLower) * 2;
-
-                if (score > 0) {
-                    bestMatches.push({
-                        type: 'param',
-                        score: score,
-                        data: param
-                    });
-                }
-            }
-
-            // Search in abbreviations (code + description)
-            for (const abbrev of kb.abbreviations || []) {
-                let score = 0;
-                score += scoreMatch(abbrev.code, queryLower) * 3;
-                score += scoreMatch(abbrev.description_de, queryLower) * 2;
-
-                if (score > 0) {
-                    bestMatches.push({
-                        type: 'abbrev',
-                        score: score,
-                        data: abbrev
-                    });
-                }
-            }
-
-            // Sort by score (highest first)
-            bestMatches.sort((a, b) => b.score - a.score);
-
-            // Build response with top match
-            let responseText = '';
-            let confidence = 'low';
-
-            if (bestMatches.length > 0) {
-                const topMatch = bestMatches[0];
-                confidence = topMatch.score > 40 ? 'high' : topMatch.score > 20 ? 'medium' : 'low';
-
-                if (topMatch.type === 'error') {
-                    const code = topMatch.data;
-                    responseText += `FEHLERCODE: ${code.code}\n\n`;
-                    responseText += `Beschreibung: ${code.description_de}\n\n`;
-                    if (code.cause_solution) {
-                        responseText += `Ursache/Lösung:\n${code.cause_solution}\n\n`;
-                    }
-                    responseText += `Handbuchseite: ${code.manual_page}`;
-                } else if (topMatch.type === 'param') {
-                    const param = topMatch.data;
-                    responseText += `PARAMETER: ${param.code}\n\n`;
-                    responseText += `Beschreibung: ${param.description_de}\n\n`;
-                    responseText += `Abschnitt: ${param.section || 'Allgemein'}\n`;
-                    responseText += `Handbuchseite: ${param.manual_page}`;
-                } else if (topMatch.type === 'abbrev') {
-                    const abbrev = topMatch.data;
-                    responseText += `KOMPONENTE/CODE: ${abbrev.code}\n\n`;
-                    responseText += `Definition: ${abbrev.description_de}\n`;
-                }
-
-                // Show additional matches if any
-                if (bestMatches.length > 1 && confidence !== 'high') {
-                    responseText += `\n\n--- Weitere Treffer ---\n`;
-                    for (let i = 1; i < Math.min(3, bestMatches.length); i++) {
-                        const match = bestMatches[i];
-                        if (match.type === 'error') {
-                            responseText += `\n• ${match.data.code}: ${match.data.description_de}`;
-                        } else if (match.type === 'param') {
-                            responseText += `\n• ${match.data.code}: ${match.data.description_de}`;
-                        } else {
-                            responseText += `\n• ${match.data.code}: ${match.data.description_de}`;
-                        }
-                    }
-                }
-            } else {
-                responseText = `Keine Treffer in der Wissensdatenbank für: "${query}"\n\n`;
-                responseText += `Versuchen Sie zu suchen nach:\n`;
-                responseText += `• Fehlercodes (z.B. F01 02, F02 06)\n`;
-                responseText += `• Fehlerbeschreibungen (z.B. Sicherheit, Tür)\n`;
-                responseText += `• Parameter (z.B. P0001, P0016)\n`;
-                responseText += `• Komponentencodes (z.B. XTSS, KVF)`;
-                confidence = 'low';
-            }
-
-            return {
-                text: responseText,
-                confidence: confidence,
-                hasData: bestMatches.length > 0,
-                allMatches: bestMatches  // Return all matches for display
-            };
-        }
-
-        // Global state for result navigation
-        let currentResultIndex = 0;
-        let allResults = [];
-
-        function displayResults(response) {
-            if (!response.allMatches || response.allMatches.length === 0) {
-                showError('Keine Treffer gefunden');
-                return;
-            }
-
-            allResults = response.allMatches;
-            currentResultIndex = 0;
-
-            const resultsContainer = document.getElementById('resultsContainer');
-            const resultsList = document.getElementById('resultsList');
-
-            // Build HTML for all results
-            let html = '';
-            for (let i = 0; i < allResults.length; i++) {
-                const match = allResults[i];
-                const isHidden = i > 0 ? ' hidden' : '';
-
-                html += `<div class="result-item${isHidden}" id="result-${i}">`;
-                html += `<span class="result-type-badge">${match.type === 'error' ? 'FEHLERCODE' : match.type === 'param' ? 'PARAMETER' : 'KOMPONENTE'}</span>`;
-                html += `<div class="result-code">${match.data.code}</div>`;
-                html += `<div class="result-description">${match.data.description_de}</div>`;
-
-                // Add type-specific details
-                if (match.type === 'error' && match.data.cause_solution) {
-                    html += `<div class="result-details"><strong>Ursache/Lösung:</strong><br>${match.data.cause_solution}</div>`;
-                    html += `<div class="result-details">📖 Handbuchseite: ${match.data.manual_page}</div>`;
-                } else if (match.type === 'param') {
-                    html += `<div class="result-details">📖 Seite: ${match.data.manual_page}`;
-                    if (match.data.section) html += ` | Abschnitt: ${match.data.section}`;
-                    html += `</div>`;
-                }
-
-                html += `</div>`;
-            }
-
-            resultsList.innerHTML = html;
-
-            // Update counter and navigation
-            updateResultsUI();
-
-            // Show results container, hide old response section
-            resultsContainer.classList.add('show');
-            document.getElementById('responseSection').classList.remove('show');
-        }
-
-        function updateResultsUI() {
-            const counter = document.getElementById('resultsCounter');
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-
-            counter.textContent = `Ergebnis ${currentResultIndex + 1} von ${allResults.length}`;
-
-            // Show navigation buttons if more than 1 result
-            if (allResults.length > 1) {
-                prevBtn.style.display = 'inline-block';
-                nextBtn.style.display = 'inline-block';
-            } else {
-                prevBtn.style.display = 'none';
-                nextBtn.style.display = 'none';
-            }
-
-            prevBtn.disabled = currentResultIndex === 0;
-            nextBtn.disabled = currentResultIndex === allResults.length - 1;
-        }
-
-        function nextResult() {
-            if (currentResultIndex < allResults.length - 1) {
-                showResultIndex(currentResultIndex + 1);
+            } catch (error) {
+                showError('Fehler bei der API-Abfrage: ' + error.message);
             }
         }
 
-        function previousResult() {
-            if (currentResultIndex > 0) {
-                showResultIndex(currentResultIndex - 1);
-            }
-        }
-
-        function showResultIndex(index) {
-            // Hide all results
-            for (let i = 0; i < allResults.length; i++) {
-                const element = document.getElementById(`result-${i}`);
-                if (element) element.classList.add('hidden');
-            }
-
-            // Show selected result
-            currentResultIndex = index;
-            const element = document.getElementById(`result-${index}`);
-            if (element) element.classList.remove('hidden');
-
-            updateResultsUI();
-
-            // Scroll to results
-            document.getElementById('resultsContainer').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        function showResponse(response) {
+        function displayAIResponse(response) {
             const responseContent = document.getElementById('responseContent');
             const responseSection = document.getElementById('responseSection');
 
-            let confidenceLabel = response.confidence === 'high' ? 'Hoch' :
-                                 response.confidence === 'medium' ? 'Mittel' : 'Niedrig';
+            let confidenceLabel = response.confidence === 'HIGH' ? 'Hoch' :
+                                 response.confidence === 'MEDIUM' ? 'Mittel' : 'Niedrig';
 
-            let html = '<h3>📋 Suchergebnis</h3>';
-            html += `<div class="response-text">${response.text}</div>`;
-            html += `<span class="confidence ${response.confidence}">Genauigkeit: ${confidenceLabel}</span>`;
+            let html = '<h3>📋 Diagnose-Ergebnis</h3>';
+            html += `<div class="response-text" style="white-space: pre-wrap;">${escapeHtml(response.diagnosis)}</div>`;
+
+            if (response.codes_referenced && response.codes_referenced.length > 0) {
+                html += `<div style="margin-top: 15px; font-size: 0.95em;">`;
+                html += `<strong>Referenzierte Codes:</strong> ${response.codes_referenced.join(', ')}<br>`;
+                html += `</div>`;
+            }
+
+            if (response.manual_pages && response.manual_pages.length > 0) {
+                html += `<div style="margin-top: 10px; font-size: 0.95em;">`;
+                html += `<strong>Handbuchseiten:</strong> ${response.manual_pages.join(', ')}<br>`;
+                html += `</div>`;
+            }
+
+            html += `<span class="confidence ${response.confidence.toLowerCase()}">Konfidenz: ${confidenceLabel}</span>`;
 
             responseContent.innerHTML = html;
             responseSection.classList.add('show');
         }
+
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return text.replace(/[&<>"']/g, m => map[m]);
+        }
+
 
         function showError(message) {
             const errorSection = document.getElementById('errorSection');
@@ -723,6 +723,107 @@
                 }
             });
         });
+
+        // Feedback system
+        let currentQuery = '';
+        let currentResponse = '';
+        let currentConfidence = '';
+        let selectedFeedback = null;
+
+        function selectFeedback(feedback) {
+            selectedFeedback = feedback;
+
+            // Update button states
+            document.querySelectorAll('.feedback-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+
+            event.target.classList.add('selected');
+
+            // Show notes field
+            document.getElementById('feedbackNotes').classList.add('show');
+        }
+
+        async function submitFeedback() {
+            if (!selectedFeedback) {
+                showFeedbackMessage('Bitte wählen Sie ein Feedback aus', 'error');
+                return;
+            }
+
+            const notes = document.getElementById('feedbackText').value.trim();
+            const submitBtn = event.target;
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/api/feedback`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        query: currentQuery,
+                        response: currentResponse,
+                        feedback: selectedFeedback,
+                        confidence: currentConfidence,
+                        notes: notes
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    showFeedbackMessage('✓ Feedback gespeichert. Danke!', 'success');
+                    // Reset form
+                    setTimeout(() => {
+                        document.querySelectorAll('.feedback-btn').forEach(btn => {
+                            btn.classList.remove('selected');
+                        });
+                        document.getElementById('feedbackText').value = '';
+                        document.getElementById('feedbackNotes').classList.remove('show');
+                        selectedFeedback = null;
+                    }, 2000);
+                } else {
+                    showFeedbackMessage('Fehler beim Speichern: ' + (data.error || 'Unbekannter Fehler'), 'error');
+                }
+            } catch (error) {
+                showFeedbackMessage('Fehler: ' + error.message, 'error');
+            } finally {
+                submitBtn.disabled = false;
+            }
+        }
+
+        function showFeedbackMessage(message, type) {
+            const messageDiv = document.getElementById('feedbackMessage');
+            messageDiv.textContent = message;
+            messageDiv.className = 'feedback-message ' + type;
+        }
+
+        // Store original displayAIResponse function before wrapping it
+        const originalDisplayAIResponse = (function() {
+            const original = displayAIResponse;
+            return original;
+        })();
+
+        // Wrap displayAIResponse to also handle feedback UI updates
+        const wrappedDisplayAIResponse = displayAIResponse;
+        function displayAIResponse(response) {
+            // Call original first
+            wrappedDisplayAIResponse(response);
+
+            // Then update feedback state
+            currentQuery = document.getElementById('queryInput').value;
+            currentResponse = response.diagnosis;
+            currentConfidence = response.confidence;
+            selectedFeedback = null;
+
+            // Clear feedback UI
+            document.querySelectorAll('.feedback-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            document.getElementById('feedbackText').value = '';
+            document.getElementById('feedbackNotes').classList.remove('show');
+            document.getElementById('feedbackMessage').className = 'feedback-message';
+        }
     </script>
 </body>
 </html>
