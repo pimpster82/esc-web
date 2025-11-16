@@ -523,13 +523,13 @@
                 <div class="feedback-section" id="feedbackSection">
                     <div class="feedback-label">War diese Antwort hilfreich?</div>
                     <div class="feedback-buttons">
-                        <button class="feedback-btn correct" onclick="selectFeedback('correct')">✓ Ja, korrekt</button>
-                        <button class="feedback-btn incorrect" onclick="selectFeedback('incorrect')">✗ Nein, falsch</button>
-                        <button class="feedback-btn unsure" onclick="selectFeedback('unsure')">? Unsicher</button>
+                        <button class="feedback-btn correct" onclick="selectFeedback('correct', event)">✓ Ja, korrekt</button>
+                        <button class="feedback-btn incorrect" onclick="selectFeedback('incorrect', event)">✗ Nein, falsch</button>
+                        <button class="feedback-btn unsure" onclick="selectFeedback('unsure', event)">? Unsicher</button>
                     </div>
                     <div class="feedback-notes" id="feedbackNotes">
                         <textarea id="feedbackText" placeholder="Optionale Notizen (z.B. was war falsch?)..."></textarea>
-                        <button class="feedback-submit" onclick="submitFeedback()">Feedback speichern</button>
+                        <button class="feedback-submit" onclick="submitFeedback(event)">Feedback speichern</button>
                         <div class="feedback-message" id="feedbackMessage"></div>
                     </div>
                 </div>
@@ -730,7 +730,7 @@
         let currentConfidence = '';
         let selectedFeedback = null;
 
-        function selectFeedback(feedback) {
+        function selectFeedback(feedback, event) {
             selectedFeedback = feedback;
 
             // Update button states
@@ -738,21 +738,25 @@
                 btn.classList.remove('selected');
             });
 
-            event.target.classList.add('selected');
+            if (event && event.target) {
+                event.target.classList.add('selected');
+            }
 
             // Show notes field
             document.getElementById('feedbackNotes').classList.add('show');
         }
 
-        async function submitFeedback() {
+        async function submitFeedback(event) {
             if (!selectedFeedback) {
                 showFeedbackMessage('Bitte wählen Sie ein Feedback aus', 'error');
                 return;
             }
 
             const notes = document.getElementById('feedbackText').value.trim();
-            const submitBtn = event.target;
-            submitBtn.disabled = true;
+            const submitBtn = event ? event.target : document.querySelector('.feedback-submit');
+            if (submitBtn) {
+                submitBtn.disabled = true;
+            }
 
             try {
                 const response = await fetch(`${API_BASE_URL}/api/feedback`, {
@@ -788,7 +792,9 @@
             } catch (error) {
                 showFeedbackMessage('Fehler: ' + error.message, 'error');
             } finally {
-                submitBtn.disabled = false;
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                }
             }
         }
 
