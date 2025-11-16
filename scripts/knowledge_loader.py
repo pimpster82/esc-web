@@ -231,6 +231,10 @@ class KnowledgeLoader:
                 results.append(comp)
         return results
 
+    def search_abbreviations(self, query: str) -> List[Dict]:
+        """Backward-compatible alias for search_components()"""
+        return self.search_components(query)
+
     def search_practical_guides(self, query: str) -> List[Dict]:
         """Search practical diagnostic guides by title or related errors"""
         query_lower = query.lower()
