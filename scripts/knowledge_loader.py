@@ -18,6 +18,7 @@ class KnowledgeLoader:
         self.error_codes = []
         self.parameters = []
         self.abbreviations = []
+        self.practical_guides = []
         self.loaded = False
 
     def load_all(self) -> bool:
@@ -26,6 +27,7 @@ class KnowledgeLoader:
             self.load_error_codes()
             self.load_parameters()
             self.load_abbreviations()
+            self.load_practical_guides()
             self.loaded = True
             return True
         except Exception as e:
@@ -72,6 +74,23 @@ class KnowledgeLoader:
                 return self.abbreviations
         except FileNotFoundError:
             print(f"❌ Abbreviations file not found: {filepath}")
+            return []
+
+    def load_practical_guides(self) -> List[Dict]:
+        """Load practical diagnostic guides from JSON"""
+        filepath = self.data_dir / "practical_guides.json"
+
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                self.practical_guides = data.get('diagnostic_guides', [])
+                print(f"✅ Loaded {len(self.practical_guides)} practical diagnostic guides")
+                return self.practical_guides
+        except FileNotFoundError:
+            print(f"⚠️  Practical guides file not found: {filepath}")
+            return []
+        except Exception as e:
+            print(f"⚠️  Error loading practical guides: {e}")
             return []
 
     def get_error_by_code(self, code: str) -> Optional[Dict]:
@@ -131,12 +150,29 @@ class KnowledgeLoader:
                 results.append(abbrev)
         return results
 
+    def search_practical_guides(self, query: str) -> List[Dict]:
+        """Search practical diagnostic guides by title or related errors"""
+        query_lower = query.lower()
+        results = []
+        for guide in self.practical_guides:
+            title = guide.get('title', '').lower()
+            problem = guide.get('problem', '').lower()
+            related_errors = [e.lower() for e in guide.get('related_errors', [])]
+
+            # Check if query matches title, problem, or related error codes
+            if (query_lower in title or
+                query_lower in problem or
+                any(query_lower in err for err in related_errors)):
+                results.append(guide)
+        return results
+
     def get_summary(self) -> Dict:
         """Get summary of loaded data"""
         return {
             "error_codes": len(self.error_codes),
             "parameters": len(self.parameters),
             "abbreviations": len(self.abbreviations),
+            "practical_guides": len(self.practical_guides),
             "total": len(self.error_codes) + len(self.parameters) + len(self.abbreviations),
             "loaded": self.loaded
         }
@@ -172,6 +208,17 @@ class KnowledgeLoader:
         for abbrev in self.abbreviations:
             context += f"\n### {abbrev.get('code')}\n"
             context += f"- {abbrev.get('description_de')}\n"
+
+        # Practical diagnostic guides
+        if self.practical_guides:
+            context += f"\n\n## PRACTICAL DIAGNOSTIC GUIDES - {len(self.practical_guides)} guides\n"
+            for guide in self.practical_guides:
+                context += f"\n### {guide.get('title')}\n"
+                context += f"- Problem: {guide.get('problem')}\n"
+                context += f"- Related Error Codes: {', '.join(guide.get('related_errors', []))}\n"
+                context += f"- Difficulty: {guide.get('difficulty_level')}\n"
+                if guide.get('diagnosis_steps'):
+                    context += f"- Diagnosis Steps: {len(guide.get('diagnosis_steps'))} steps\n"
 
         return context
 

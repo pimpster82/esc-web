@@ -151,6 +151,22 @@ Antworte basierend auf der Wissensdatenbank."""
             for abbrev in abbrev_matches[:5]:  # Limit to 5
                 context += f"- **{abbrev.get('code')}**: {abbrev.get('description_de')}\n"
 
+        # Check for practical diagnostic guides
+        guide_matches = self.knowledge.search_practical_guides(question)
+        if guide_matches:
+            context += "\n## Praktische Diagnose-Anleitung\n"
+            for guide in guide_matches[:3]:  # Limit to 3 guides
+                context += f"\n### {guide.get('title')}\n"
+                context += f"**Problem**: {guide.get('problem')}\n"
+                context += f"**Related Errors**: {', '.join(guide.get('related_errors', []))}\n"
+                context += f"**Difficulty**: {guide.get('difficulty_level')}\n"
+                # Add first diagnostic step
+                if guide.get('diagnosis_steps'):
+                    context += f"**Key Steps**: {len(guide.get('diagnosis_steps'))} diagnostic steps available\n"
+                # Add common causes
+                if guide.get('common_causes'):
+                    context += f"**Common Causes**: {', '.join([c.get('cause', '') for c in guide.get('common_causes', [])[:3]])}\n"
+
         return context
 
     def _parse_response(self, question: str, response: str) -> DiagnosticResponse:

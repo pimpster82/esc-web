@@ -50,11 +50,11 @@ GitHub will automatically build and deploy your site.
 After 1-2 minutes, your site will be available at:
 
 ```
-https://YOUR-USERNAME.github.io/esc-web/
+https://pimpster82.github.io/esc-web/
 ```
 
 For example:
-- `https://john-smith.github.io/esc-web/`
+- `https://git@github.com:pimpster82/esc-web`
 - `https://elevator-pro.github.io/esc-web/`
 
 ---

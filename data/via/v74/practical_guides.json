@@ -1,0 +1,444 @@
+{
+  "metadata": {
+    "name": "Praktische Diagnose-Leitfäden",
+    "purpose": "Layer 3 - VIA-spezifische Leitfäden und praktische Tipps für Techniker",
+    "created": "2025-11-16",
+    "version": "1.0",
+    "total_guides": 8
+  },
+  "diagnostic_guides": [
+    {
+      "id": "guide_001",
+      "title": "Sicherheitskreis-Fehlerdiagnose (F01 02, F01 03, F02 06)",
+      "related_errors": ["F01 02", "F01 03", "F02 06", "F01 30"],
+      "problem": "Aufzug reagiert nicht, Fehlercodes F01xx oder F02xx",
+      "diagnosis_steps": [
+        {
+          "step": 1,
+          "action": "Visuelle Kontrolle durchführen",
+          "details": "Überprüfen Sie die Verdrahtung zwischen den Sicherheitskreis-Kontaktpunkten (1H, 3C, 6H, 7H, 8H, 9H) auf sichtbare Beschädigungen, Verschleißspuren oder Korrosion",
+          "tools": ["Taschenlampe", "Inspektionshandschuhe"]
+        },
+        {
+          "step": 2,
+          "action": "Steckverbindungen prüfen",
+          "details": "Kontrollieren Sie alle XTSS Stecker auf festen Sitz. Ziehen Sie jeden Stecker heraus und wieder rein, um Kontaktoxide zu entfernen",
+          "tools": ["Steckerprüfer"],
+          "component_refs": ["XTSS", "SMQ"]
+        },
+        {
+          "step": 3,
+          "action": "Durchgangsprüfung mit Multimeter",
+          "details": "Stellen Sie das Multimeter auf Ohm-Modus (Durchgang). Messen Sie zwischen den Kontaktpunkten. Sollte < 1 Ohm sein bei geschlossenem Kreis",
+          "tools": ["Digitales Multimeter"],
+          "critical": true
+        },
+        {
+          "step": 4,
+          "action": "SMQ Board kontrollieren",
+          "details": "Überprüfen Sie das SMQ Board (Safety Monitoring Board) auf LED-Anzeigen. Status-LEDs sollten grün leuchten. Rote LEDs deuten auf Fehler hin",
+          "tools": ["Taschenlampe"],
+          "component_refs": ["SMQ"]
+        },
+        {
+          "step": 5,
+          "action": "Spannungsprüfung durchführen",
+          "details": "Überprüfen Sie mit dem Multimeter die Versorgungsspannung am VSS-Pin des XTSS Steckers. Sollte 110V AC sein. Falls nicht, könnte der STR-Sicherung auslösen",
+          "tools": ["Digitales Multimeter"],
+          "voltage": "110V AC",
+          "critical": true
+        }
+      ],
+      "common_causes": [
+        {
+          "cause": "Lockere oder oxidierte Stecker",
+          "probability": "Sehr häufig",
+          "solution": "Stecker reinigen und fest einsetzen"
+        },
+        {
+          "cause": "Unterbrochene Verdrahtung",
+          "probability": "Häufig",
+          "solution": "Visuelle Kontrolle, ggf. Verdrahtung ersetzen"
+        },
+        {
+          "cause": "Defektes SMQ Board",
+          "probability": "Selten",
+          "solution": "Board austauschen, andere Komponenten zuerst prüfen"
+        },
+        {
+          "cause": "Stromversorgungsfehler (110V fehlt)",
+          "probability": "Mittel",
+          "solution": "STR-Sicherung prüfen, KVF-Phasenfehler kontrollieren"
+        }
+      ],
+      "troubleshooting_tips": [
+        "Sicherheitskreis-Fehler treten oft nach Wartungsarbeiten auf - immer nach der Arbeit testen!",
+        "Das SMQ Board ist sehr zuverlässig - es ist meist ein Problem mit den Steckverbindungen",
+        "Verwenden Sie niemals Kraft beim Einstecken - die Kontakte sind empfindlich",
+        "Messwerte dokumentieren - hilft bei der Diagnose von intermittierenden Fehlern"
+      ],
+      "manual_page_ref": 113,
+      "difficulty_level": "Mittel"
+    },
+    {
+      "id": "guide_002",
+      "title": "Spannungs- und Stromversorgungsfehler (F01 09, F46 17)",
+      "related_errors": ["F01 09", "F46 17"],
+      "problem": "Aufzug erhält keine oder unvollständige Stromversorgung",
+      "diagnosis_steps": [
+        {
+          "step": 1,
+          "action": "Gesamtspannungsprüfung",
+          "details": "Überprüfen Sie die Eingangsspannung an der Hauptschalttafel. In Mitteleuropa sollte 3x 400V AC sein (3-Phasen). Messen Sie zwischen Phase-Null und Phase-Phase",
+          "tools": ["Digitales Multimeter"],
+          "critical": true,
+          "voltage": "3x 400V AC"
+        },
+        {
+          "step": 2,
+          "action": "Sicherungsautomaten kontrollieren",
+          "details": "Prüfen Sie alle Sicherungen und Leistungsschalter auf Auslösungen. Der STR-Sicherungsautomaten (110V) muss aktiv sein",
+          "tools": ["Visuelle Kontrolle"],
+          "component_refs": ["STR"]
+        },
+        {
+          "step": 3,
+          "action": "KVF Phasenfehler prüfen",
+          "details": "Überprüfen Sie die KVF (Steuereinheit) auf die richtige Phasenfolge. Eine vertauschte Phase führt zu F01 09. Messen Sie Spannung zwischen den Phasen an KVF",
+          "tools": ["Digitales Multimeter"],
+          "component_refs": ["KVF"],
+          "critical": true
+        },
+        {
+          "step": 4,
+          "action": "110V Nebenspannungsversorgung prüfen",
+          "details": "Messen Sie die 110V AC am VSS-Pin des XTSS Steckers (SMQ-Seite). Falls keine Spannung: Transformator-Problem oder STR-Sicherung defekt",
+          "tools": ["Digitales Multimeter"],
+          "voltage": "110V AC",
+          "component_refs": ["XTSS", "SMQ"]
+        },
+        {
+          "step": 5,
+          "action": "Transformator kontrollieren",
+          "details": "Wenn 400V anliegt aber kein 110V: Transformator ist möglicherweise defekt. Überprüfen Sie die Primär- und Sekundärwicklung mit dem Multimeter",
+          "tools": ["Digitales Multimeter"],
+          "critical": true
+        }
+      ],
+      "measurement_guide": {
+        "tool": "Digitales Multimeter (AC/DC)",
+        "meter_setup": "AC Spannungsmodus, Auto-Range",
+        "safety_note": "ACHTUNG: Unter Spannung messen! Tragen Sie Sicherheitsausrüstung",
+        "typical_values": {
+          "3_phase": "3x 400V AC ±10%",
+          "110v": "110V AC ±10%",
+          "24v_dc": "24V DC ±10%"
+        }
+      },
+      "common_causes": [
+        {
+          "cause": "Unterbrochene Stromzufuhr",
+          "probability": "Häufig",
+          "solution": "Sicherung/Schalter kontrollieren"
+        },
+        {
+          "cause": "Falsche Phasenfolge (R-S-T vertauscht)",
+          "probability": "Mittel",
+          "solution": "Phasen an KVF korrigieren"
+        },
+        {
+          "cause": "Transformator-Ausfall",
+          "probability": "Selten",
+          "solution": "Transformator austauschen"
+        },
+        {
+          "cause": "Defekter Stromverteilungsschalter",
+          "probability": "Selten",
+          "solution": "Schalter/Steuergerät austauschen"
+        }
+      ],
+      "manual_page_ref": 113,
+      "difficulty_level": "Fortgeschrittene"
+    },
+    {
+      "id": "guide_003",
+      "title": "Tür-Mechanik Fehlerbehebung (F02 06, F02 07, F03 05)",
+      "related_errors": ["F02 06", "F02 07", "F03 05"],
+      "problem": "Türen öffnen/schließen nicht oder während Fahrt Fehler",
+      "diagnosis_steps": [
+        {
+          "step": 1,
+          "action": "Türmechanismus visuell kontrollieren",
+          "details": "Überprüfen Sie die Tür auf sichtbare Verschmutzung, Verschleiß oder Verformung. Führungsschienen sollten sauber und gerade sein",
+          "tools": ["Taschenlampe", "Inspektionshandschuhe"]
+        },
+        {
+          "step": 2,
+          "action": "Türsensoren reinigen",
+          "details": "Die Kontaktsensoren (Punkt 6H/7H/8H/9H) sind häufig verschmutzt. Mit fusselfreiem Tuch und evtl. leicht alkoholhaltiger Lösung reinigen",
+          "tools": ["Fusselfreies Tuch", "Isopropanol"],
+          "critical": true
+        },
+        {
+          "step": 3,
+          "action": "Türsensor-Durchgang prüfen",
+          "details": "Mit Multimeter im Ohm-Modus den Durchgang der Türsensoren prüfen (Punkte 6H, 7H, 8H, 9H). Bei geöffneter Tür sollte Durchgang vorhanden sein",
+          "tools": ["Digitales Multimeter"]
+        },
+        {
+          "step": 4,
+          "action": "Tür-Verriegelung testen",
+          "details": "Manuell die Tür zu- und aufmachen. Sie sollte sanft und ohne Widerstand laufen. Reibung deutet auf Verschleiß hin",
+          "tools": []
+        }
+      ],
+      "common_causes": [
+        {
+          "cause": "Verschmutzte Sensoren",
+          "probability": "Sehr häufig",
+          "solution": "Sensoren mit fusselfreiem Tuch reinigen"
+        },
+        {
+          "cause": "Verschlissene Türführungsschienen",
+          "probability": "Häufig",
+          "solution": "Schienen reinigen und schmieren, ggf. austauschen"
+        },
+        {
+          "cause": "Defekter Türmotor",
+          "probability": "Mittel",
+          "solution": "Motor austauschen"
+        }
+      ],
+      "manual_page_ref": 113,
+      "difficulty_level": "Anfänger"
+    },
+    {
+      "id": "guide_004",
+      "title": "Geschwindigkeit und Bewegungsfehler (F01 20, F01 29)",
+      "related_errors": ["F01 20", "F01 29"],
+      "problem": "Aufzug fährt zu schnell oder macht unerwartete Bewegungen",
+      "diagnosis_steps": [
+        {
+          "step": 1,
+          "action": "Geschwindigkeit messen",
+          "details": "Fahren Sie den Aufzug von oben nach unten und messen Sie die Zeit für eine bekannte Distanz (z.B. 3 Meter). Berechnen Sie: Geschwindigkeit = Distanz / Zeit",
+          "tools": ["Stoppuhr", "Messstab"],
+          "critical": true
+        },
+        {
+          "step": 2,
+          "action": "Geschwindigkeitsbegrenzer kontrollieren",
+          "details": "Der Geschwindigkeitsbegrenzer ist eine Sicherheitsvorrichtung. Überprüfen Sie manuell die Funktion. Falls der Aufzug zu schnell wird: Begrenzerschleife prüfen",
+          "tools": [],
+          "critical": true
+        },
+        {
+          "step": 3,
+          "action": "Fahrkorbführungsrollen prüfen",
+          "details": "Überprüfen Sie die Rollen an den Seiten des Fahrkorbschachts auf Verschleiß und Verschmutzung. Rollen sollten leicht drehen",
+          "tools": ["Taschenlampe"]
+        },
+        {
+          "step": 4,
+          "action": "Bremsen testen",
+          "details": "Normale Betriebsbremse und Sicherheitsbremse sollten einwandfrei funktionieren. Bremsen können durch Staub oder Verschleiß beeinträchtigt sein",
+          "tools": []
+        }
+      ],
+      "common_causes": [
+        {
+          "cause": "Fehlende oder defekte Geschwindigkeitsbegrenzung",
+          "probability": "Häufig",
+          "solution": "Begrenzerschleife prüfen und justieren"
+        },
+        {
+          "cause": "Verschlissene Bremsbeläge",
+          "probability": "Häufig",
+          "solution": "Bremsbeläge austauschen"
+        },
+        {
+          "cause": "Fehlerhafte Geschwindigkeit-Detektion",
+          "probability": "Mittel",
+          "solution": "Sensor überprüfen"
+        }
+      ],
+      "manual_page_ref": 113,
+      "difficulty_level": "Fortgeschrittene"
+    },
+    {
+      "id": "guide_005",
+      "title": "Grundcheck für jeden Aufzug-Besuch",
+      "related_errors": ["F01 02", "F01 09", "F02 06"],
+      "problem": "Schnell-Überblick vor detaillierter Diagnose",
+      "diagnosis_steps": [
+        {
+          "step": 1,
+          "action": "Stromversorgung kontrollieren",
+          "details": "Überprüfen Sie, ob die Hauptschalter aktiv sind und Leuchten brennen. Kontrollieren Sie Sicherungen/Schutzschalter auf Auslösung",
+          "tools": ["Sichtprüfung"],
+          "estimated_time": "2 min"
+        },
+        {
+          "step": 2,
+          "action": "Fehler-Display auslesen",
+          "details": "Notieren Sie alle angezeigten Fehlercodes (F-Codes). Dokumentieren Sie die genauen Codes",
+          "tools": [],
+          "estimated_time": "1 min"
+        },
+        {
+          "step": 3,
+          "action": "Funktionsprüfung",
+          "details": "Test der Knöpfe: Hoch, Runter, Stop. Test der Türen: Öffnen, Schließen. Fahrt vom oberen bis unteren Stock",
+          "tools": [],
+          "estimated_time": "5 min"
+        },
+        {
+          "step": 4,
+          "action": "Stecker und Kabel sichtprüfung",
+          "details": "Schnelle visuelle Kontrolle aller Steckverbindungen und Kabel auf sichtbare Schäden",
+          "tools": ["Taschenlampe"],
+          "estimated_time": "3 min"
+        },
+        {
+          "step": 5,
+          "action": "SMQ und Steuerung kontrollieren",
+          "details": "Überprüfen Sie SMQ LED-Status und allgemeine Steuerungs-LEDs. Grün = OK, Rot = Fehler",
+          "tools": ["Taschenlampe"],
+          "estimated_time": "2 min"
+        }
+      ],
+      "quick_reference": "Dieser Check dauert ~13 Minuten und gibt einen Überblick der Hauptprobleme",
+      "manual_page_ref": 113,
+      "difficulty_level": "Anfänger"
+    },
+    {
+      "id": "guide_006",
+      "title": "Messgerät-Anleitung: Multimeter für Aufzug-Diagnose",
+      "related_errors": ["F01 09", "F01 02", "F46 17"],
+      "problem": "Wie man richtig mit Multimeter misst",
+      "measurement_procedures": [
+        {
+          "procedure": "AC-Spannung messen",
+          "steps": [
+            "Multimeter einschalten",
+            "Funktion auf 'AC V' (Wechselspannung) stellen",
+            "Red-Probe an Messort, Black-Probe an GND/Neutral",
+            "Wert ablesen. Sollte ~110V AC oder ~400V AC sein"
+          ],
+          "safety": "ACHTUNG: Live-Messungen! Isolierte Handschuhe tragen",
+          "used_for": ["Stromversorgung prüfen", "SMQ Spannungsversorgung"]
+        },
+        {
+          "procedure": "Durchgang (Kontinuität) prüfen",
+          "steps": [
+            "Multimeter einschalten",
+            "Funktion auf 'Ohm' oder 'Kontinuität' stellen",
+            "Red an Pin 1, Black an Pin 2",
+            "Bei Durchgang: Piep-Ton oder Anzeige nahe 0 Ohm"
+          ],
+          "safety": "KEINE Spannung anlegeny! Stromversorgung abschalten",
+          "used_for": ["Verdrahtung prüfen", "Sensoren testen"]
+        },
+        {
+          "procedure": "Widerstand messen",
+          "steps": [
+            "Stromversorgung ABSCHALTEN",
+            "Multimeter auf 'Ohm' stellen",
+            "Probes an Messstelle",
+            "Wert ablesen"
+          ],
+          "safety": "Immer Strom abschalten vor Widerstands-Messung!",
+          "used_for": ["Sensorprüfung", "Wicklungsprüfung"]
+        }
+      ],
+      "common_mistakes": [
+        "Mit Stromversorgung Kontinuität prüfen - kann Multimeter zerstören!",
+        "Falsche Messfunktion wählen - immer auf AC V für Stromversorgung",
+        "Probes nicht richtig kontaktieren - schlechte Messwerte",
+        "Messungen nicht dokumentieren - später nicht reproduzierbar"
+      ],
+      "recommended_meter": "Digitales Multimeter CAT III 600V min.",
+      "difficulty_level": "Anfänger"
+    },
+    {
+      "id": "guide_007",
+      "title": "Praktische Tipps und Tricks",
+      "related_errors": ["F01 02", "F01 09", "F02 06"],
+      "problem": "Erfahrungsgemäße Hinweise für schnellere Diagnose",
+      "tips": [
+        {
+          "tip": "Stecker-Problem ist #1 Ursache",
+          "detail": "Bei 70% der Fehler ist einfach ein XTSS Stecker lose oder durch Oxidation schlechter Kontakt. Zuerst immer Stecker ausziehen und wieder rein!"
+        },
+        {
+          "tip": "SMQ Board ist sehr robust",
+          "detail": "Das SMQ Board funktioniert meist tadellos. Wenn SMQ-LED rot: Meist nicht das Board selbst, sondern ein Problem in den angeschlossenen Kreisen"
+        },
+        {
+          "tip": "Dokumentieren Sie alles",
+          "detail": "Schreiben Sie auf: Fehlercodes, Messwerte, Komponenten-Status, durchgeführte Tests. Hilft bei intermittierenden Fehlern später"
+        },
+        {
+          "tip": "Sicherheitskreis ist kritisch",
+          "detail": "Sicherheitskreis-Fehler (F01 02) machen den Aufzug komplett unbrauchbar. Das ist mit Absicht - Sicherheit geht vor"
+        },
+        {
+          "tip": "Ersatzteile bereit haben",
+          "detail": "Häufige Ausfallteile: XTSS Stecker, SMQ Board, Türmotoren. Diese sollten Sie immer dabei haben"
+        },
+        {
+          "tip": "Nach Wartung immer testen",
+          "detail": "Nach jeder Wartungsarbeit einen Funktions-Test durchführen. 90% der Fehler entstehen durch unvorsichtige Arbeit"
+        },
+        {
+          "tip": "Kunden informieren",
+          "detail": "Erklären Sie dem Kunden, warum der Aufzug stillsteht (Sicherheitsgründe). Das verhindert unnötige Anrufe"
+        },
+        {
+          "tip": "Regelmäßige Wartung",
+          "detail": "Mit regelmäßiger Wartung (Schmierung, Reinigung, Kontrolle) vermeiden Sie 80% der Fehler"
+        }
+      ],
+      "difficulty_level": "Alle Stufen"
+    },
+    {
+      "id": "guide_008",
+      "title": "Fehler-Matrix: Symptome -> Ursachen",
+      "related_errors": ["F01 02", "F01 09", "F02 06", "F01 20"],
+      "problem": "Schnelle Zuordnung von Symptomen zu Fehlern",
+      "symptom_matrix": [
+        {
+          "symptom": "Aufzug reagiert gar nicht (kein Strom)",
+          "possible_errors": ["F01 09", "F46 17"],
+          "check_first": ["Hauptschalter", "Sicherungen", "Eingangsspannung"],
+          "estimated_fix_time": "15-30 min"
+        },
+        {
+          "symptom": "Türen öffnen nicht",
+          "possible_errors": ["F02 06", "F02 07", "F03 05"],
+          "check_first": ["Türsensoren reinigen", "Verriegelung prüfen"],
+          "estimated_fix_time": "20-45 min"
+        },
+        {
+          "symptom": "Aufzug fährt zu schnell",
+          "possible_errors": ["F01 20", "F01 29"],
+          "check_first": ["Geschwindigkeit messen", "Begrenzerschleife prüfen"],
+          "estimated_fix_time": "30-60 min"
+        },
+        {
+          "symptom": "Fehler F01 02 (Sicherheitskreis offen)",
+          "possible_errors": ["F01 02"],
+          "check_first": ["XTSS Stecker", "Sicherheitskreis-Verdrahtung"],
+          "estimated_fix_time": "30-90 min"
+        },
+        {
+          "symptom": "SMQ Board LED rot",
+          "possible_errors": ["F01 02", "F01 03", "F01 09"],
+          "check_first": ["Steckverbindungen", "Spannungsversorgung"],
+          "estimated_fix_time": "20-45 min"
+        }
+      ],
+      "difficulty_level": "Anfänger"
+    }
+  ]
+}
