@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Image reference index for diagrams, schematics, and procedural images",
+    "last_updated": "2024-11-16",
+    "purpose": "Maps images to error codes, components, and guides"
+  },
+  "general_images": {
+    "diagrams": [
+      {
+        "id": "diag_001",
+        "filename": "data/general/images/diagrams/safety_circuit.png",
+        "title": "Universal Safety Circuit Diagram",
+        "description": "Basic safety circuit topology common to most elevators",
+        "tags": ["safety", "circuit", "universal", "F01"],
+        "applies_to": ["all"],
+        "guide_reference": "universal_guides - security_circuits"
+      },
+      {
+        "id": "diag_002",
+        "filename": "data/general/images/diagrams/power_distribution.png",
+        "title": "Power Distribution Overview",
+        "description": "General power supply distribution and main circuits",
+        "tags": ["power", "supply", "distribution", "F03"],
+        "applies_to": ["all"],
+        "guide_reference": "universal_guides - power_supply"
+      },
+      {
+        "id": "diag_003",
+        "filename": "data/general/images/diagrams/door_system.png",
+        "title": "Door Mechanical System",
+        "description": "Standard door opening/closing mechanism",
+        "tags": ["door", "mechanics", "sensors"],
+        "applies_to": ["all"],
+        "guide_reference": "universal_guides - door_mechanics"
+      }
+    ],
+    "components": [
+      {
+        "id": "comp_001",
+        "filename": "data/general/images/components/multimeter_usage.png",
+        "title": "Multimeter Operating Guide",
+        "description": "How to use multimeter for AC/DC voltage, continuity, resistance",
+        "tags": ["multimeter", "measurement", "tools", "testing"],
+        "applies_to": ["all"],
+        "guide_reference": "universal_guides - multimeter_guide"
+      },
+      {
+        "id": "comp_002",
+        "filename": "data/general/images/components/connector_types.png",
+        "title": "Common Connector Types",
+        "description": "Identification and inspection of standard elevator connectors",
+        "tags": ["connectors", "identification", "wiring"],
+        "applies_to": ["all"],
+        "guide_reference": "universal_guides - field_tips"
+      },
+      {
+        "id": "comp_003",
+        "filename": "data/general/images/components/wiring_basics.png",
+        "title": "Wiring Identification and Testing",
+        "description": "How to identify wire types and test for continuity/integrity",
+        "tags": ["wiring", "identification", "testing"],
+        "applies_to": ["all"],
+        "guide_reference": "universal_guides - safety_circuits"
+      }
+    ],
+    "procedures": [
+      {
+        "id": "proc_001",
+        "filename": "data/general/images/procedures/lockout_procedure.png",
+        "title": "Lockout/Tagout Procedure",
+        "description": "Safe lockout procedure before maintenance work",
+        "tags": ["safety", "lockout", "procedure", "LOTO"],
+        "applies_to": ["all"],
+        "guide_reference": "universal_guides - field_tips"
+      },
+      {
+        "id": "proc_002",
+        "filename": "data/general/images/procedures/testing_workflow.png",
+        "title": "General Diagnostic Workflow",
+        "description": "Step-by-step testing workflow for systematic diagnosis",
+        "tags": ["workflow", "diagnosis", "systematic", "procedure"],
+        "applies_to": ["all"],
+        "guide_reference": "universal_guides - diagnostic_methodology"
+      }
+    ]
+  },
+  "via_v74_images": {
+    "schematics": [
+      {
+        "id": "v74_sch_001",
+        "filename": "data/manufacturers/via/v74/images/schematics/control_cabinet.png",
+        "title": "VIA v74 Control Cabinet Layout",
+        "description": "Electrical components layout in VIA v74 control cabinet",
+        "tags": ["via", "v74", "schematic", "control_cabinet", "layout"],
+        "error_codes": ["F01 02", "F01 03", "F01 30", "F02 06"],
+        "components": ["SMQ", "XTSS", "KVF", "1H", "3C"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "via_v74 - sicherheitskreis.json"
+      },
+      {
+        "id": "v74_sch_002",
+        "filename": "data/manufacturers/via/v74/images/schematics/motor_circuit.png",
+        "title": "VIA v74 Motor Circuit",
+        "description": "Motor drive and control circuits specific to v74",
+        "tags": ["via", "v74", "motor", "drive", "circuit"],
+        "error_codes": ["F03", "F04", "F05"],
+        "components": ["Motor", "Drive", "Contactor"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "via_v74 - motor_control.json"
+      },
+      {
+        "id": "v74_sch_003",
+        "filename": "data/manufacturers/via/v74/images/schematics/brake_system.png",
+        "title": "VIA v74 Brake System",
+        "description": "Electromagnetic brake circuits and testing points",
+        "tags": ["via", "v74", "brake", "safety", "circuit"],
+        "error_codes": ["F01", "F02"],
+        "components": ["Brake", "Solenoid"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "via_v74 - specific_guides"
+      },
+      {
+        "id": "v74_sch_004",
+        "filename": "data/manufacturers/via/v74/images/schematics/safety_circuit_v74.png",
+        "title": "VIA v74 Safety Circuit Schematic",
+        "description": "Complete safety circuit diagram with all monitoring points",
+        "tags": ["via", "v74", "safety", "circuit", "schematic", "F01", "F02"],
+        "error_codes": ["F01 02", "F01 03", "F01 30", "F02 06", "F02 18"],
+        "components": ["SMQ", "1H", "3C", "XTSS"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "universal_guides - security_circuits"
+      }
+    ],
+    "components": [
+      {
+        "id": "v74_cmp_001",
+        "filename": "data/manufacturers/via/v74/images/components/smq_board.png",
+        "title": "SMQ Board - Safety Monitoring",
+        "description": "Safety Monitoring and Control board for VIA v74",
+        "tags": ["via", "v74", "SMQ", "safety", "monitoring", "component"],
+        "error_codes": ["F01 30", "F02 06"],
+        "components": ["SMQ"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "via_v74 - smq_board.json"
+      },
+      {
+        "id": "v74_cmp_002",
+        "filename": "data/manufacturers/via/v74/images/components/xtss_component.png",
+        "title": "XTSS Safety Relay",
+        "description": "XTSS safety relay module and connections",
+        "tags": ["via", "v74", "XTSS", "relay", "safety"],
+        "error_codes": ["F01 02", "F01 03"],
+        "components": ["XTSS"],
+        "applies_to": ["via/v74"]
+      },
+      {
+        "id": "v74_cmp_003",
+        "filename": "data/manufacturers/via/v74/images/components/kvf_assembly.png",
+        "title": "KVF Contactor Assembly",
+        "description": "KVF main contactor assembly and terminals",
+        "tags": ["via", "v74", "KVF", "contactor", "power"],
+        "error_codes": ["F03", "F04"],
+        "components": ["KVF"],
+        "applies_to": ["via/v74"]
+      },
+      {
+        "id": "v74_cmp_004",
+        "filename": "data/manufacturers/via/v74/images/components/connectors_v74.png",
+        "title": "VIA v74 Connector Guide",
+        "description": "VIA-specific connector types, pinouts, and identification",
+        "tags": ["via", "v74", "connectors", "identification", "wiring"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "universal_guides - field_tips"
+      }
+    ],
+    "assemblies": [
+      {
+        "id": "v74_asm_001",
+        "filename": "data/manufacturers/via/v74/images/assemblies/machine_room_layout.png",
+        "title": "VIA v74 Machine Room Layout",
+        "description": "Typical VIA v74 machine room component placement",
+        "tags": ["via", "v74", "machine_room", "layout", "assembly"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "universal_guides - practical_guides"
+      },
+      {
+        "id": "v74_asm_002",
+        "filename": "data/manufacturers/via/v74/images/assemblies/car_assembly.png",
+        "title": "VIA v74 Car Assembly",
+        "description": "Elevator car component assembly and positioning",
+        "tags": ["via", "v74", "car", "assembly", "components"],
+        "applies_to": ["via/v74"]
+      },
+      {
+        "id": "v74_asm_003",
+        "filename": "data/manufacturers/via/v74/images/assemblies/door_mechanism.png",
+        "title": "VIA v74 Door Mechanism",
+        "description": "Door motor, linkages, and sensor positioning",
+        "tags": ["via", "v74", "door", "mechanism", "sensors"],
+        "error_codes": ["F20", "F21", "F22"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "universal_guides - door_mechanics"
+      }
+    ],
+    "procedures": [
+      {
+        "id": "v74_proc_001",
+        "filename": "data/manufacturers/via/v74/images/procedures/f01_02_diagnosis.png",
+        "title": "F01 02 Diagnosis Procedure",
+        "description": "Step-by-step visual guide for diagnosing F01 02 errors",
+        "tags": ["via", "v74", "F01 02", "diagnosis", "procedure", "safety"],
+        "error_codes": ["F01 02"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "universal_guides - security_circuits"
+      },
+      {
+        "id": "v74_proc_002",
+        "filename": "data/manufacturers/via/v74/images/procedures/power_testing.png",
+        "title": "VIA v74 Power Testing Procedure",
+        "description": "Voltage testing points and measurement procedures",
+        "tags": ["via", "v74", "power", "testing", "procedure", "multimeter"],
+        "error_codes": ["F03", "F03 01", "F03 02"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "universal_guides - power_supply"
+      },
+      {
+        "id": "v74_proc_003",
+        "filename": "data/manufacturers/via/v74/images/procedures/connector_inspection.png",
+        "title": "Connector Inspection Procedure",
+        "description": "How to inspect and clean VIA v74 connectors",
+        "tags": ["via", "v74", "connector", "inspection", "maintenance"],
+        "applies_to": ["via/v74"],
+        "guide_reference": "universal_guides - field_tips"
+      }
+    ]
+  },
+  "usage_examples": {
+    "finding_images_for_error": "Query error code (e.g., 'F01 02') to find all related images",
+    "finding_images_for_component": "Query component code (e.g., 'SMQ') to find identification and usage images",
+    "finding_images_for_guide": "Query guide name to find supporting diagrams and procedure images",
+    "cross_referencing": "Each image record links to relevant error codes, components, and guides"
+  }
+}

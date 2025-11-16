@@ -1,0 +1,781 @@
+{
+  "metadata": {
+    "total_entries": 152,
+    "includes": [
+      "original_abbreviations",
+      "hardware_boards",
+      "connectors"
+    ],
+    "last_enhanced": "2025-11-16",
+    "manual_version": "VIASerie_v74"
+  },
+  "abbreviations": [
+    {
+      "code": "VIA",
+      "description_de": "SERIE",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "ANNEX",
+      "description_de": "I ABKÜRZUNGEN",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "325VS",
+      "description_de": "325VS Magnetschalter Q",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "327VS",
+      "description_de": "327VS Magnetschalter QAC Kabinenbeleuchtung thermomagnetischer Schalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "328VS",
+      "description_de": "328VS Magnetschalter QAH Schachtbeleuchtung thermomagnetischer Schalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "AFI",
+      "description_de": "unterer Stopschalter R Rot",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "AFS",
+      "description_de": "oberer Stopschalter RF 3VFMAC Bremswiderstand",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "BTS",
+      "description_de": "Temperaturfühler SACCP Fangvorrichtungskontakt Gegengewicht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "COND",
+      "description_de": "Kondensator Frequenzregler SAFCP Schlaffseilkontakt Gegengewicht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FA",
+      "description_de": "Sicherung Kabinendeckenbeleuchtung SAFH Schlaffseilkontakt Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FAC",
+      "description_de": "Kabinenlicht Differential SALH Schalter Schachtbeleuchtung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FAH",
+      "description_de": "Kabinenlicht Differential SALV Geschwindigkeitsbegrenzer Fernauslösungskontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FCA1",
+      "description_de": "Sicherung Heizung SAM Stossdämpfer Kontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FCAP",
+      "description_de": "Endschalter Öffner SCC Kabinenverriegelung Serie",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FCCP",
+      "description_de": "Endschalter Schließer SCE Schachtverriegelung Serie",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FE",
+      "description_de": "Eingangsfilter Frequenzregler SDI Schalter 2-Weg-Gegensprechanlage",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FF",
+      "description_de": "Differential SEC1 Kabinenverriegelungskontakt 1",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FHC",
+      "description_de": "Kabinennotlicht SEC2 Kabinenverriegelungskontakt 2",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FOPR",
+      "description_de": "R Phase Sicherung SEM Maschinenzahnradkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FOPS",
+      "description_de": "S Phase Sicherung SEN Empfindlichkeitskontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FOPT",
+      "description_de": "T Phase Sicherung SFI Unterer Endkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FR",
+      "description_de": "Sicherung R SFS Oberer Endkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FS",
+      "description_de": "Sicherung S SHA Türschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "FT",
+      "description_de": "Sicherung T SIB Inspektionstaster abwärts",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "G2R",
+      "description_de": "Relais SIR´ Steuerungstaster ab Steuerung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "GFR",
+      "description_de": "Bremsplatine SIS Inspektionstaster aufwärts",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "GRL",
+      "description_de": "Gleichrichterplatine Riegelmagnet SIS´ Aufwärts Taster ab Steuerung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "GRV",
+      "description_de": "Gleichrichterplatine Ventil SLVC Gegengewicht Geschwindigkeitsbegrenzer Kontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "HALR",
+      "description_de": "Alarmanzeige SLVH Geschwindigkeitsbegrenzer Schachtkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "HC",
+      "description_de": "Kabinenlicht SMAX Maximaldruckschalter Kontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "HNL",
+      "description_de": "Nicht-Bündig Anzeige SMES Maschinenraum MES Schalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "HRB",
+      "description_de": "Lichtreihe (Schachtinstallation) SMIN Minimaldruckschalter Kontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "K1",
+      "description_de": "Schütz 1 SPE Taster RufsteuTearusntegr",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "K2",
+      "description_de": "Schütz 2 SPF Anwesenheitskontakt in Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KAB",
+      "description_de": "Tür-Auf Relais SPM Bewegliche Türschwelle",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KB",
+      "description_de": "Schütz abwärts SPT Teleskop Säulenkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KBRE",
+      "description_de": "Notbefreiungsrelais abwärts SSB Taster Notbefreiung aufwärts",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KCP",
+      "description_de": "Tür-Zu Relais SSMES MES Maschinenraumkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KG",
+      "description_de": "Allgemeiner Schütz SSOB Überlast Druckschalter Kontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KL",
+      "description_de": "langsamer Schütz STC Lukenkontakt Zugang über Kabine",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KM",
+      "description_de": "Betriebsrelais STCC Ausgleichskettenkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KPF",
+      "description_de": "Schachtgrubenrelais STH Lukenkontakt Zugang über Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KR",
+      "description_de": "schneller Schütz STLC Begrenzerseil Spannungskontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KS",
+      "description_de": "Schütz aufwärts STLCP Gegengewichtsspannrollenkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KSRE",
+      "description_de": "Notbefreiungsrelais aufwärts STLCPF Schachtgrube Gegengewichtsspannrollenkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KT",
+      "description_de": "Stern-Dreieck Schütz STLCPH Schacht Gegengewichtsspannrollenkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "KVF",
+      "description_de": "Phasen Monitorrelais STLF Spannrollenkontakt in Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "MES",
+      "description_de": "Hilfe bei elektrischer Wartung STOPC Wartungskasten Stoptaster",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "PCB",
+      "description_de": "3VFMAC Frequenzreglerboard STPSM Maschinenraum Stopkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TC",
+      "description_de": "Thermokontakt XC6 3VFMAC Encoder Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TCC",
+      "description_de": "Steckdose Wartungskasten XC9 CAN 3VFMAC Steuerungsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TCH",
+      "description_de": "Steckdose Schachtgrube XCA1 Schaltschrank 1 Hilfsstecker PCB",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TFN",
+      "description_de": "Telefon XCA1 Stecker Kabinenplatine",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TRM",
+      "description_de": "Transformator XCA2 Schaltschrank 2 Hilfsstecker PCB",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TROP3F",
+      "description_de": "3-Phasen Transformator XCBUS PCB-VS-SM Verbindungsstecker mit PCB-VSCAB",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "TRV",
+      "description_de": "Transformatorventil XCC Stecker Kabinenverriegelung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "VD",
+      "description_de": "abwärts Ventil XCC-S Stecker Kabinenverriegelung im Maschinenraum",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "VR",
+      "description_de": "schnelles Ventil XCFE zusätzlicher hydraulischer Endkontakt",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "VS",
+      "description_de": "aufwärts Ventil XCFED 2 Zugangsseiten Notendstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X324",
+      "description_de": "324 Magnetschalter Stecker XCIS Stecker Inspektion Sicherheitskreis",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X325",
+      "description_de": "325 Magnetschalter Stecker XCMES MES Schaltschrankstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X325VS",
+      "description_de": "Magnetschalter Stecker 325VS XCMND Steuerungsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X327",
+      "description_de": "327 Magnetschalter Stecker XCNTP Stecker Gegengewichtsseil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X3C",
+      "description_de": "3c Wechselstecker XDISMB Stecker Schaltschrankanzeige",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X3VF",
+      "description_de": "3VF Verbindungsstecker XEC Stecker Kabinenverriegelung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "X538",
+      "description_de": "538 Platinenstecker XEC1 Stecker Schaltschrankverriegelung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAC",
+      "description_de": "Keilkontakt XEC2 Stecker Schaltschrankverriegelung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAE",
+      "description_de": "Stecker Stockwerksalarm XEM Stecker Maschineneingriff",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAFC",
+      "description_de": "Schlaffseilkontakt XEMER PCB VS-CAB Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAFF",
+      "description_de": "Schlaffseilstecker Schachtgrube XEMR1 Stecker Tableau - Kabinendruckknopf",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAFH",
+      "description_de": "Schlaffseilstecker Schacht XEMR1 Stecker Steuerung - Kabinentableau",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAFI",
+      "description_de": "Stecker unterer Endschalter XEMR2 Notlichtstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAFS",
+      "description_de": "Stecker oberer Endschalter XENC Encoderstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XALB",
+      "description_de": "Stecker Kabinenlicht XEXT Entlüftungsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XALH",
+      "description_de": "Stecker Schachtlicht XFI Stecker unteres Hubende",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XALHS",
+      "description_de": "Stecker Schachtlicht XFIAC unterer Endschalter vor dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XALTI",
+      "description_de": "Stecker Gegensprechanlage XFIAH unterer Endschalter vor dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XALTIH",
+      "description_de": "Stecker Gegensprechanlage im Schacht XFIP Unterer Endschalter nach dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAM",
+      "description_de": "Pufferstecker Schachtgrube XFOT1 PCB VS-CAB Stecker Fotozelle",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XANTF",
+      "description_de": "Verbindungsstecker Endschalter XFOT23 2 PCB VS-CAB Stecker Fotozelle",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAP",
+      "description_de": "Tür-Auf und Tür-Zu Stecker in Inspektion XFRP Endschalter nach dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XARM",
+      "description_de": "Kabinenlicht Stecker XFS Oberer Endstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XAUX",
+      "description_de": "Hilfsstecker XFSAC oberer Endschalter vor dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XB12",
+      "description_de": "Stecker Tableau - Tableau 2 XFSAH oberer Endschalter vor dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XB22",
+      "description_de": "Stecker Tableau - Tableau 2 XFSP oberer Endschalter nach dem Stopschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XBATS",
+      "description_de": "Hilfsstecker Batterie XGF PCB VS-CAB Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XBOT21",
+      "description_de": "Stecker Tableau - Tableau 2 XHA Stecker Türschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XC1",
+      "description_de": "Adapter Platinenstecker XHC Stecker Kabinenlicht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XC10",
+      "description_de": "Stecker Kabinenplatine XHMB Stecker Stockwerkstableau",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XC11",
+      "description_de": "PCB-SM Verbindungsstecker mit PCB-3VFMAC XHMES MES Schachtstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XC2",
+      "description_de": "3VFMAC Kontrollsignal Stecker XIA Stecker Alarmidentifikation",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XC3",
+      "description_de": "Adapter Platinenstecker XINT Stecker Gegensprechanlage in Kabine",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XINTS",
+      "description_de": "Stecker Gegensprechanlage in Maschinenraum",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XKET",
+      "description_de": "ÖL PCB Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XKMT1",
+      "description_de": "ÖL PCB Stecker XTH Stecker Schachtzugangsluke",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XKMT2",
+      "description_de": "ÖL PCB Stecker XTLC Spannungskontakt Begrenzerseil Kabine",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XKV",
+      "description_de": "PCB VS-SM Prüfstecker XTLCPF Stecker Geschwindigkeitsbegrenzer Gegengewicht in Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XLVC",
+      "description_de": "Stecker Geschwindigkeitsbegrenzer Kabine XTLCPH Stecker Seilspannung Gegengewicht im Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XLVCPH",
+      "description_de": "Stecker Gegengewicht Schacht Geschwindigkeitsbegrenzer XTLF Stecker Geschwindigkeitsbegrenzer Spannung in Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XLVH",
+      "description_de": "Stecker Geschwindigkeitsbegrenzer Schacht XTLH Spannungskontakt Begrenzerseil Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XMAQ",
+      "description_de": "Stecker Maschinensteuerung XTSS PCB VS-SM Stecker Sicherheitskreis Spannung",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XMCBUS",
+      "description_de": "andere PCB Verbindungsstecker (Maschinenraum) XTSS PCB VS-SM Stecker Sicherheitskreis Spannung PCB VS-SM",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XMES",
+      "description_de": "MES Stecker XVALV Stecker Hydraulikaggregatventil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XNL",
+      "description_de": "Stecker Nicht-Bündig Anzeige XVCBUS PCB VS-SM Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XNSN",
+      "description_de": "538 Stecker mit PCB VS-SM XVD Stecker Stockwerksventil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XO",
+      "description_de": "Stecker Hydraulikplatine XVE Stecker Notbefreiungsventil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOI",
+      "description_de": "220 Bremsstecker XVET Stecker Stern-Dreiecksventil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOP1",
+      "description_de": "Antrieb Stecker - Antrieb PCB XVF Schützrelais Phasenmonitor",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOP2",
+      "description_de": "Antrieb Stecker - Antrieb PCB XVL Stecker Spannung Verriegelungskurve",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOP3A",
+      "description_de": "Stecker 3-Phasen Antrieb XVR Stecker schnelles Ventil",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOP3F",
+      "description_de": "Stecker 3-Phasen Antrieb XZSB 538 Platine Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOPC",
+      "description_de": "Stecker Direktanlauf Antrieb Z",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOPCA",
+      "description_de": "Stecker Direktanlauf Antrieb ZFLC Schütz Ablesefilter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOPL",
+      "description_de": "Stecker spannungsfreier Kontakt Antrieb",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOPLR",
+      "description_de": "Stecker spannungsfreier Kontakt Antrieb",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XOPMB",
+      "description_de": "Verbindungsstecker Antrieb",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XP1",
+      "description_de": "Stecker Adapterboard",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XP2",
+      "description_de": "Stecker Adapterboard",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPC",
+      "description_de": "Stecker Anwesenheit Kabine",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPCEN",
+      "description_de": "Stecker Druckschalter",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPF",
+      "description_de": "Stecker Anwesenheit Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPM",
+      "description_de": "Stecker bewegliche Türschwelle",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPMB1",
+      "description_de": "Stecker Rufe Schacht 1",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPMB2",
+      "description_de": "Stecker Rufe Schacht 2",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPN",
+      "description_de": "Stecker Pulse bündig",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPOS",
+      "description_de": "PCB VS-SM Positionsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPSC",
+      "description_de": "PCB VS-CAB Gegengewichtsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XPT",
+      "description_de": "Stecker Teleskopstütze",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XRB",
+      "description_de": "Lichtkette im Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XRCBUS",
+      "description_de": "PCB VS-CAB Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XRES",
+      "description_de": "elektromechanischer Notbefreiungsstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XRLV",
+      "description_de": "Stecker Fernauslösung Geschwindigkeitsbegrenzer",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XRLVC",
+      "description_de": "Stecker Fernauslösung Geschwindigkeitsbegrenzer Gegengewicht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSE",
+      "description_de": "Stecker Notbefreiungssystem",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSM1",
+      "description_de": "PCB VS-SM Hilfsstecker Eingänge - Ausgänge",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSM2",
+      "description_de": "PCB VS-SM Hilfsstecker Eingänge - Ausgänge",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSMES",
+      "description_de": "MES Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSSC",
+      "description_de": "PCB VS-SM Stecker Kabinensicherheitskreis",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSSH1",
+      "description_de": "PCB VS-SM Stecker Sicherheitskreis im Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSSH2",
+      "description_de": "PCB VS-SM Stecker Sicherheitskreis im Schacht",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSSM",
+      "description_de": "PCB VS-SM Stecker Sicherheitskreis im Maschinenraum",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSSS",
+      "description_de": "PCB VS-SM Stecker Sicherheitskreis im Maschinenraum",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSTOPB",
+      "description_de": "Stecker Kabinenstoptaster",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSTOPF",
+      "description_de": "Stoptaster Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSTPB",
+      "description_de": "Stecker Stoptaster Tableau",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSTPF",
+      "description_de": "Stecker Stoptaster Schachtgrube",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XSTPT",
+      "description_de": "Stecker Stoptaster Kabinendach",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XT20",
+      "description_de": "PCB VS-SM 20Vac Eingang Stecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XTC",
+      "description_de": "Stecker Kabinenluke",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XTCC",
+      "description_de": "Stecker Ausgleichskette",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "XTFN",
+      "description_de": "Telefonstecker",
+      "extraction_status": "from_quickguide"
+    },
+    {
+      "code": "SMQ",
+      "description_de": "SMQ Board - Safety monitoring and control",
+      "location": "Machine room control cabinet",
+      "connectors": [
+        "XTSS",
+        "XKV",
+        "XSM1"
+      ],
+      "type": "hardware",
+      "extraction_status": "example"
+    }
+  ]
+}

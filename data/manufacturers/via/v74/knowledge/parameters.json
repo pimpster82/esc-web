@@ -1,0 +1,663 @@
+{
+  "metadata": {
+    "manual_version": "VIASerie_v74",
+    "manual_pages": "141-155",
+    "extraction_date": "2025-11-16T21:06:46.680603",
+    "status": "Populated from structured tables",
+    "total_parameters": 93,
+    "note": "Parameters automatically extracted from table pages 141-155"
+  },
+  "parameters": [
+    {
+      "code": "P0001",
+      "description_de": "[Seite Anlage 1] Anzahl Haltestellen der Anlage",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "[Seite Anlage 1] Art der Anlage",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "[Seite Anlage 1] Aufzug Nummer",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "[Seite Anlage 1] Funktionsweise",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "[Seite Anlage 1] Art der Türen",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "[Seite Anlage 1] Bedienungsart",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "[Seite Anlage 1] Türen beim Anhalten",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "[Seite Anlage 1] Anzahl Zugänge",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "[Seite Anlage 1] Zugang Ausgangsetage",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "[Seite Anlage 1] Zugang Untergeschosse",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "[Seite Anlage 1] Restliche Zugänge",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "[Seite Anlage 1] Höhe Ausgangsetage",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "[Seite Anlage 1] Asymmetrische untere Etagenhöhen",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0014",
+      "description_de": "[Seite Anlage 1] Asymmetrische obere Etagenhöhen",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0015",
+      "description_de": "[Seite Anlage 1] Rücksendungsetage",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0016",
+      "description_de": "[Seite Anlage 1] Art des Tableau",
+      "manual_page": 141,
+      "section": "Seite Anlage 1",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "Personenzahl",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "Fahrstuhlart",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "Anordnung",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "Abstand Etagenhöhen",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "Wechselart (Information)",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "Bremsabstand (Information mit Impulspositionierung)",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "Nenngeschwindigkeit",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "Inspektionsgeschwindigkeit",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "9 Senkrechttyp Schacht",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "3 VF Steuerungsmodus",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "Hydraulikstart",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "Soft-Starter",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "Door Lock",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0014",
+      "description_de": "Softstopp",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0015",
+      "description_de": "4 Senkrecht geteilt",
+      "manual_page": 142,
+      "section": "ANLAGE 2",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "Programmierung maximale Fahrtdauer",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "Programmierung maximale Schließdauer",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "Zeit nächste Fahrt",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "Zeit nächste Fahrt Ausgangsetage",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "Zeit nächste Fahrt kurz",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "Programmierung für außen",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "Maximale Dauer Türkreis",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "Verlängerte Öffnungsdauer Türen",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "Dauer Rücksendung zur Hauptetage",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "Programmierung Hydraulikaufzug",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "Uhrzeit Beginn Nachtmodus",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "Uhrzeit Ende Nachtmodus",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "Verzögerung Türschließung wegen Hindernis",
+      "manual_page": 143,
+      "section": "",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "[Seite Komfort] Vorgezogene Türöffnung",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "[Seite Komfort] Nachregulierung",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "[Seite Komfort] Dauer Nachregulierung",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "[Seite Komfort] DTS (15)",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "[Seite Komfort] Türsperre",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "[Seite Komfort] Lichtzelle",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "[Seite Komfort] Programmierung nächste Fahrt kurz",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "[Seite Komfort] Kontrolle Fahrkorblicht",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "[Seite Komfort] Verzögerung der Regulierung (Aufwärtsfahrt)",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "[Seite Komfort] Verzögerung der Regulierung (Abwärtsfahrt)",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "[Seite Komfort] Anpassung an die Regulierung nach Last",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "[Seite Komfort] Ausgleich nach Temperatur (Öl)",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "[Seite Komfort] Kontrolle Lautstärke in Fahrkorb",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0014",
+      "description_de": "[Seite Komfort] Nachtmodus",
+      "manual_page": 146,
+      "section": "Seite Komfort",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] UP Peak 23 (0 : Signal | 1 : Stunden | 2 : Lernen)",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] Down Peak 23 (0 : Signal | 1 : Stunden | 2 : Lernen)",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] Etage UP Peak (1..32)",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] Etage Down Peak (1..32)",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] UP Peak Beginn",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] UP Peak Ende",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] Down Peak Beginn",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0014",
+      "description_de": "[Seite Kontrolle Senkrechtverkehr] Down Peak Ende",
+      "manual_page": 148,
+      "section": "Seite Kontrolle Senkrechtverkehr",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "[SICHERHEITEN] Brandsteuerung 24 (0: Nein | 1: EN 81-72 | 2: Australische Vorschrift | 3: U36 Französische Vorschrift | 4: EN 81-73PC | 5: EN 81-73)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "[SICHERHEITEN] Etage für Evakuierung / Feuerwehr (Etage)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "[SICHERHEITEN] Alternativetage für Evakuierung / Feuerwehr (Etage)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "[SICHERHEITEN] Bergungssteuerung (0: Nein | 1: Ja)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "[SICHERHEITEN] Höchsttemperatur (10..125)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "[SICHERHEITEN] Mindesttemperatur25 (0..20)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "[SICHERHEITEN] Begrenzersteuerung (0: Nein | 1: ParaInme 26 | 2: ParaNivel 27 | 3: Gemischt 1,2)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "[SICHERHEITEN] Manuelle Rückstellung (0: Nein | 1: Beliebiger Fehler | 2: Endschalter, MFD, Druckregler)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0009",
+      "description_de": "[SICHERHEITEN] Steuerung der Türen vom Inspektionskasten (0: Nein | 1: Ja)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "[SICHERHEITEN] Inspektionsmodus begrenzt bis (0: AF 28 | 1: Etage | 2: ES1 Signal)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0011",
+      "description_de": "[SICHERHEITEN] Außentemperaturfühler Masch.-raum (0: Nein | 1: Ja)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0012",
+      "description_de": "[SICHERHEITEN] Lastablesung 29 (0: Zelle | 1: Kontakt an SMQ | 2: Kontakt an CAB | 3: Fester Punkt)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0013",
+      "description_de": "[SICHERHEITEN] EN 81-28 Alarmfilterung (0: Nein | 1: V7 | 2: V8 30 | 3: Fonomac 3 (ohne Filterplatte VS | ALRM))",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0014",
+      "description_de": "[SICHERHEITEN] Höchstzahl an Bedienungen pro Stunde (0..250 Fahrten 31)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0015",
+      "description_de": "[SICHERHEITEN] Funktionsweise KP2 Eingang (0: Schützkontakt hängengeblieben | 1: Umrichterstatus | 2: Monitoring Ventil- / | Begrenzerspulenkontakt)",
+      "manual_page": 149,
+      "section": "SICHERHEITEN",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "[Seite Fernsteuerung / Telefon und Internet / Adresse] Automatischer Anruf an Steuerzentrale (0: Nein | 1: Schwere | Fehler | 2: Alle)",
+      "manual_page": 150,
+      "section": "Seite Fernsteuerung / Telefon und Internet / Adresse",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "[Seite Fernsteuerung / Telefon und Internet / Adresse] Anschlussmittel (0: Direkt | 1: RTC | 2: GSM)",
+      "manual_page": 150,
+      "section": "Seite Fernsteuerung / Telefon und Internet / Adresse",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "[Seite Fernsteuerung / Telefon und Internet / Adresse] Anschlussart (0: von Punkt zu | Punkt | 1: Internet)",
+      "manual_page": 150,
+      "section": "Seite Fernsteuerung / Telefon und Internet / Adresse",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0001",
+      "description_de": "[Seite Konfiguration nach Etagen] Türen beim Anhalten",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0002",
+      "description_de": "[Seite Konfiguration nach Etagen] Nicht betriebsbereite Etage",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0003",
+      "description_de": "[Seite Konfiguration nach Etagen] Code Fahrkorbaufruf",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0004",
+      "description_de": "[Seite Konfiguration nach Etagen] Etagenkennzeichen",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0005",
+      "description_de": "[Seite Konfiguration nach Etagen] Zugang, der bedient wird",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0006",
+      "description_de": "[Seite Konfiguration nach Etagen] Entfernung zwischen Etagen",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0007",
+      "description_de": "[Seite Konfiguration nach Etagen] Wechselart (Information)",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0008",
+      "description_de": "[Seite Konfiguration nach Etagen] Bremsweg 32",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    },
+    {
+      "code": "P0010",
+      "description_de": "[Seite Konfiguration nach Etagen] Zweite Geschwindigkeitsbank 33",
+      "manual_page": 151,
+      "section": "Seite Konfiguration nach Etagen",
+      "extraction_status": "from_table"
+    }
+  ]
+}
