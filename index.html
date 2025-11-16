@@ -221,6 +221,101 @@
             font-size: 0.85em;
             margin-left: 10px;
         }
+
+        .results-container {
+            display: none;
+        }
+
+        .results-container.show {
+            display: block;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f0f4ff;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .results-counter {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .results-nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .results-nav button {
+            padding: 8px 15px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background 0.2s;
+        }
+
+        .results-nav button:hover:not(:disabled) {
+            background: #764ba2;
+        }
+
+        .results-nav button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .result-item {
+            background: #f5f5f5;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .result-item.hidden {
+            display: none;
+        }
+
+        .result-type-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            background: #667eea;
+            color: white;
+        }
+
+        .result-code {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .result-description {
+            margin-bottom: 10px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .result-details {
+            font-size: 0.95em;
+            color: #666;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -247,6 +342,17 @@
             <div class="loading" id="loading">
                 <div class="spinner"></div>
                 <p style="margin-top: 10px; color: #667eea;">Analysieren...</p>
+            </div>
+
+            <div class="results-container" id="resultsContainer">
+                <div class="results-header">
+                    <div class="results-counter" id="resultsCounter"></div>
+                    <div class="results-nav">
+                        <button id="prevBtn" onclick="previousResult()" style="display: none;">← Zurück</button>
+                        <button id="nextBtn" onclick="nextResult()" style="display: none;">Weiter →</button>
+                    </div>
+                </div>
+                <div id="resultsList"></div>
             </div>
 
             <div class="response-section" id="responseSection">
@@ -311,25 +417,29 @@
             const query = document.getElementById('queryInput').value.trim();
 
             if (!query) {
-                showError('Please enter a question');
+                showError('Bitte geben Sie einen Suchbegriff ein');
                 return;
             }
 
             if (!knowledgeBase) {
-                showError('Knowledge base is loading... Please wait.');
+                showError('Wissensdatenbank wird geladen... Bitte warten.');
                 return;
             }
 
             showLoading(true);
             hideError();
             document.getElementById('responseSection').classList.remove('show');
+            document.getElementById('resultsContainer').classList.remove('show');
 
             try {
-                // For now, show a local analysis without API
                 const response = await analyzeQuery(query, knowledgeBase);
-                showResponse(response);
+                if (response.allMatches && response.allMatches.length > 0) {
+                    displayResults(response);
+                } else {
+                    showError('Keine Treffer in der Wissensdatenbank gefunden');
+                }
             } catch (error) {
-                showError('Error analyzing query: ' + error.message);
+                showError('Fehler bei der Analyse: ' + error.message);
             } finally {
                 showLoading(false);
             }
@@ -465,8 +575,109 @@
             return {
                 text: responseText,
                 confidence: confidence,
-                hasData: bestMatches.length > 0
+                hasData: bestMatches.length > 0,
+                allMatches: bestMatches  // Return all matches for display
             };
+        }
+
+        // Global state for result navigation
+        let currentResultIndex = 0;
+        let allResults = [];
+
+        function displayResults(response) {
+            if (!response.allMatches || response.allMatches.length === 0) {
+                showError('Keine Treffer gefunden');
+                return;
+            }
+
+            allResults = response.allMatches;
+            currentResultIndex = 0;
+
+            const resultsContainer = document.getElementById('resultsContainer');
+            const resultsList = document.getElementById('resultsList');
+
+            // Build HTML for all results
+            let html = '';
+            for (let i = 0; i < allResults.length; i++) {
+                const match = allResults[i];
+                const isHidden = i > 0 ? ' hidden' : '';
+
+                html += `<div class="result-item${isHidden}" id="result-${i}">`;
+                html += `<span class="result-type-badge">${match.type === 'error' ? 'FEHLERCODE' : match.type === 'param' ? 'PARAMETER' : 'KOMPONENTE'}</span>`;
+                html += `<div class="result-code">${match.data.code}</div>`;
+                html += `<div class="result-description">${match.data.description_de}</div>`;
+
+                // Add type-specific details
+                if (match.type === 'error' && match.data.cause_solution) {
+                    html += `<div class="result-details"><strong>Ursache/Lösung:</strong><br>${match.data.cause_solution}</div>`;
+                    html += `<div class="result-details">📖 Handbuchseite: ${match.data.manual_page}</div>`;
+                } else if (match.type === 'param') {
+                    html += `<div class="result-details">📖 Seite: ${match.data.manual_page}`;
+                    if (match.data.section) html += ` | Abschnitt: ${match.data.section}`;
+                    html += `</div>`;
+                }
+
+                html += `</div>`;
+            }
+
+            resultsList.innerHTML = html;
+
+            // Update counter and navigation
+            updateResultsUI();
+
+            // Show results container, hide old response section
+            resultsContainer.classList.add('show');
+            document.getElementById('responseSection').classList.remove('show');
+        }
+
+        function updateResultsUI() {
+            const counter = document.getElementById('resultsCounter');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+
+            counter.textContent = `Ergebnis ${currentResultIndex + 1} von ${allResults.length}`;
+
+            // Show navigation buttons if more than 1 result
+            if (allResults.length > 1) {
+                prevBtn.style.display = 'inline-block';
+                nextBtn.style.display = 'inline-block';
+            } else {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+            }
+
+            prevBtn.disabled = currentResultIndex === 0;
+            nextBtn.disabled = currentResultIndex === allResults.length - 1;
+        }
+
+        function nextResult() {
+            if (currentResultIndex < allResults.length - 1) {
+                showResultIndex(currentResultIndex + 1);
+            }
+        }
+
+        function previousResult() {
+            if (currentResultIndex > 0) {
+                showResultIndex(currentResultIndex - 1);
+            }
+        }
+
+        function showResultIndex(index) {
+            // Hide all results
+            for (let i = 0; i < allResults.length; i++) {
+                const element = document.getElementById(`result-${i}`);
+                if (element) element.classList.add('hidden');
+            }
+
+            // Show selected result
+            currentResultIndex = index;
+            const element = document.getElementById(`result-${index}`);
+            if (element) element.classList.remove('hidden');
+
+            updateResultsUI();
+
+            // Scroll to results
+            document.getElementById('resultsContainer').scrollIntoView({ behavior: 'smooth' });
         }
 
         function showResponse(response) {
