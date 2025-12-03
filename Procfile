@@ -1,1 +1,1 @@
-web: gunicorn web_api:app --bind 0.0.0.0:${PORT:-8080} --workers 2
+web: gunicorn web_api:app -c gunicorn_config.py
