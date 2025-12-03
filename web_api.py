@@ -136,6 +136,7 @@ def query_claude(question):
         # Initialize Anthropic client with explicit parameters only
         import sys
         print(f"[CLAUDE] Initializing Anthropic client...", file=sys.stderr, flush=True)
+        print(f"[CLAUDE] API Key present: {bool(api_key)}, Length: {len(api_key) if api_key else 0}, Starts with: {api_key[:15] if api_key else 'N/A'}...", file=sys.stderr, flush=True)
 
         try:
             client = anthropic.Anthropic(api_key=api_key)
