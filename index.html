@@ -682,6 +682,20 @@
 
             responseContent.innerHTML = html;
             responseSection.classList.add('show');
+
+            // Update feedback state
+            currentQuery = document.getElementById('queryInput').value;
+            currentResponse = response.diagnosis;
+            currentConfidence = response.confidence;
+            selectedFeedback = null;
+
+            // Clear feedback UI
+            document.querySelectorAll('.feedback-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            document.getElementById('feedbackText').value = '';
+            document.getElementById('feedbackNotes').classList.remove('show');
+            document.getElementById('feedbackMessage').className = 'feedback-message';
         }
 
         function escapeHtml(text) {
@@ -804,32 +818,6 @@
             messageDiv.className = 'feedback-message ' + type;
         }
 
-        // Store original displayAIResponse function before wrapping it
-        const originalDisplayAIResponse = (function() {
-            const original = displayAIResponse;
-            return original;
-        })();
-
-        // Wrap displayAIResponse to also handle feedback UI updates
-        const wrappedDisplayAIResponse = displayAIResponse;
-        function displayAIResponse(response) {
-            // Call original first
-            wrappedDisplayAIResponse(response);
-
-            // Then update feedback state
-            currentQuery = document.getElementById('queryInput').value;
-            currentResponse = response.diagnosis;
-            currentConfidence = response.confidence;
-            selectedFeedback = null;
-
-            // Clear feedback UI
-            document.querySelectorAll('.feedback-btn').forEach(btn => {
-                btn.classList.remove('selected');
-            });
-            document.getElementById('feedbackText').value = '';
-            document.getElementById('feedbackNotes').classList.remove('show');
-            document.getElementById('feedbackMessage').className = 'feedback-message';
-        }
     </script>
 </body>
 </html>
