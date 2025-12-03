@@ -189,7 +189,7 @@ Please provide a helpful diagnostic response in German. Include:
 4. Your confidence level"""
 
         message = client.messages.create(
-            model="claude-3-5-sonnet-20241022",
+            model="claude-3-5-sonnet-20240620",
             max_tokens=2000,
             system=system_prompt,
             messages=[
