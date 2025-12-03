@@ -211,8 +211,16 @@ Please provide a helpful diagnostic response in German. Include:
 
         # Extract referenced codes (simple heuristic)
         codes_referenced = []
-        for item in KNOWLEDGE_BASE:
-            if item['code'].upper() in response_text.upper():
+        if isinstance(KNOWLEDGE_BASE, dict):
+            # Handle nested structure
+            all_items = (KNOWLEDGE_BASE.get('error_codes', []) +
+                        KNOWLEDGE_BASE.get('parameters', []) +
+                        KNOWLEDGE_BASE.get('abbreviations', []))
+        else:
+            all_items = KNOWLEDGE_BASE
+
+        for item in all_items:
+            if item.get('code', '').upper() in response_text.upper():
                 codes_referenced.append(item['code'])
 
         # Extract manual pages
