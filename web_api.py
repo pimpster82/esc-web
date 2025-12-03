@@ -245,17 +245,7 @@ def save_feedback(feedback_data):
         print(f"Error saving feedback: {e}")
         return False
 
-# Routes
-@app.route('/')
-def index():
-    """Serve the main HTML page"""
-    return send_from_directory('.', 'index.html')
-
-@app.route('/knowledge.json')
-def knowledge_json():
-    """Serve the knowledge base JSON"""
-    return send_from_directory('.', 'knowledge.json')
-
+# API Routes (defined first for priority)
 @app.route('/api/knowledge-summary', methods=['GET'])
 def api_knowledge_summary():
     """Get knowledge base summary"""
@@ -330,6 +320,17 @@ def health():
         "knowledge_loaded": KNOWLEDGE_BASE is not None,
         "entries": entries
     })
+
+# Static file routes
+@app.route('/')
+def index():
+    """Serve the main HTML page"""
+    return send_from_directory('.', 'index.html')
+
+@app.route('/knowledge.json')
+def knowledge_json():
+    """Serve the knowledge base JSON"""
+    return send_from_directory('.', 'knowledge.json')
 
 # Initialize - Load knowledge base on startup (works with gunicorn)
 import sys
