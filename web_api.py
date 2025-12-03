@@ -20,18 +20,22 @@ FEEDBACK_FILE = 'feedback.json'
 
 def load_knowledge_base():
     """Load the knowledge base from JSON file"""
+    import sys
     global KNOWLEDGE_BASE
     try:
         # Use absolute path based on script location
         script_dir = os.path.dirname(os.path.abspath(__file__))
         knowledge_path = os.path.join(script_dir, 'knowledge.json')
+        print(f"[LOADING] Attempting to load from: {knowledge_path}", file=sys.stderr, flush=True)
         with open(knowledge_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             KNOWLEDGE_BASE = data
-            print(f"✓ Knowledge base loaded: {len(data)} entries")
+            print(f"✓ Knowledge base loaded: {len(data)} entries", file=sys.stderr, flush=True)
             return data
     except Exception as e:
-        print(f"✗ Error loading knowledge base: {e}")
+        print(f"✗ Error loading knowledge base: {e}", file=sys.stderr, flush=True)
+        import traceback
+        traceback.print_exc(file=sys.stderr)
         return []
 
 def get_knowledge_summary():
@@ -286,19 +290,20 @@ def health():
     })
 
 # Initialize - Load knowledge base on startup (works with gunicorn)
-print("=" * 60)
-print("ESC - Elevator Service Companion API Server")
-print("=" * 60)
+import sys
+print("=" * 60, file=sys.stderr, flush=True)
+print("ESC - Elevator Service Companion API Server", file=sys.stderr, flush=True)
+print("=" * 60, file=sys.stderr, flush=True)
 load_knowledge_base()
 
 if not os.environ.get('ANTHROPIC_API_KEY'):
-    print("\n⚠️  WARNING: ANTHROPIC_API_KEY not set!")
-    print("   Set it with: export ANTHROPIC_API_KEY='your-key-here'")
+    print("\n⚠️  WARNING: ANTHROPIC_API_KEY not set!", file=sys.stderr, flush=True)
+    print("   Set it with: export ANTHROPIC_API_KEY='your-key-here'", file=sys.stderr, flush=True)
 else:
-    print("✓ ANTHROPIC_API_KEY configured")
+    print("✓ ANTHROPIC_API_KEY configured", file=sys.stderr, flush=True)
 
-print("🚀 Server ready")
-print("=" * 60 + "\n")
+print("🚀 Server ready", file=sys.stderr, flush=True)
+print("=" * 60 + "\n", file=sys.stderr, flush=True)
 
 # Development server (only when run directly with python)
 if __name__ == '__main__':
