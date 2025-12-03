@@ -188,8 +188,11 @@ Please provide a helpful diagnostic response in German. Include:
 3. Relevant manual pages (if any)
 4. Your confidence level"""
 
+        # Use the latest Sonnet 4.5 model
+        model_to_use = "claude-sonnet-4-5-20250929"  # Latest Sonnet 4.5
+
         message = client.messages.create(
-            model="claude-3-5-sonnet-20241022",
+            model=model_to_use,
             max_tokens=2000,
             system=system_prompt,
             messages=[
