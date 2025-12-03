@@ -30,19 +30,43 @@ def load_knowledge_base():
         with open(knowledge_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             KNOWLEDGE_BASE = data
-            print(f"✓ Knowledge base loaded: {len(data)} entries", file=sys.stderr, flush=True)
+
+            # Count actual entries
+            total = 0
+            if isinstance(data, dict):
+                total = (len(data.get('error_codes', [])) +
+                        len(data.get('parameters', [])) +
+                        len(data.get('abbreviations', [])))
+            else:
+                total = len(data)
+
+            print(f"✓ Knowledge base loaded: {total} entries", file=sys.stderr, flush=True)
             return data
     except Exception as e:
         print(f"✗ Error loading knowledge base: {e}", file=sys.stderr, flush=True)
         import traceback
         traceback.print_exc(file=sys.stderr)
-        return []
+        return {}
 
 def get_knowledge_summary():
     """Get a summary of the knowledge base"""
     if not KNOWLEDGE_BASE:
         return {"total": 0, "error_codes": 0, "parameters": 0, "components": 0}
 
+    # Handle nested structure
+    if isinstance(KNOWLEDGE_BASE, dict):
+        error_codes = len(KNOWLEDGE_BASE.get('error_codes', []))
+        parameters = len(KNOWLEDGE_BASE.get('parameters', []))
+        components = len(KNOWLEDGE_BASE.get('abbreviations', []))
+
+        return {
+            "total": error_codes + parameters + components,
+            "error_codes": error_codes,
+            "parameters": parameters,
+            "components": components
+        }
+
+    # Fallback for flat structure
     error_codes = sum(1 for item in KNOWLEDGE_BASE if item.get('type') == 'error')
     parameters = sum(1 for item in KNOWLEDGE_BASE if item.get('type') == 'parameter')
     components = sum(1 for item in KNOWLEDGE_BASE if item.get('type') == 'component')
@@ -61,32 +85,40 @@ def format_knowledge_for_claude():
 
     formatted = "# Via Series Elevator Knowledge Base\n\n"
 
-    # Group by type
-    errors = [item for item in KNOWLEDGE_BASE if item.get('type') == 'error']
-    params = [item for item in KNOWLEDGE_BASE if item.get('type') == 'parameter']
-    components = [item for item in KNOWLEDGE_BASE if item.get('type') == 'component']
+    # Handle nested structure
+    if isinstance(KNOWLEDGE_BASE, dict):
+        errors = KNOWLEDGE_BASE.get('error_codes', [])
+        params = KNOWLEDGE_BASE.get('parameters', [])
+        components = KNOWLEDGE_BASE.get('abbreviations', [])
+    else:
+        # Fallback for flat structure
+        errors = [item for item in KNOWLEDGE_BASE if item.get('type') == 'error']
+        params = [item for item in KNOWLEDGE_BASE if item.get('type') == 'parameter']
+        components = [item for item in KNOWLEDGE_BASE if item.get('type') == 'component']
 
     if errors:
         formatted += "## Error Codes\n"
         for item in errors:
-            formatted += f"\n### {item['code']}\n"
-            formatted += f"- Description: {item['description']}\n"
+            formatted += f"\n### {item.get('code')}\n"
+            formatted += f"- Description: {item.get('description_de', item.get('description', ''))}\n"
+            if item.get('cause_solution'):
+                formatted += f"- Cause/Solution: {item['cause_solution']}\n"
             if item.get('manual_page'):
                 formatted += f"- Manual Page: {item['manual_page']}\n"
 
     if params:
         formatted += "\n## Parameters\n"
         for item in params:
-            formatted += f"\n### {item['code']}\n"
-            formatted += f"- Description: {item['description']}\n"
+            formatted += f"\n### {item.get('code')}\n"
+            formatted += f"- Description: {item.get('description_de', item.get('description', ''))}\n"
             if item.get('manual_page'):
                 formatted += f"- Manual Page: {item['manual_page']}\n"
 
     if components:
-        formatted += "\n## Hardware Components\n"
+        formatted += "\n## Hardware Components & Abbreviations\n"
         for item in components:
-            formatted += f"\n### {item['code']}\n"
-            formatted += f"- Description: {item['description']}\n"
+            formatted += f"\n### {item.get('code')}\n"
+            formatted += f"- Description: {item.get('description_de', item.get('description', ''))}\n"
 
     return formatted
 
@@ -283,10 +315,20 @@ def api_feedback():
 @app.route('/health', methods=['GET'])
 def health():
     """Health check endpoint"""
+    # Calculate total entries for nested structure
+    entries = 0
+    if KNOWLEDGE_BASE:
+        if isinstance(KNOWLEDGE_BASE, dict):
+            entries = (len(KNOWLEDGE_BASE.get('error_codes', [])) +
+                      len(KNOWLEDGE_BASE.get('parameters', [])) +
+                      len(KNOWLEDGE_BASE.get('abbreviations', [])))
+        else:
+            entries = len(KNOWLEDGE_BASE)
+
     return jsonify({
         "status": "healthy",
         "knowledge_loaded": KNOWLEDGE_BASE is not None,
-        "entries": len(KNOWLEDGE_BASE) if KNOWLEDGE_BASE else 0
+        "entries": entries
     })
 
 # Initialize - Load knowledge base on startup (works with gunicorn)
