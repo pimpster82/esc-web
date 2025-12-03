@@ -133,7 +133,24 @@ def query_claude(question):
         }
 
     try:
-        client = anthropic.Anthropic(api_key=api_key)
+        # Initialize Anthropic client with explicit parameters only
+        import sys
+        print(f"[CLAUDE] Initializing Anthropic client...", file=sys.stderr, flush=True)
+
+        try:
+            client = anthropic.Anthropic(api_key=api_key)
+            print(f"[CLAUDE] Client initialized successfully", file=sys.stderr, flush=True)
+        except TypeError as te:
+            print(f"[CLAUDE] TypeError during client init: {te}", file=sys.stderr, flush=True)
+            # Fallback: try without any proxy settings
+            import os as _os
+            # Remove proxy env vars if they exist
+            for key in list(_os.environ.keys()):
+                if 'PROXY' in key.upper():
+                    print(f"[CLAUDE] Removing env var: {key}", file=sys.stderr, flush=True)
+                    del _os.environ[key]
+            client = anthropic.Anthropic(api_key=api_key)
+            print(f"[CLAUDE] Client initialized after removing proxy vars", file=sys.stderr, flush=True)
 
         knowledge_context = format_knowledge_for_claude()
 
