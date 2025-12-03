@@ -79,11 +79,11 @@ def get_knowledge_summary():
     }
 
 def format_knowledge_for_claude():
-    """Format the knowledge base for Claude's context"""
+    """Format the knowledge base for Claude's context - COMPACT VERSION"""
     if not KNOWLEDGE_BASE:
         return "Knowledge base not loaded."
 
-    formatted = "# Via Series Elevator Knowledge Base\n\n"
+    formatted = "# Via Series Elevator Knowledge Base (Summary)\n\n"
 
     # Handle nested structure
     if isinstance(KNOWLEDGE_BASE, dict):
@@ -96,29 +96,21 @@ def format_knowledge_for_claude():
         params = [item for item in KNOWLEDGE_BASE if item.get('type') == 'parameter']
         components = [item for item in KNOWLEDGE_BASE if item.get('type') == 'component']
 
-    if errors:
-        formatted += "## Error Codes\n"
-        for item in errors:
-            formatted += f"\n### {item.get('code')}\n"
-            formatted += f"- Description: {item.get('description_de', item.get('description', ''))}\n"
-            if item.get('cause_solution'):
-                formatted += f"- Cause/Solution: {item['cause_solution']}\n"
-            if item.get('manual_page'):
-                formatted += f"- Manual Page: {item['manual_page']}\n"
+    # Only include summary counts and sample entries to avoid stack overflow
+    formatted += f"## Available Data\n"
+    formatted += f"- {len(errors)} Error Codes (F01 02 to F11 13)\n"
+    formatted += f"- {len(params)} Parameters (P0001 to P0015)\n"
+    formatted += f"- {len(components)} Hardware Components/Abbreviations\n\n"
 
-    if params:
-        formatted += "\n## Parameters\n"
-        for item in params:
-            formatted += f"\n### {item.get('code')}\n"
-            formatted += f"- Description: {item.get('description_de', item.get('description', ''))}\n"
-            if item.get('manual_page'):
-                formatted += f"- Manual Page: {item['manual_page']}\n"
+    formatted += "## Sample Error Codes\n"
+    for item in errors[:5]:  # Only first 5
+        formatted += f"- {item.get('code')}: {item.get('description_de', '')[:80]}...\n"
 
-    if components:
-        formatted += "\n## Hardware Components & Abbreviations\n"
-        for item in components:
-            formatted += f"\n### {item.get('code')}\n"
-            formatted += f"- Description: {item.get('description_de', item.get('description', ''))}\n"
+    formatted += "\n## Sample Components\n"
+    for item in components[:10]:  # Only first 10
+        formatted += f"- {item.get('code')}: {item.get('description_de', '')[:60]}...\n"
+
+    formatted += "\n**Note**: Search the full knowledge base for specific codes when needed."
 
     return formatted
 
@@ -153,40 +145,62 @@ def query_claude(question):
             client = anthropic.Anthropic(api_key=api_key)
             print(f"[CLAUDE] Client initialized after removing proxy vars", file=sys.stderr, flush=True)
 
-        knowledge_context = format_knowledge_for_claude()
+        # Search for relevant entries in knowledge base based on question
+        relevant_entries = []
+        question_upper = question.upper()
+
+        if isinstance(KNOWLEDGE_BASE, dict):
+            all_items = (KNOWLEDGE_BASE.get('error_codes', []) +
+                        KNOWLEDGE_BASE.get('parameters', []) +
+                        KNOWLEDGE_BASE.get('abbreviations', []))
+        else:
+            all_items = KNOWLEDGE_BASE
+
+        # Find relevant entries
+        for item in all_items:
+            code = item.get('code', '')
+            desc = item.get('description_de', item.get('description', ''))
+            if code.upper() in question_upper or any(word in desc.upper() for word in question_upper.split() if len(word) > 3):
+                relevant_entries.append(item)
+                if len(relevant_entries) >= 10:  # Limit to 10 most relevant
+                    break
+
+        # Format relevant entries
+        knowledge_context = "# Relevant Knowledge Base Entries\n\n"
+        for item in relevant_entries:
+            knowledge_context += f"**{item.get('code')}**: {item.get('description_de', item.get('description', ''))}\n"
+            if item.get('cause_solution'):
+                knowledge_context += f"  Ursache/Lösung: {item['cause_solution']}\n"
+            if item.get('manual_page'):
+                knowledge_context += f"  Handbuchseite: {item['manual_page']}\n"
+            knowledge_context += "\n"
+
+        if not relevant_entries:
+            knowledge_context = format_knowledge_for_claude()
 
         system_prompt = """You are an expert elevator service technician assistant for Via Series elevators.
-You have access to a comprehensive knowledge base with error codes, parameters, and hardware components.
 
 Your role is to:
-1. Provide accurate technical diagnostics based on the knowledge base
+1. Provide accurate technical diagnostics based on the provided knowledge base entries
 2. Reference specific error codes, parameters, or components when relevant
-3. Suggest manual page numbers for detailed information
-4. Respond in GERMAN language
-5. Be concise but thorough
+3. Respond in GERMAN language
+4. Be concise but thorough
 
-When answering:
-- If asked about an error code, explain what it means and possible causes
-- If asked about a component, explain its function and location
-- If asked about a parameter, explain its purpose and typical values
-- Always reference the relevant manual pages when available
-
-Respond with a confidence level:
+Confidence level:
 - HIGH: Information directly from knowledge base
 - MEDIUM: Inferred from related knowledge
-- LOW: General elevator knowledge, not specific to this system
-"""
+- LOW: General elevator knowledge"""
 
-        user_prompt = f"""User Question: {question}
+        user_prompt = f"""Frage: {question}
 
-Available Knowledge Base:
+Wissensbasis:
 {knowledge_context}
 
-Please provide a helpful diagnostic response in German. Include:
-1. Direct answer to the question
-2. Referenced codes (if any)
-3. Relevant manual pages (if any)
-4. Your confidence level"""
+Bitte antworte auf Deutsch mit:
+1. Direkte Antwort
+2. Referenzierte Codes
+3. Handbuchseiten (falls vorhanden)
+4. Konfidenz-Level"""
 
         # Use the latest Sonnet 4.5 model
         model_to_use = "claude-sonnet-4-5-20250929"  # Latest Sonnet 4.5
