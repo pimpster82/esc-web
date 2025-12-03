@@ -22,7 +22,10 @@ def load_knowledge_base():
     """Load the knowledge base from JSON file"""
     global KNOWLEDGE_BASE
     try:
-        with open('knowledge.json', 'r', encoding='utf-8') as f:
+        # Use absolute path based on script location
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        knowledge_path = os.path.join(script_dir, 'knowledge.json')
+        with open(knowledge_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             KNOWLEDGE_BASE = data
             print(f"✓ Knowledge base loaded: {len(data)} entries")
@@ -282,24 +285,24 @@ def health():
         "entries": len(KNOWLEDGE_BASE) if KNOWLEDGE_BASE else 0
     })
 
-# Initialize
+# Initialize - Load knowledge base on startup (works with gunicorn)
+print("=" * 60)
+print("ESC - Elevator Service Companion API Server")
+print("=" * 60)
+load_knowledge_base()
+
+if not os.environ.get('ANTHROPIC_API_KEY'):
+    print("\n⚠️  WARNING: ANTHROPIC_API_KEY not set!")
+    print("   Set it with: export ANTHROPIC_API_KEY='your-key-here'")
+else:
+    print("✓ ANTHROPIC_API_KEY configured")
+
+print("🚀 Server ready")
+print("=" * 60 + "\n")
+
+# Development server (only when run directly with python)
 if __name__ == '__main__':
-    print("=" * 60)
-    print("ESC - Elevator Service Companion API Server")
-    print("=" * 60)
-
-    # Load knowledge base
-    load_knowledge_base()
-
-    # Check for API key
-    if not os.environ.get('ANTHROPIC_API_KEY'):
-        print("\n⚠️  WARNING: ANTHROPIC_API_KEY not set!")
-        print("   Set it with: export ANTHROPIC_API_KEY='your-key-here'")
-        print("   Or configure it in Railway environment variables\n")
-    else:
-        print("✓ ANTHROPIC_API_KEY configured")
-
-    print("\n🚀 Server starting...")
+    print("\n🚀 Starting development server...")
     print("   Local: http://localhost:8080")
     print("   Railway: Will use $PORT environment variable")
     print("=" * 60 + "\n")
